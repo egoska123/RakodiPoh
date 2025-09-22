@@ -203,6 +203,9 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 
 .ecosystem-node{
   position:absolute;
+  width:clamp(210px, 26vw, 248px);
+  padding:20px 22px;
+
   width:min(270px,36vw);
   padding:22px 24px;
   border-radius:20px;
@@ -220,6 +223,9 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
+  width:clamp(250px, 30vw, 300px);
+  text-align:center;
+  padding:26px 28px;
   width:min(320px,44vw);
   text-align:center;
   padding:28px 30px;
@@ -227,6 +233,25 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   box-shadow:0 30px 70px rgba(12,8,30,0.65);
   border:1px solid rgba(255,255,255,0.2);
   animation:ecosystem-hub 14s ease-in-out infinite;
+  z-index:4;
+}
+
+.ecosystem-node--youtube{
+  top:9%;
+  left:clamp(12px, 3.6vw, 60px);
+  animation:ecosystem-node-left 18s ease-in-out infinite;
+}
+.ecosystem-node--telegram{
+  bottom:10%;
+  left:clamp(18px, 4.2vw, 72px);
+  animation:ecosystem-node-left 22s ease-in-out infinite;
+}
+.ecosystem-node--social{
+  top:20%;
+  right:clamp(18px, 4vw, 70px);
+  animation:ecosystem-node-right 20s ease-in-out infinite;
+}
+
 }
 
 .ecosystem-node--youtube{top:10%;left:10%;animation:ecosystem-node-left 18s ease-in-out infinite}
@@ -349,6 +374,10 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 }
 
 @media (max-width:1180px){
+  .ecosystem-node{width:min(248px, 44vw)}
+  .ecosystem-node--youtube{left:5%}
+  .ecosystem-node--telegram{left:9%}
+
   .ecosystem-node{width:min(260px,40vw)}
   .ecosystem-node--youtube{left:6%}
   .ecosystem-node--telegram{left:10%}
