@@ -538,24 +538,84 @@
   <!-- 7) Братство — «Роли, ритуалы, доступ» -->
   <section id="fraternity" class="reveal">
     <div class="container">
-      <h2 class="section-title">Братство Ракоди</h2>
-      <p class="section-sub">Мы организуемся в роли и «палаты». Доступ к частям экосистемы даёт участие и (где уместно) холд токена.</p>
-      <div class="grid cols-2">
-        <div class="card"><h3>Новобранец</h3><p class="muted">вход, базовые квесты, первый бэйдж.</p></div>
-        <div class="card"><h3>Смотритель</h3><p class="muted">куратор мемов и гайдов.</p></div>
-        <div class="card"><h3>Архивариус</h3><p class="muted">работает с «свитками» знаний, помогает формировать канон.</p></div>
-        <div class="card"><h3>Консул</h3><p class="muted">инициирует предложения, ведёт дискуссии и голосования.</p></div>
+      <div class="fraternity-layout">
+        <div class="fraternity-overview">
+          <div class="fraternity-heading">
+            <h2 class="section-title">Братство Ракоди</h2>
+            <p class="section-sub">Мы организуемся в роли и «палаты». Доступ к частям экосистемы даёт участие и (где уместно) холд токена.</p>
+          </div>
+          <div class="fraternity-grid">
+            <article class="fraternity-card">
+              <span class="fraternity-pill">Базовый вход</span>
+              <h3>Новобранец</h3>
+              <p class="muted">вход, базовые квесты, первый бэйдж.</p>
+            </article>
+            <article class="fraternity-card">
+              <span class="fraternity-pill">Кураторство</span>
+              <h3>Смотритель</h3>
+              <p class="muted">куратор мемов и гайдов.</p>
+            </article>
+            <article class="fraternity-card">
+              <span class="fraternity-pill">Свитки</span>
+              <h3>Архивариус</h3>
+              <p class="muted">работает с «свитками» знаний, помогает формировать канон.</p>
+            </article>
+            <article class="fraternity-card">
+              <span class="fraternity-pill">Совет</span>
+              <h3>Консул</h3>
+              <p class="muted">инициирует предложения, ведёт дискуссии и голосования.</p>
+            </article>
+          </div>
+          <div class="fraternity-meta">
+            <div class="fraternity-meta-item">
+              <span class="fraternity-meta-label">Приватный уровень</span>
+              <span class="fraternity-meta-value">Посвящённое братство</span>
+            </div>
+            <p class="small">Приватные комнаты и миссии с повышенными наградами доступны после вклада и участия в ритуалах.</p>
+          </div>
+        </div>
+        <aside class="fraternity-journey" aria-label="Этапы посвящения">
+          <div class="fraternity-journey-head">
+            <span class="fraternity-sigil" aria-hidden="true">Σ</span>
+            <div>
+              <h3>Путь посвящения</h3>
+              <p class="muted">Каждый шаг фиксирует вклад и открывает новый уровень доступа.</p>
+            </div>
+          </div>
+          <ol class="fraternity-steps">
+            <li class="fraternity-step">
+              <span class="fraternity-step-index">Шаг 1</span>
+              <div class="fraternity-step-body">
+                <h4>Вступление и первый бэйдж</h4>
+                <p>Присоединяйся к Telegram и активируй роль «Новобранец».</p>
+              </div>
+            </li>
+            <li class="fraternity-step">
+              <span class="fraternity-step-index">Шаг 2</span>
+              <div class="fraternity-step-body">
+                <h4>Первые квесты</h4>
+                <p>Выполняй задания и участвуй в мем‑библиотеке.</p>
+              </div>
+            </li>
+            <li class="fraternity-step">
+              <span class="fraternity-step-index">Шаг 3</span>
+              <div class="fraternity-step-body">
+                <h4>Курация и голос</h4>
+                <p>Переходи в роли Смотрителя/Архивариуса и подключайся к модерации.</p>
+              </div>
+            </li>
+            <li class="fraternity-step">
+              <span class="fraternity-step-index">Шаг 4</span>
+              <div class="fraternity-step-body">
+                <h4>Совет Консулов</h4>
+                <p>Ведёшь инициативы, формируешь повестку и участвуешь в стратегических голосованиях.</p>
+              </div>
+            </li>
+          </ol>
+        </aside>
       </div>
-      <p class="small">Посвящённое братство — приватные комнаты и миссии с повышенными наградами.</p>
     </div>
-  
-      <div class="container" style="margin-top:10px">
-        <div class="timeline">
-        <div class="milestone"><div class="when">Шаг 1</div><div>Вступление и первый бэйдж.</div></div>
-        <div class="milestone"><div class="when">Шаг 2</div><div>Первые квесты и участие в мем‑библиотеке.</div></div>
-        <div class="milestone"><div class="when">Шаг 3</div><div>Курация и голосования (Смотритель/Архивариус).</div></div>
-        <div class="milestone"><div class="when">Шаг 4</div><div>Инициативы и консулы.</div></div>
-      </div></section>
+  </section>
 
   <!-- 8) Награды и квесты — «Играй по‑серьёзному» -->
   <section id="quests" class="reveal quest-section">
