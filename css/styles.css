@@ -597,6 +597,7 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 }
 @media (max-width:540px){
   .token-params__value{font-size:16px}
+}
 /* Tokenomics — TLDR tiles */
 .tldr-section{position:relative;z-index:1}
 .tldr-shell{
