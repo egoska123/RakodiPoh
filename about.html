@@ -441,43 +441,99 @@
 
   <!-- 6) Мем-библиотека — «Архив, который смеётся» -->
   <section id="memlib" class="reveal">
-    <div style="margin-inline: auto;" class="container">
-      <h2 class="section-title">Мем-библиотека</h2>
-      <p class="section-sub">Это наш живой архив. От ироничных артов до полезных гайдов. Лучшее попадает на главную и в ролики.</p>
-      <div class="grid cols-3">
-        <div class="card"><h3>Как попадает контент</h3><p class="muted">Предложи мем → модерация Братства → публикация → награды.</p></div>
-        <div class="card"><h3>Фильтры</h3><p class="muted">Мемы • Новости • Гайды • Архив</p></div>
-        <div class="card"><h3>Правила коротко</h3>
-          <ul>
-            <li>Остроумно, без токсичности.</li>
-            <li>По делу: мем должен вести к идее.</li>
-            <li>Указывай источники, если используешь референсы.</li>
+    <div class="container memlib">
+      <div class="memlib-head">
+        <div class="memlib-head__copy">
+          <h2 class="section-title">Мем-библиотека</h2>
+          <p class="section-sub">Это наш живой архив: от ироничных артов до полезных гайдов. Лучшие находки попадают на главную, в ролики и в подборки Братства.</p>
+        </div>
+        <div class="memlib-head__meta">
+          <span class="memlib-pill">#rakodi-archive</span>
+          <span class="memlib-pill memlib-pill--ghost">Обновление каждую неделю</span>
+        </div>
+      </div>
+
+      <div class="memlib-panels">
+        <article class="memlib-panel">
+          <span class="memlib-panel__eyebrow">Путь артефактов</span>
+          <h3 class="memlib-panel__title">Как попадает контент</h3>
+          <p class="memlib-panel__text">Весь поток проходит через гильдию кураторов, чтобы мемы оставались остроумными и в тему.</p>
+          <div class="memlib-chain" aria-hidden="true">
+            <span>Предложи мем</span>
+            <span>Модерация</span>
+            <span>Публикация</span>
+            <span>Награды</span>
+          </div>
+        </article>
+
+        <article class="memlib-panel">
+          <span class="memlib-panel__eyebrow">Каталоги</span>
+          <h3 class="memlib-panel__title">Фильтры</h3>
+          <p class="memlib-panel__text">Навигация по разделам помогает быстро найти нужную эмоцию или инструкцию.</p>
+          <ul class="memlib-panel__list">
+            <li>Мемы и хроники</li>
+            <li>Новости и отчёты</li>
+            <li>Гайды и свитки</li>
+            <li>Архив редкостей</li>
           </ul>
+        </article>
+
+        <article class="memlib-panel">
+          <span class="memlib-panel__eyebrow">Этика</span>
+          <h3 class="memlib-panel__title">Правила коротко</h3>
+          <ul class="memlib-panel__list memlib-panel__list--bullets">
+            <li>Остроумно, без токсичности.</li>
+            <li>Мем должен подводить к идее.</li>
+            <li>Если используешь референсы — отмечай авторов.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="memlib-stats">
+        <div class="memlib-stat" role="meter" aria-label="Видео и хроники" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+          <div class="memlib-stat__meta">
+            <span class="memlib-stat__label">Видео и хроники</span>
+            <span class="memlib-stat__value">~40%</span>
+          </div>
+          <div class="memlib-bar" style="--progress:40%">
+            <span class="memlib-bar__fill"></span>
+          </div>
+        </div>
+
+        <div class="memlib-stat" role="meter" aria-label="Свитки-мемы" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+          <div class="memlib-stat__meta">
+            <span class="memlib-stat__label">Свитки-мемы</span>
+            <span class="memlib-stat__value">~30%</span>
+          </div>
+          <div class="memlib-bar" style="--progress:30%">
+            <span class="memlib-bar__fill"></span>
+          </div>
+        </div>
+
+        <div class="memlib-stat" role="meter" aria-label="Истории и гайды" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+          <div class="memlib-stat__meta">
+            <span class="memlib-stat__label">Истории и гайды</span>
+            <span class="memlib-stat__value">~20%</span>
+          </div>
+          <div class="memlib-bar" style="--progress:20%">
+            <span class="memlib-bar__fill"></span>
+          </div>
+        </div>
+
+        <div class="memlib-stat" role="meter" aria-label="Код и инфраструктура" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          <div class="memlib-stat__meta">
+            <span class="memlib-stat__label">Код и инфраструктура</span>
+            <span class="memlib-stat__value">~10%</span>
+          </div>
+          <div class="memlib-bar" style="--progress:10%">
+            <span class="memlib-bar__fill"></span>
+          </div>
         </div>
       </div>
-      </div class="container" style=''>
-          <p class="small" style="margin:6px 0 0">~40%</p>
-        </div>
-        <div class="card" style="text-align:center">
-          <div class="badge">Свитки‑мемы</div>
-          <div style="height:10px;border-radius:10px;background:var(--glass);border:var(--border);overflow:hidden;margin-top:8px"><div style="height:100%;width:30%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>
-          <p class="small" style="margin:6px 0 0">~30%</p>
-        </div>
-        <div class="card" style="text-align:center">
-          <div class="badge">Истории/тексты</div>
-          <div style="height:10px;border-radius:10px;background:var(--glass);border:var(--border);overflow:hidden;margin-top:8px"><div style="height:100%;width:20%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>
-          <p class="small" style="margin:6px 0 0">~20%</p>
-        </div>
-        <div class="card" style="text-align:center">
-          <div class="badge">Код/инфраструктура</div>
-          <div style="height:10px;border-radius:10px;background:var(--glass);border:var(--border);overflow:hidden;margin-top:8px"><div style="height:100%;width:10%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>
-          <p class="small" style="margin:6px 0 0">~10%</p>
-        </div>
-        </div>
-      </div>
+
+      <p class="memlib-note small">Задача архива — удерживать живую историю комьюнити. Присылай находки, чтобы расширять канон Ракоди.</p>
     </div>
-        
-      </section>
+  </section>
 
   <!-- 7) Братство — «Роли, ритуалы, доступ» -->
   <section id="fraternity" class="reveal">
