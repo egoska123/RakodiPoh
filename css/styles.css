@@ -4408,24 +4408,62 @@ box-shadow:0 32px 80px rgba(6,6,28,0.55);backdrop-filter:blur(16px);overflow:hid
 
 
 .page-brotherhood #ranks{
+  position:relative;
   background:
-    radial-gradient(900px 600px at 12% 20%, rgba(123,92,255,0.22), transparent 74%),
-    linear-gradient(150deg, rgba(9,10,26,0.94), rgba(10,9,24,0.84));
+    radial-gradient(900px 620px at 10% 12%, rgba(123,92,255,0.24), transparent 74%),
+    radial-gradient(680px 520px at 88% 8%, rgba(255,46,106,0.18), transparent 70%),
+    linear-gradient(158deg, rgba(9,11,30,0.96), rgba(7,9,26,0.88));
+  overflow:hidden;
+  isolation:isolate;
 }
-.page-brotherhood #ranks .grid{gap:clamp(22px,4vw,30px)}
-.page-brotherhood #ranks .card{padding:28px 26px 32px;border-radius:24px;border:1px solid rgba(255,255,255,0.16);background:linear-gradient(160deg, rgba(255,255,255,0.12), rgba(10,8,26,0.78));box-shadow:0 32px 80px rgba(4,4,20,0.6);position:relative;overflow:hidden}
-.page-brotherhood #ranks .card::before{
+.page-brotherhood #ranks::before,
+.page-brotherhood #ranks::after{
   content:"";
   position:absolute;
-  inset:-40% auto auto -42%;
-  width:220px;
-  height:220px;
-  background:radial-gradient(circle at 50% 50%, rgba(123,92,255,0.28), transparent 70%);
-  opacity:.55;
+  pointer-events:none;
+  border-radius:999px;
+  filter:blur(.4px);
+  opacity:.58;
 }
-.page-brotherhood #ranks .card h3{font-size:clamp(20px,3vw,24px);margin-bottom:12px;position:relative}
-.page-brotherhood #ranks .card p{position:relative}
-.page-brotherhood #ranks .small{margin-top:22px;color:rgba(205,208,240,0.7)}
+.page-brotherhood #ranks::before{
+  inset:auto -200px -160px auto;
+  width:420px;
+  height:420px;
+  background:radial-gradient(circle at 32% 36%, rgba(123,92,255,0.34), transparent 70%);
+}
+.page-brotherhood #ranks::after{
+  inset:-200px auto auto -160px;
+  width:360px;
+  height:360px;
+  background:radial-gradient(circle at 58% 42%, rgba(255,46,106,0.26), transparent 68%);
+}
+.page-brotherhood #ranks .container{position:relative;z-index:1}
+.page-brotherhood #ranks .ranks-header{display:flex;align-items:flex-end;justify-content:space-between;gap:clamp(18px,4vw,32px);flex-wrap:wrap;margin-bottom:clamp(28px,5vw,40px)}
+.page-brotherhood #ranks .ranks-subtitle{margin:0;max-width:560px}
+.page-brotherhood #ranks .roles-board{position:relative;padding:clamp(28px,6vw,44px);border-radius:34px;border:1px solid rgba(255,255,255,0.12);background:linear-gradient(140deg, rgba(20,16,46,0.86), rgba(8,7,28,0.92));box-shadow:0 42px 120px rgba(5,6,26,0.65);overflow:hidden}
+.page-brotherhood #ranks .roles-board::before,
+.page-brotherhood #ranks .roles-board::after{content:"";position:absolute;pointer-events:none;mix-blend-mode:screen}
+.page-brotherhood #ranks .roles-board::before{inset:-200px -140px auto auto;width:360px;height:360px;background:radial-gradient(circle at 34% 44%, rgba(123,92,255,0.52), transparent 70%)}
+.page-brotherhood #ranks .roles-board::after{inset:auto auto -220px -140px;width:420px;height:420px;background:radial-gradient(circle at 62% 50%, rgba(255,46,106,0.46), transparent 74%)}
+.page-brotherhood #ranks .roles-grid{display:grid;gap:clamp(20px,4vw,28px);grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+@media (max-width:720px){.page-brotherhood #ranks .roles-grid{grid-template-columns:minmax(0,1fr)}}
+.page-brotherhood #ranks .role-card{--role-accent:#ff2e6a;--role-glow:rgba(255,46,106,0.48);position:relative;padding:clamp(24px,4vw,32px);border-radius:26px;border:1px solid rgba(255,255,255,0.1);background:linear-gradient(135deg, rgba(32,24,60,0.82), rgba(9,8,26,0.92));box-shadow:0 28px 80px rgba(4,5,22,0.55);overflow:hidden;isolation:isolate;transition:transform .45s ease, box-shadow .45s ease}
+.page-brotherhood #ranks .role-card::before{content:"";position:absolute;inset:-140px -40px auto auto;width:280px;height:240px;background:radial-gradient(circle at 50% 50%, var(--role-glow), transparent 70%);opacity:.8;transition:transform .45s ease, opacity .45s ease}
+.page-brotherhood #ranks .role-card::after{content:"";position:absolute;inset:1px;border-radius:inherit;background:linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0));opacity:.7;pointer-events:none}
+.page-brotherhood #ranks .role-card:hover{transform:translateY(-10px);box-shadow:0 36px 100px rgba(6,7,32,0.7)}
+.page-brotherhood #ranks .role-card:hover::before{transform:translate3d(-12px,-10px,0);opacity:1}
+.page-brotherhood #ranks .role-card__header{display:flex;align-items:center;gap:clamp(16px,3vw,24px);margin-bottom:clamp(14px,2.5vw,20px)}
+.page-brotherhood #ranks .role-tier{display:grid;place-items:center;width:clamp(48px,7vw,58px);height:clamp(48px,7vw,58px);border-radius:18px;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.18), transparent 60%),linear-gradient(140deg, var(--role-accent), rgba(255,255,255,0.12));color:#fff;font-weight:700;font-size:clamp(18px,3vw,22px);letter-spacing:.06em;box-shadow:0 0 32px var(--role-glow)}
+.page-brotherhood #ranks .role-card__title-wrap{display:grid;gap:6px}
+.page-brotherhood #ranks .role-card__title{margin:0;font-size:clamp(22px,3.2vw,26px)}
+.page-brotherhood #ranks .role-legend{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:rgba(220,222,245,0.76)}
+.page-brotherhood #ranks .role-legend::before{content:"◎";font-size:13px;color:var(--role-accent)}
+.page-brotherhood #ranks .role-card__text{margin:0;color:rgba(226,228,250,0.82);max-width:440px}
+.page-brotherhood #ranks .role-card--watcher{--role-accent:#7b5cff;--role-glow:rgba(123,92,255,0.46)}
+.page-brotherhood #ranks .role-card--archivist{--role-accent:#35d0ff;--role-glow:rgba(53,208,255,0.42)}
+.page-brotherhood #ranks .role-card--consul{--role-accent:#ffc542;--role-glow:rgba(255,197,66,0.46)}
+.page-brotherhood #ranks .roles-note{margin:clamp(26px,4.5vw,34px) 0 0;color:rgba(212,214,243,0.78);display:inline-flex;align-items:center;gap:10px}
+.page-brotherhood #ranks .roles-note::before{content:"▹";font-size:14px;color:var(--accent);opacity:.85}
 
 .quest-section{
   border-bottom:none;
