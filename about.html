@@ -247,27 +247,107 @@
   <section id="ecosystem" class="reveal">
     <div class="container">
       <h2 class="section-title">Как всё соединено</h2>
-      <div class="grid cols-2">
-        <div class="card"><h3>Сайт — нервный центр</h3><p class="muted">Здесь — смысл, структура, токеномика, квесты и живые метрики. Сюда приводит весь внешний трафик.</p></div>
-        <div class="card"><h3>YouTube — медиаядро</h3><p class="muted">Клиповые тизеры в игровом/киношном стиле. Эмоция → внимание → переход на сайт.</p></div>
-        <div class="card"><h3>Telegram — форум Братства</h3><p class="muted">Обсуждения, анонсы, голосования, мемы дня. Первая точка входа в «ритуалы» комьюнити.</p></div>
-        <div class="card"><h3>Соцсети — сетка сигналов</h3><p class="muted">X, Instagram, (по ситуации) Reddit для англоязычной ветки. Усиливаем охват и приводим людей к видео и на сайт.</p></div>
+      <p class="section-sub">Орбитальная схема показывает, как каждый канал ловит внимание и возвращает его в нервный центр экосистемы.</p>
+
+      <div class="ecosystem-diagram">
+        <svg class="ecosystem-links" viewBox="0 0 800 600" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="ecosystem-line" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="rgba(255,46,106,0.85)"/>
+              <stop offset="50%" stop-color="rgba(123,92,255,0.65)"/>
+              <stop offset="100%" stop-color="rgba(76,217,253,0.6)"/>
+            </linearGradient>
+            <radialGradient id="ecosystem-core" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(255,46,106,0.8)"/>
+              <stop offset="60%" stop-color="rgba(123,92,255,0.25)"/>
+              <stop offset="100%" stop-color="rgba(12,16,32,0)"/>
+            </radialGradient>
+            <radialGradient id="ecosystem-orbit" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/>
+              <stop offset="70%" stop-color="rgba(255,255,255,0.02)"/>
+              <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+            </radialGradient>
+          </defs>
+          <circle cx="400" cy="300" r="188" fill="none" stroke="url(#ecosystem-line)" stroke-width="1.4" stroke-dasharray="10 18" opacity="0.55" class="ecosystem-orbit"/>
+          <circle cx="400" cy="300" r="262" fill="none" stroke="url(#ecosystem-line)" stroke-width="1.1" stroke-dasharray="12 26" opacity="0.35" class="ecosystem-orbit"/>
+          <circle cx="400" cy="300" r="118" fill="url(#ecosystem-orbit)" opacity="0.5"/>
+          <path d="M400 300 C 332 236 260 198 170 158" stroke="url(#ecosystem-line)" stroke-width="2.4" fill="none" stroke-linecap="round" class="ecosystem-line"/>
+          <path d="M400 300 C 336 352 280 398 188 426" stroke="url(#ecosystem-line)" stroke-width="2.4" fill="none" stroke-linecap="round" class="ecosystem-line"/>
+          <path d="M400 300 C 476 266 542 238 604 260" stroke="url(#ecosystem-line)" stroke-width="2.4" fill="none" stroke-linecap="round" class="ecosystem-line"/>
+          <circle cx="400" cy="300" r="74" fill="url(#ecosystem-core)" opacity="0.7"/>
+        </svg>
+
+        <article class="ecosystem-node ecosystem-node--site">
+          <span class="ecosystem-chip">Главный узел</span>
+          <h3>Сайт — нервный центр</h3>
+          <p>Живые метрики, токеномика, квесты и база знаний. Сюда стекается весь внешний трафик и превращается в участие.</p>
+          <ul class="ecosystem-meta">
+            <li>открытая аналитика и дашборды</li>
+            <li>документация и onboarding для Братства</li>
+          </ul>
+        </article>
+
+        <article class="ecosystem-node ecosystem-node--youtube">
+          <span class="ecosystem-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="presentation" focusable="false">
+              <circle cx="16" cy="16" r="13.2" stroke="currentColor" stroke-width="2" opacity="0.6" fill="none"/>
+              <path d="M13 11.5L21 16L13 20.5V11.5Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <h3>YouTube — медиаядро</h3>
+          <p>Клиповые тизеры, прямые эфиры и коллаборации. Эмоция зажигает внимание и ведёт к подробностям на сайте.</p>
+          <span class="ecosystem-note">Трейлеры • Бэкстейдж • Прямые стримы</span>
+        </article>
+
+        <article class="ecosystem-node ecosystem-node--telegram">
+          <span class="ecosystem-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="presentation" focusable="false">
+              <path d="M5 16L26 6L20.5 26L15.4 20.7L20.8 11.5L12.1 18L5 16Z" fill="currentColor" opacity="0.92"/>
+            </svg>
+          </span>
+          <h3>Telegram — форум Братства</h3>
+          <p>Обсуждения, голосования, мемы дня и оперативные объявления. Первая точка входа в ритуалы комьюнити.</p>
+          <span class="ecosystem-note">Рейды • Квесты • Роли и награды</span>
+        </article>
+
+        <article class="ecosystem-node ecosystem-node--social">
+          <span class="ecosystem-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="presentation" focusable="false">
+              <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="22" cy="8" r="3" fill="currentColor" opacity="0.7"/>
+              <circle cx="24" cy="22" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="9" cy="23" r="3" fill="currentColor" opacity="0.7"/>
+              <path d="M12.5 12.5L19 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+              <path d="M13 8L19 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+              <path d="M20 22L22 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+            </svg>
+          </span>
+          <h3>Соцсети — сетка сигналов</h3>
+          <p>X, Instagram и Reddit ловят новые аудитории. Усиливаем охват и возвращаем людей к видео и на сайт.</p>
+          <span class="ecosystem-note">Кросс-постинг • Мемы • Анонсы и спойлеры</span>
+        </article>
       </div>
 
-      <div style="width: min(1200px, 100%);" class="container">
-      <div class="card" style="margin:24px 0 0;text-align:center;width:100%">
-        <span class="badge">Сайт</span>
-        <span style="opacity:.6">↔</span>
-        <span class="badge">YouTube</span>
-        <span style="opacity:.6">↔</span>
-        <span class="badge">Telegram</span>
-        <span style="opacity:.6">↔</span>
-        <span class="badge">Соцсети</span>
+      <div class="ecosystem-flow">
+        <div class="flow-step">
+          <span class="flow-index">01</span>
+          <h4>Контент зажигает</h4>
+          <p>Видео и мемы создают эмоциональный вход. Основные CTA ведут на сайт и в Telegram.</p>
+        </div>
+        <div class="flow-step">
+          <span class="flow-index">02</span>
+          <h4>Сайт собирает</h4>
+          <p>Цифры, легенда и механики удерживают внимание, конвертируя его в регистрацию и покупку токена.</p>
+        </div>
+        <div class="flow-step">
+          <span class="flow-index">03</span>
+          <h4>Комьюнити усиливает</h4>
+          <p>Телеграм и соцсети возвращают инсайты в контент, замыкая петлю роста.</p>
+        </div>
       </div>
     </div>
-    </div>
-  
-    
+
+
   </section>
 
   <!-- 5) Контент-двигатель — «Как мемы двигают капитализацию» -->
