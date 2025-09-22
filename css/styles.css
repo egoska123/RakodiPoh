@@ -3669,6 +3669,129 @@ footer img{border-radius:12px;padding:0;background:transparent;border:none;filte
   .partners-track{animation:none !important;transform:none !important;}
 }
 
+/* Utility showcase */
+.utility-section{position:relative;padding:clamp(96px, 17vw, 160px) 0;overflow:hidden}
+.utility-section::before{
+  content:"";
+  position:absolute;
+  inset:-140px -20% -160px;
+  background:
+    radial-gradient(60% 90% at 50% 0%, rgba(123,92,255,0.2), transparent 75%),
+    radial-gradient(70% 100% at 50% 100%, rgba(255,46,106,0.12), transparent 80%);
+  opacity:.9;
+  pointer-events:none;
+  filter:blur(0.5px);
+}
+.utility-section .container{position:relative;z-index:1}
+.utility-header{text-align:center;display:grid;gap:16px;max-width:720px;margin:0 auto clamp(36px,5vw,52px)}
+.utility-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin:0 auto;
+  padding:7px 18px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.18);
+  background:rgba(10,10,26,0.62);
+  font-size:12px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:rgba(240,238,255,0.78);
+  backdrop-filter:blur(8px);
+}
+.utility-eyebrow::before{
+  content:"⟢";
+  color:var(--accent);
+  font-size:13px;
+  line-height:1;
+  filter:drop-shadow(0 2px 6px rgba(255,46,106,0.45));
+}
+.utility-note{margin:0;color:rgba(224,223,242,0.82);line-height:1.7;font-size:16px}
+.utility-showcase{
+  position:relative;
+  display:grid;
+  gap:clamp(22px,3vw,32px);
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.utility-showcase::before{
+  content:"";
+  position:absolute;
+  inset:-40px -60px;
+  background:radial-gradient(540px 260px at 20% 0%, rgba(255,255,255,0.1), transparent 70%);
+  opacity:.7;
+  pointer-events:none;
+}
+.utility-card{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  padding:clamp(26px,4vw,36px);
+  border-radius:30px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:linear-gradient(160deg, rgba(21,18,44,0.92), rgba(9,8,26,0.82));
+  box-shadow:0 28px 80px rgba(5,4,22,0.6);
+  overflow:hidden;
+  isolation:isolate;
+  z-index:0;
+  transition:transform .35s cubic-bezier(.19,1,.22,1), box-shadow .35s cubic-bezier(.19,1,.22,1), border-color .35s ease;
+}
+.utility-card::before{
+  content:"";
+  position:absolute;
+  inset:-42% 28% 48% -32%;
+  background:radial-gradient(320px 240px at 30% 30%, rgba(255,46,106,0.4), transparent 70%);
+  opacity:.6;
+  z-index:-1;
+  transition:opacity .35s ease, transform .35s ease;
+}
+.utility-card::after{
+  content:"";
+  position:absolute;
+  inset:1px;
+  border-radius:inherit;
+  background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0));
+  z-index:-2;
+}
+.utility-card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(255,255,255,0.16);
+  box-shadow:0 38px 110px rgba(7,5,26,0.65);
+}
+.utility-card:hover::before{opacity:1;transform:translate3d(0,-10px,0)}
+.utility-card__icon{
+  width:64px;
+  height:64px;
+  border-radius:18px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(140deg, rgba(255,255,255,0.12), rgba(123,92,255,0.16));
+  box-shadow:0 20px 44px rgba(6,4,24,0.55);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.18);
+}
+.utility-card__icon svg{width:40px;height:40px}
+.utility-card__content{display:grid;gap:10px}
+.utility-card__content h3{margin:0;font-size:clamp(20px,2.6vw,26px);letter-spacing:.01em}
+.utility-card__content p{margin:0;color:rgba(225,225,242,0.86);line-height:1.7;font-size:16px}
+.utility-footnote{margin:clamp(32px,5vw,48px) auto 0;text-align:center;max-width:720px;color:rgba(210,210,232,0.72)}
+
+@media (max-width:1100px){
+  .utility-showcase{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:760px){
+  .utility-header{margin-bottom:clamp(28px,8vw,40px)}
+  .utility-showcase{grid-template-columns:minmax(0,1fr);}
+  .utility-card{padding:24px;gap:16px}
+}
+@media (max-width:520px){
+  .utility-card__icon{width:58px;height:58px;border-radius:16px}
+  .utility-card__icon svg{width:34px;height:34px}
+  .utility-note{font-size:15px}
+  .utility-card__content p{font-size:15px}
+}
+
 .reveal{opacity:0;transform:translateY(24px);transition:all .8s cubic-bezier(.2,.65,.15,1)}
 .reveal.visible{opacity:1;transform:none}
 
