@@ -298,32 +298,271 @@
     <div class="container">
       <h2 class="section-title" style="text-align:center">Наши партнеры</h2>
     </div>
-    <!-- Полноширинная бегущая строка под стиль сайта -->
-    <div class="ticker-bar" style="position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow:hidden;border-top:1px solid rgba(123,92,255,.35);border-bottom:1px solid rgba(123,92,255,.35);background:linear-gradient(180deg,rgba(123,92,255,0.08),rgba(123,92,255,0.05));box-shadow:inset 0 0 24px rgba(123,92,255,.18)">
-      <div class="ticker-track" style="display:flex;gap:36px;white-space:nowrap;animation:rakodi-ticker 28s linear infinite;padding:14px 10px;will-change:transform">
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Тех‑поддержка</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Медиа</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Инфраструктура</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Аудит</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Платёжные партнёры</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Креаторы</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Маркет‑мейкинг</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Игровые студии</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Data‑провайдеры</span>
-        <!-- дублирование для бесшовной прокрутки -->
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Тех‑поддержка</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Медиа</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Инфраструктура</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Аудит</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Платёжные партнёры</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Креаторы</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Маркет‑мейкинг</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Игровые студии</span>
-        <span class="ticker-item" style="font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#d6d0ff;text-shadow:0 0 6px rgba(123,92,255,.60),0 0 18px rgba(123,92,255,.30)">Data‑провайдеры</span>
+    <div class="partners-marquee" aria-label="Партнёры Rakodi">
+      <div class="partners-row">
+        <div class="partners-track partners-track--left">
+          <article class="partner-card">
+            <img src="assets/cat-traider.png" alt="Партнёр трейдерского коммьюнити" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@TradeFox</span>
+              <span class="partner-card__tag">Маркет-мейкер</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/city_girl.webp" alt="Партнёр медиа-проекта" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@NeonCity</span>
+              <span class="partner-card__tag">Медиа</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/cat-wallet.png" alt="Партнёр кошелькового сервиса" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@WalletCraft</span>
+              <span class="partner-card__tag">Инфраструктура</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/hero_cowboy.webp" alt="Партнёр игровой студии" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@CowboyLabs</span>
+              <span class="partner-card__tag">Игры</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/cat-millioner.png" alt="Инвест-партнёр Rakodi" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@WhaleSensei</span>
+              <span class="partner-card__tag">Капитал</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/cat-search.png" alt="Партнёр аналитического сервиса" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@ScanVerse</span>
+              <span class="partner-card__tag">Аналитика</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/cat-traider.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@TradeFox</span>
+              <span class="partner-card__tag">Маркет-мейкер</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/city_girl.webp" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@NeonCity</span>
+              <span class="partner-card__tag">Медиа</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/cat-wallet.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@WalletCraft</span>
+              <span class="partner-card__tag">Инфраструктура</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/hero_cowboy.webp" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@CowboyLabs</span>
+              <span class="partner-card__tag">Игры</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/cat-millioner.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@WhaleSensei</span>
+              <span class="partner-card__tag">Капитал</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/cat-search.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@ScanVerse</span>
+              <span class="partner-card__tag">Аналитика</span>
+            </div>
+          </article>
+        </div>
       </div>
-      <style>
-        @keyframes rakodi-ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-      </style>
+      <div class="partners-row">
+        <div class="partners-track partners-track--right">
+          <article class="partner-card">
+            <img src="assets/20250922_1249_Cyberpunk%20Drone%20Mastery_simple_compose_01k5rgjwwbfr6bhhqy2yehf7v6.png" alt="Партнёр кибердронов" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@DroneMaster</span>
+              <span class="partner-card__tag">Техподдержка</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/20250922_1248_Cyberpunk%20Neon%20Warrior_simple_compose_01k5rghga2eg58bgf6pc0b3y8v.png" alt="Партнёр киберспорт" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@NeonBlade</span>
+              <span class="partner-card__tag">Киберспорт</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/20250922_0953_Hellenistic%20Cat%20Majesty_remix_01k5r6ey56ftjtzazr0xg1mmjp.png" alt="Творческий партнёр" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@CatMajesty</span>
+              <span class="partner-card__tag">Креаторы</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="Партнёр по бренду" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@VisorClub</span>
+              <span class="partner-card__tag">Бренд</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/photo_2025-09-22_11-34-07.jpg" alt="Коммьюнити Rakodi" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@LibraryDAO</span>
+              <span class="partner-card__tag">Комьюнити</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/duck.webp" alt="Мем-партнёр" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@LuckyDuck</span>
+              <span class="partner-card__tag">Мемы</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/20250922_1249_Cyberpunk%20Drone%20Mastery_simple_compose_01k5rgjwwbfr6bhhqy2yehf7v6.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@DroneMaster</span>
+              <span class="partner-card__tag">Техподдержка</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/20250922_1248_Cyberpunk%20Neon%20Warrior_simple_compose_01k5rghga2eg58bgf6pc0b3y8v.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@NeonBlade</span>
+              <span class="partner-card__tag">Киберспорт</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/20250922_0953_Hellenistic%20Cat%20Majesty_remix_01k5r6ey56ftjtzazr0xg1mmjp.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@CatMajesty</span>
+              <span class="partner-card__tag">Креаторы</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@VisorClub</span>
+              <span class="partner-card__tag">Бренд</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/photo_2025-09-22_11-34-07.jpg" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@LibraryDAO</span>
+              <span class="partner-card__tag">Комьюнити</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/duck.webp" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@LuckyDuck</span>
+              <span class="partner-card__tag">Мемы</span>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="partners-row">
+        <div class="partners-track partners-track--left partners-track--slow">
+          <article class="partner-card">
+            <img src="assets/image.png" alt="Партнёр визуального продакшена" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@FrameForge</span>
+              <span class="partner-card__tag">Продакшн</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/cat-sm.png" alt="Партнёр NFT" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@PixelClaw</span>
+              <span class="partner-card__tag">NFT</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/cat-wallet.png" alt="Партнёр DeFi сервиса" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@DefiPort</span>
+              <span class="partner-card__tag">DeFi</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/city_girl.webp" alt="Партнёр по инфлюэнсерам" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@VibeSisters</span>
+              <span class="partner-card__tag">Инфлюенс</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/cat-millioner.png" alt="Партнёр по ликвидности" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@LiquidityZen</span>
+              <span class="partner-card__tag">Ликвидность</span>
+            </div>
+          </article>
+          <article class="partner-card">
+            <img src="assets/duck.webp" alt="Партнёр комьюнити мемов" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@QuackGang</span>
+              <span class="partner-card__tag">Комьюнити</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/image.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@FrameForge</span>
+              <span class="partner-card__tag">Продакшн</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/cat-sm.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@PixelClaw</span>
+              <span class="partner-card__tag">NFT</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/cat-wallet.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@DefiPort</span>
+              <span class="partner-card__tag">DeFi</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/city_girl.webp" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@VibeSisters</span>
+              <span class="partner-card__tag">Инфлюенс</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/cat-millioner.png" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@LiquidityZen</span>
+              <span class="partner-card__tag">Ликвидность</span>
+            </div>
+          </article>
+          <article class="partner-card" aria-hidden="true">
+            <img src="assets/duck.webp" alt="" loading="lazy">
+            <div class="partner-card__meta">
+              <span class="partner-card__nick">@QuackGang</span>
+              <span class="partner-card__tag">Комьюнити</span>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
     <div class="container">
       <div class="hero-cta" style="margin-top:14px"><a href="#" class="btn">Стать партнёром</a></div>
