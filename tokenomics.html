@@ -337,22 +337,68 @@
   <section id="dex-path" class="reveal">
     <div class="container">
       <h2 class="section-title">Путь к DEX</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <ul>
-            <li><b>MC:</b> цель [—]</li>
-            <li><b>Холдеры:</b> цель [—]</li>
-            <li><b>Ликвидность:</b> цель [—]</li>
-            <li><b>Техготовность:</b> аудит/ревью, документация</li>
+      <div class="dex-track">
+        <article class="dex-track__card dex-track__card--targets">
+          <div class="dex-track__header">
+            <span class="dex-track__eyebrow">Чекпоинты</span>
+            <span class="dex-track__tag">Фиксируем путь по ключевым метрикам</span>
+          </div>
+          <ul class="dex-targets">
+            <li>
+              <span class="dex-targets__icon">MC</span>
+              <div class="dex-targets__body">
+                <span class="dex-targets__label">Рыночная капитализация</span>
+                <span class="dex-targets__value">Цель [—]</span>
+              </div>
+              <span class="dex-targets__status">В работе</span>
+            </li>
+            <li>
+              <span class="dex-targets__icon">HLD</span>
+              <div class="dex-targets__body">
+                <span class="dex-targets__label">Количество холдеров</span>
+                <span class="dex-targets__value">Цель [—]</span>
+              </div>
+              <span class="dex-targets__status">В работе</span>
+            </li>
+            <li>
+              <span class="dex-targets__icon">LQ</span>
+              <div class="dex-targets__body">
+                <span class="dex-targets__label">Ликвидность пула</span>
+                <span class="dex-targets__value">Цель [—]</span>
+              </div>
+              <span class="dex-targets__status">В работе</span>
+            </li>
+            <li>
+              <span class="dex-targets__icon">TECH</span>
+              <div class="dex-targets__body">
+                <span class="dex-targets__label">Техническая готовность</span>
+                <span class="dex-targets__value">Аудит/ревью, документация</span>
+              </div>
+              <span class="dex-targets__status">На ревью</span>
+            </li>
           </ul>
-        </div>
-        <div class="card">
-          <h3>Прогресс</h3>
-          <div style="height:10px;border-radius:10px;background:var(--glass);border:var(--border);overflow:hidden"><div style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>
-          <p class="small" style="margin:6px 0 0">Готовность: <b>[XX%]</b> • Осталось по метрикам: [краткая строка]</p>
-        </div>
+        </article>
+        <article class="dex-track__card dex-track__card--progress">
+          <div class="dex-progress">
+            <div class="dex-progress__header">
+              <span class="dex-progress__badge">Прогресс</span>
+              <span class="dex-progress__tag">Обновляется по мере достижения чекпоинтов</span>
+            </div>
+            <div class="dex-progress__meter" style="--progress:0%;">
+              <div class="dex-progress__value"></div>
+            </div>
+            <p class="dex-progress__summary">Готовность: <b>[XX%]</b> • Осталось по метрикам: [краткая строка]</p>
+            <div class="dex-progress__chips">
+              <span class="dex-chip">MC</span>
+              <span class="dex-chip">Холдеры</span>
+              <span class="dex-chip">Ликвидность</span>
+              <span class="dex-chip">Техготовность</span>
+            </div>
+            <p class="dex-progress__note">Следим за динамикой и переходим на DEX, когда все индикаторы становятся зелёными.</p>
+          </div>
+        </article>
       </div>
-      <p class="small">Как только чекпоинты зелёные — объявляем процедуру перехода.</p>
+      <p class="dex-track__footnote small">Как только чекпоинты зелёные — объявляем процедуру перехода.</p>
     </div>
   </section>
 
