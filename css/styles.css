@@ -4738,6 +4738,90 @@ body.page-brotherhood section .section-sub{color:rgba(218,220,248,0.82)}
 }
 .liquidity-note__icon svg{width:24px;height:24px;fill:#fff;opacity:.82}
 
+.disclaimer-section{
+  position:relative;
+  padding:96px 0;
+  color:#f9f9ff;
+  background:radial-gradient(120% 120% at 50% 0%, rgba(103,72,255,0.55) 0%, rgba(24,13,44,0.9) 45%, rgba(8,5,18,1) 100%);
+  overflow:hidden;
+}
+.disclaimer-section::before{
+  content:"";
+  position:absolute;
+  inset:-20% 10% auto;
+  height:320px;
+  background:radial-gradient(60% 60% at 50% 50%, rgba(255,71,129,0.55) 0%, rgba(13,7,31,0) 100%);
+  opacity:.75;
+  filter:blur(0.5px);
+  pointer-events:none;
+}
+.disclaimer-section .container{position:relative;z-index:1}
+.disclaimer-section__title{
+  position:relative;
+  margin-bottom:28px;
+  color:rgba(255,255,255,0.92);
+  text-align:left;
+  letter-spacing:0.02em;
+}
+.disclaimer-card{
+  position:relative;
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+  padding:28px 32px;
+  border-radius:28px;
+  background:linear-gradient(130deg, rgba(18,11,34,0.92) 0%, rgba(35,24,66,0.92) 100%);
+  box-shadow:0 20px 60px rgba(7,3,19,0.55);
+  border:1px solid rgba(134,107,255,0.32);
+  backdrop-filter:blur(18px);
+}
+.disclaimer-card::after{
+  content:"";
+  position:absolute;
+  inset:1px;
+  border-radius:inherit;
+  padding:1px;
+  background:linear-gradient(135deg, rgba(255,83,144,0.55), rgba(113,99,255,0.4));
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite:exclude;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite:destination-out;
+}
+.disclaimer-card__emblem{
+  flex:0 0 60px;
+  width:60px;
+  height:60px;
+  border-radius:18px;
+  display:grid;
+  place-items:center;
+  font-size:28px;
+  font-weight:700;
+  color:#fff;
+  background:linear-gradient(140deg, rgba(255,93,149,0.7), rgba(124,107,255,0.65));
+  box-shadow:0 16px 40px rgba(10,4,28,0.65);
+}
+.disclaimer-card__content{position:relative;z-index:1;max-width:720px}
+.disclaimer-card__text{
+  margin:0;
+  font-size:17px;
+  line-height:1.7;
+  color:rgba(243,241,255,0.85);
+}
+
+@media (max-width:860px){
+  .disclaimer-card{flex-direction:column;align-items:flex-start;padding:26px 24px}
+  .disclaimer-card__emblem{width:52px;height:52px;font-size:24px;border-radius:16px}
+}
+@media (max-width:560px){
+  .disclaimer-section{padding:72px 0}
+  .disclaimer-card{padding:24px 20px;border-radius:22px}
+  .disclaimer-card__text{font-size:16px}
+}
+
 @media (max-width:1040px){
   .liquidity-panels{grid-template-columns:minmax(0,1fr)}
 }
