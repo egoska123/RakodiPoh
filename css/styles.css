@@ -5082,8 +5082,141 @@ box-shadow:0 32px 80px rgba(6,6,28,0.55);backdrop-filter:blur(16px);overflow:hid
 .page-brotherhood #canon .milestone .when{color:#fff;letter-spacing:.04em;text-transform:uppercase}
 
 .page-brotherhood #voting{background:radial-gradient(860px 620px at 92% 10%, rgba(255,46,106,0.18), transparent 74%), linear-gradient(160deg, rgba(8,10,26,0.94), rgba(10,9,24,0.86))}
-.page-brotherhood #voting .grid{gap:clamp(24px,4vw,32px)}
-.page-brotherhood #voting .card{padding:28px;border-radius:24px;border:1px solid rgba(255,255,255,0.14);background:linear-gradient(150deg, rgba(255,255,255,0.12), rgba(8,9,24,0.76));box-shadow:0 30px 78px rgba(5,4,22,0.56)}
+.page-brotherhood #voting .decision-grid{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(28px,4vw,36px);
+}
+.page-brotherhood #voting .decision-card{
+  position:relative;
+  padding:clamp(28px,5vw,34px);
+  border-radius:28px;
+  border:1px solid rgba(255,255,255,0.16);
+  background:linear-gradient(165deg, rgba(17,19,44,0.94), rgba(9,10,30,0.76));
+  box-shadow:0 34px 92px rgba(5,4,24,0.58);
+  overflow:hidden;
+  isolation:isolate;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  color:#eef2ff;
+}
+.page-brotherhood #voting .decision-card::before{
+  content:"";
+  position:absolute;
+  inset:-30% -40% auto;
+  height:70%;
+  background:radial-gradient(60% 80% at 50% 0%, rgba(255,96,160,0.32), transparent 70%);
+  opacity:.9;
+  z-index:-1;
+}
+.page-brotherhood #voting .decision-card::after{
+  content:"";
+  position:absolute;
+  inset:auto -40% -35% -30%;
+  height:70%;
+  background:radial-gradient(65% 80% at 50% 100%, rgba(126,104,255,0.34), transparent 72%);
+  opacity:.9;
+  z-index:-1;
+}
+.page-brotherhood #voting .decision-card--now{
+  border:1px solid rgba(255,182,216,0.22);
+  background:
+    linear-gradient(150deg, rgba(255,105,180,0.16), rgba(16,18,46,0.92)),
+    linear-gradient(165deg, rgba(16,18,44,0.94), rgba(9,10,30,0.74));
+}
+.page-brotherhood #voting .decision-card--next{
+  border:1px solid rgba(157,148,255,0.22);
+  background:
+    linear-gradient(150deg, rgba(132,119,255,0.14), rgba(16,18,46,0.94)),
+    linear-gradient(165deg, rgba(16,18,44,0.94), rgba(9,10,30,0.74));
+}
+.page-brotherhood #voting .decision-card__pill{
+  align-self:flex-start;
+  padding:10px 18px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.18);
+  background:linear-gradient(120deg, rgba(255,255,255,0.12), rgba(11,12,28,0.6));
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight:600;
+  color:#fff;
+}
+.page-brotherhood #voting .decision-card__text{
+  margin:0;
+  font-size:clamp(18px,2.4vw,20px);
+  line-height:1.5;
+  color:rgba(232,233,255,0.92);
+}
+.page-brotherhood #voting .decision-card__badge{
+  align-self:flex-start;
+  padding:8px 16px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.12);
+  color:rgba(255,214,236,0.92);
+  font-size:12px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+.page-brotherhood #voting .decision-card__hint{
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:rgba(208,210,250,0.72);
+}
+.page-brotherhood #voting .decision-roadmap{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:14px;
+  counter-reset:step;
+}
+.page-brotherhood #voting .decision-roadmap li{
+  position:relative;
+  padding:14px 16px 14px 54px;
+  border-radius:20px;
+  background:linear-gradient(130deg, rgba(18,20,46,0.86), rgba(10,11,30,0.78));
+  border:1px solid rgba(167,170,255,0.16);
+  font-size:15px;
+  color:rgba(229,231,255,0.88);
+  line-height:1.45;
+}
+.page-brotherhood #voting .decision-roadmap li::before{
+  counter-increment:step;
+  content:counter(step);
+  position:absolute;
+  left:18px;
+  top:50%;
+  transform:translateY(-50%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  background:linear-gradient(135deg, rgba(255,108,182,0.85), rgba(140,128,255,0.85));
+  color:#0c0d1c;
+  font-size:14px;
+  font-weight:700;
+  box-shadow:0 12px 28px rgba(6,5,30,0.4);
+}
+.page-brotherhood #voting .decision-roadmap li:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  left:31px;
+  top:calc(100% - 10px);
+  width:1px;
+  height:20px;
+  background:linear-gradient(180deg, rgba(149,146,255,0.4), rgba(255,111,186,0.1));
+}
+.page-brotherhood #voting .decision-card__cta{
+  margin-top:auto;
+  align-self:flex-start;
+  box-shadow:0 20px 40px rgba(255,112,188,0.35);
+}
 
 .page-brotherhood #code{background:linear-gradient(170deg, rgba(8,10,24,0.92), rgba(7,8,20,0.84))}
 .page-brotherhood #code .card{padding:30px 32px;border-radius:26px;border:1px solid rgba(255,255,255,0.16);background:linear-gradient(150deg, rgba(255,255,255,0.1), rgba(6,8,22,0.74));box-shadow:0 32px 90px rgba(5,4,20,0.58)}
@@ -5128,6 +5261,9 @@ box-shadow:0 32px 80px rgba(6,6,28,0.55);backdrop-filter:blur(16px);overflow:hid
 
 @media (max-width:720px){
   .page-brotherhood main section{padding:88px 0}
+  .page-brotherhood #voting .decision-grid{grid-template-columns:1fr}
+  .page-brotherhood #voting .decision-card{padding:26px;border-radius:24px}
+  .page-brotherhood #voting .decision-card__cta{width:100%;text-align:center}
   .join-gateway{grid-template-columns:minmax(0,1fr)}
   .join-progress-panel{padding:26px 24px 28px}
   .join-progress-top{flex-direction:column;align-items:flex-start;gap:8px}
@@ -5143,6 +5279,9 @@ box-shadow:0 32px 80px rgba(6,6,28,0.55);backdrop-filter:blur(16px);overflow:hid
 
 @media (max-width:560px){
   .page-brotherhood #hero-bro .section-title{font-size:42px}
+  .page-brotherhood #voting .decision-card__pill,
+  .page-brotherhood #voting .decision-card__badge{font-size:11px;letter-spacing:.14em}
+  .page-brotherhood #voting .decision-roadmap li{padding:12px 14px 12px 48px;font-size:14px}
   .quest-pill{font-size:11px;letter-spacing:.12em}
   .quest-leaderboard li{flex-wrap:wrap;gap:8px}
   .quest-progress::after{position:static;display:block;margin-bottom:6px}
