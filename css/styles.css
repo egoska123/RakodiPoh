@@ -3993,3 +3993,214 @@ body.page-brotherhood section .section-sub{color:rgba(218,220,248,0.82)}
 }
 
 
+
+/* Tokenomics — Liquidity & Market block */
+.liquidity-section{position:relative;z-index:1}
+.liquidity-shell{
+  position:relative;
+  padding:clamp(36px, 6vw, 68px);
+  border-radius:40px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:
+    radial-gradient(880px 540px at 0% -20%, rgba(255,46,106,0.28), transparent 68%),
+    radial-gradient(760px 520px at 100% -18%, rgba(123,92,255,0.26), transparent 72%),
+    linear-gradient(150deg, rgba(16,14,34,0.95), rgba(10,8,24,0.86));
+  box-shadow:0 40px 120px rgba(5,4,20,0.65);
+  overflow:hidden;
+  isolation:isolate;
+}
+.liquidity-shell::before,
+.liquidity-shell::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  filter:blur(1.5px);
+}
+.liquidity-shell::before{
+  inset:auto -26% -46% auto;
+  width:340px;
+  height:340px;
+  background:radial-gradient(circle at 50% 50%, rgba(123,92,255,0.32), transparent 68%);
+  opacity:.7;
+}
+.liquidity-shell::after{
+  inset:-38% auto auto -32%;
+  width:300px;
+  height:300px;
+  background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.18), transparent 70%);
+  opacity:.55;
+}
+
+.liquidity-header{position:relative;z-index:1;display:grid;gap:14px;max-width:720px}
+.liquidity-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 14px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.18);
+  background:rgba(11,10,24,0.64);
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  font-size:11px;
+  color:rgba(255,255,255,0.72);
+  width:fit-content;
+}
+.liquidity-eyebrow::before{
+  content:"⟡";
+  color:var(--accent);
+  font-size:14px;
+  line-height:1;
+}
+.liquidity-lead{
+  margin:0;
+  color:rgba(233,233,248,0.88);
+  line-height:1.7;
+  font-size:16px;
+}
+
+.liquidity-panels{
+  position:relative;
+  z-index:1;
+  margin-top:clamp(28px, 4vw, 40px);
+  display:grid;
+  gap:clamp(22px, 3.5vw, 28px);
+  grid-template-columns:repeat(2, minmax(0,1fr));
+}
+.liquidity-card{
+  position:relative;
+  padding:clamp(26px, 3.6vw, 34px);
+  border-radius:28px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:linear-gradient(160deg, rgba(255,255,255,0.08), rgba(12,10,26,0.72));
+  box-shadow:0 30px 70px rgba(4,3,18,0.55);
+  display:grid;
+  gap:clamp(16px, 2.6vw, 20px);
+  min-height:100%;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.liquidity-card::after{
+  content:"";
+  position:absolute;
+  inset:auto 24px -26px auto;
+  width:120px;
+  height:120px;
+  background:radial-gradient(circle at 50% 50%, rgba(255,46,106,0.45), transparent 70%);
+  opacity:.55;
+  pointer-events:none;
+}
+.liquidity-card--locks::after{background:radial-gradient(circle at 50% 50%, rgba(123,92,255,0.45), transparent 70%)}
+.liquidity-card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(255,255,255,0.2);
+  box-shadow:0 38px 90px rgba(6,4,24,0.65);
+}
+.liquidity-card__header{display:flex;align-items:center;gap:12px}
+.liquidity-card__badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  font-family:"JetBrains Mono","Fira Code","SFMono-Regular","Menlo",monospace;
+  font-size:15px;
+  letter-spacing:.08em;
+  color:#fff;
+  box-shadow:0 16px 32px rgba(10,4,22,0.55);
+}
+.liquidity-card__title{margin:0;font-size:clamp(21px, 3vw, 26px);letter-spacing:.02em}
+.liquidity-card__text{margin:0;color:rgba(232,231,245,0.86);line-height:1.65;font-size:16px}
+.liquidity-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 18px;
+  padding:12px 16px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.1);
+  background:rgba(10,12,28,0.58);
+  font-size:14px;
+  letter-spacing:.02em;
+  color:rgba(233,233,248,0.86);
+}
+.liquidity-meta b{color:#fff;font-weight:600}
+.liquidity-list{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:10px;
+}
+.liquidity-list li{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  padding:12px 16px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,0.1);
+  background:rgba(9,11,24,0.58);
+  font-size:15px;
+  color:rgba(233,233,248,0.88);
+}
+.liquidity-list li span{letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:rgba(255,255,255,0.56)}
+.liquidity-list li b{font-size:15px;font-weight:600;color:#fff;white-space:nowrap}
+
+.liquidity-note{
+  position:relative;
+  z-index:1;
+  margin-top:clamp(30px, 4vw, 42px);
+  padding:18px 22px;
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,0.14);
+  background:rgba(11,12,26,0.7);
+  backdrop-filter:blur(14px);
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  color:rgba(233,233,248,0.88);
+  line-height:1.65;
+  font-size:15px;
+}
+.liquidity-note::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  padding:1px;
+  background:linear-gradient(140deg, rgba(255,46,106,0.55), rgba(123,92,255,0.45));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite:destination-out;
+  mask-composite:exclude;
+}
+.liquidity-note__icon{
+  position:relative;
+  flex:0 0 46px;
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg, rgba(255,46,106,0.42), rgba(123,92,255,0.45));
+  box-shadow:0 16px 32px rgba(6,4,20,0.55);
+}
+.liquidity-note__icon svg{width:24px;height:24px;fill:#fff;opacity:.82}
+
+@media (max-width:1040px){
+  .liquidity-panels{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:720px){
+  .liquidity-shell{padding:28px;border-radius:28px}
+  .liquidity-card{padding:24px}
+  .liquidity-meta{gap:10px 14px}
+  .liquidity-list li{flex-direction:column;align-items:flex-start;gap:6px}
+  .liquidity-list li b{white-space:normal}
+}
+@media (max-width:520px){
+  .liquidity-note{flex-direction:column}
+  .liquidity-note__icon{width:52px;height:52px}
+}
+
