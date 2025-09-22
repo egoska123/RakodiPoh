@@ -958,6 +958,7 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   .growth-core{width:min(220px,68vw)}
   .growth-dot{min-width:48px;font-size:12px;letter-spacing:.08em}
   .growth-progress-labels span{min-width:34px;height:26px;font-size:11px}
+}
 .legend-section{
   position:relative;
   padding:150px 0;
