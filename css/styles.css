@@ -1994,6 +1994,251 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .legend .dot{width:12px;height:12px;border-radius:50%}
 .legend .name{color:var(--muted)}
 
+#fraternity{
+  background:
+    radial-gradient(880px 520px at 12% 12%, rgba(123,92,255,0.18), transparent 70%),
+    radial-gradient(720px 520px at 86% 0%, rgba(255,46,106,0.16), transparent 72%),
+    linear-gradient(180deg, rgba(12,12,26,0.92), rgba(8,8,20,0.92));
+  border-bottom:none;
+  isolation:isolate;
+}
+
+#fraternity::before{
+  content:"";
+  position:absolute;
+  inset:auto 10% -18% 10%;
+  height:280px;
+  background:radial-gradient(circle at 50% 0%, rgba(255,255,255,0.08), transparent 70%);
+  opacity:.6;
+  filter:blur(18px);
+  pointer-events:none;
+}
+
+.fraternity-layout{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);
+  gap:32px;
+  align-items:stretch;
+  z-index:1;
+}
+
+.fraternity-heading{position:relative;padding-bottom:18px;margin-bottom:24px}
+.fraternity-heading::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:86px;
+  height:3px;
+  border-radius:6px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  opacity:.9;
+}
+
+.fraternity-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.fraternity-card{
+  position:relative;
+  padding:22px 22px 24px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:linear-gradient(155deg, rgba(20,20,38,0.92), rgba(13,11,30,0.88));
+  box-shadow:0 18px 44px rgba(8,6,26,0.45);
+  overflow:hidden;
+  transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.fraternity-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 80% -10%, rgba(255,46,106,0.24), transparent 70%);
+  opacity:.45;
+  pointer-events:none;
+}
+
+.fraternity-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(255,255,255,0.2);
+  box-shadow:0 24px 60px rgba(10,8,36,0.55);
+}
+
+.fraternity-card h3{margin:12px 0 10px;font-size:24px}
+
+.fraternity-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.14);
+  color:#fff;
+}
+
+.fraternity-meta{margin-top:32px;display:flex;flex-direction:column;gap:10px}
+.fraternity-meta-item{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.fraternity-meta-label{
+  padding:6px 12px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.14);
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:#fff;
+}
+.fraternity-meta-value{font-weight:700;font-size:18px}
+
+.fraternity-journey{
+  position:relative;
+  border-radius:26px;
+  padding:32px 28px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:linear-gradient(165deg, rgba(16,16,38,0.94), rgba(26,20,60,0.92));
+  box-shadow:0 32px 80px rgba(6,4,24,0.65);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.fraternity-journey::before{
+  content:"";
+  position:absolute;
+  inset:18% -30% auto;
+  height:240px;
+  background:radial-gradient(circle at 30% 0%, rgba(255,46,106,0.3), transparent 65%);
+  opacity:.6;
+  pointer-events:none;
+}
+
+.fraternity-journey::after{
+  content:"";
+  position:absolute;
+  inset:auto -20% -30% -20%;
+  height:220px;
+  background:radial-gradient(circle at 50% 100%, rgba(123,92,255,0.32), transparent 70%);
+  opacity:.6;
+  pointer-events:none;
+  filter:blur(12px);
+}
+
+.fraternity-journey-head{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  z-index:1;
+}
+
+.fraternity-sigil{
+  display:grid;
+  place-items:center;
+  width:54px;
+  height:54px;
+  border-radius:16px;
+  background:linear-gradient(135deg, rgba(255,46,106,0.85), rgba(123,92,255,0.85));
+  font-size:28px;
+  font-weight:700;
+  box-shadow:0 16px 38px rgba(15,8,38,0.55);
+}
+
+.fraternity-steps{
+  position:relative;
+  list-style:none;
+  margin:0;
+  padding:12px 0 12px 0;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  z-index:1;
+}
+
+.fraternity-steps::before{
+  content:"";
+  position:absolute;
+  left:28px;
+  top:0;
+  bottom:0;
+  width:2px;
+  background:linear-gradient(180deg, rgba(255,46,106,0.85), rgba(123,92,255,0.1));
+  opacity:.7;
+}
+
+.fraternity-step{
+  position:relative;
+  display:flex;
+  gap:16px;
+  align-items:flex-start;
+  padding:16px 18px 16px 56px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:rgba(10,10,22,0.55);
+  backdrop-filter:blur(6px);
+  transition:transform .25s ease, border-color .25s ease;
+}
+
+.fraternity-step::before{
+  content:"";
+  position:absolute;
+  left:22px;
+  top:24px;
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  box-shadow:0 0 0 6px rgba(123,92,255,0.22);
+}
+
+.fraternity-step:hover{transform:translateX(4px);border-color:rgba(255,255,255,0.18)}
+
+.fraternity-step-index{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 14px;
+  border-radius:999px;
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:700;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.16);
+  color:#fff;
+  min-width:92px;
+}
+
+.fraternity-step-body h4{margin:0 0 6px;font-size:18px}
+.fraternity-step-body p{margin:0;color:#d2d2e6}
+
+@media (max-width:1080px){
+  .fraternity-layout{grid-template-columns:1fr;gap:40px}
+  .fraternity-journey{max-width:620px;margin-inline:auto}
+}
+
+@media (max-width:720px){
+  .fraternity-grid{grid-template-columns:1fr}
+  .fraternity-card h3{font-size:22px}
+  .fraternity-step{padding-left:52px}
+  .fraternity-step-index{min-width:82px;font-size:12px}
+}
+
+@media (max-width:520px){
+  .fraternity-journey{padding:26px 22px}
+  .fraternity-steps::before{left:24px}
+  .fraternity-step{padding:16px 16px 16px 46px}
+  .fraternity-step::before{left:18px}
+}
+
 .timeline{position:relative;padding-left:20px}
 .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),transparent)}
 .milestone{position:relative;margin:14px 0;padding:12px 12px 12px 24px;background:var(--glass);border:var(--border);border-radius:12px}
