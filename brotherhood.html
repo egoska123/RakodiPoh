@@ -74,20 +74,57 @@
   <!-- 3) Как вступить -->
   <section id="join" class="reveal">
     <div class="container">
-      <h2 class="section-title">Твой вход в Братство</h2>
-      <div class="grid cols-3">
-        <div class="card"><h3>I — Telegram</h3><p class="muted">Публичный чат, анонсы, обсуждения, мемы дня.</p></div>
-        <div class="card"><h3>II — YouTube</h3><p class="muted">Клиповые тизеры — сердце легенды. Комменты считаются активностью.</p></div>
-        <div class="card"><h3>III — Сайт</h3><p class="muted">Подключи кошелёк (по желанию), получи бэйдж «Новобранец», начни квесты.</p></div>
+      <div class="join-header">
+        <h2 class="section-title">Твой вход в Братство</h2>
+        <p class="join-sub">Три канала, через которые мем‑легион становится твоим.</p>
       </div>
-      <div class="card join-progress">
-        <div class="join-progress-track">
-          <div class="join-progress-fill"></div>
+      <div class="join-gateway">
+        <article class="join-step join-step--telegram">
+          <header class="join-step__header">
+            <span class="join-step__index">I</span>
+            <div class="join-step__heading">
+              <span class="join-step__eyebrow">Пульс общения</span>
+              <h3 class="join-step__title">Telegram</h3>
+            </div>
+          </header>
+          <p class="join-step__description">Публичный чат, анонсы, обсуждения, мемы дня.</p>
+        </article>
+        <article class="join-step join-step--youtube">
+          <header class="join-step__header">
+            <span class="join-step__index">II</span>
+            <div class="join-step__heading">
+              <span class="join-step__eyebrow">Сердце легенды</span>
+              <h3 class="join-step__title">YouTube</h3>
+            </div>
+          </header>
+          <p class="join-step__description">Клиповые тизеры — сердце легенды. Комменты считаются активностью.</p>
+        </article>
+        <article class="join-step join-step--site">
+          <header class="join-step__header">
+            <span class="join-step__index">III</span>
+            <div class="join-step__heading">
+              <span class="join-step__eyebrow">Нервный центр</span>
+              <h3 class="join-step__title">Сайт</h3>
+            </div>
+          </header>
+          <p class="join-step__description">Подключи кошелёк (по желанию), получи бэйдж «Новобранец», начни квесты.</p>
+        </article>
+      </div>
+      <div class="join-progress-panel" style="--join-progress:0.68">
+        <div class="join-progress-top">
+          <span class="join-progress-label">Ступени вовлечения</span>
+          <span class="join-progress-value">68% готово</span>
         </div>
-        <div class="join-stages">
-          <span class="badge join-stage">I</span>
-          <span class="badge join-stage">II</span>
-          <span class="badge join-stage">III</span>
+        <div class="join-progress-meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="68">
+          <div class="join-progress-meter__fill"></div>
+          <span class="join-progress-marker is-complete" style="--step:0.02"></span>
+          <span class="join-progress-marker is-complete" style="--step:0.5"></span>
+          <span class="join-progress-marker" style="--step:0.98"></span>
+        </div>
+        <div class="join-progress-stops">
+          <span class="join-progress-stop"><b>I</b><span>Telegram</span></span>
+          <span class="join-progress-stop"><b>II</b><span>YouTube</span></span>
+          <span class="join-progress-stop"><b>III</b><span>Сайт</span></span>
         </div>
       </div>
     </div>

@@ -4311,12 +4311,6 @@ body.page-brotherhood section .section-sub{color:rgba(218,220,248,0.82)}
 .page-brotherhood #hero-bro .hero-cta{gap:16px;margin-top:22px}
 .page-brotherhood #hero-bro .small{color:rgba(205,208,240,0.74);margin-top:18px}
 
-.join-progress{--progress:0.33;margin-top:18px;padding:20px 22px;border-radius:18px;border:1px solid rgba(255,255,255,0.14);background:linear-gradient(140deg, rgba(255,255,255,0.1), rgba(12,12,28,0.7));box-shadow:0 30px 80px rgba(5,4,22,0.48)}
-.join-progress-track{position:relative;height:10px;border-radius:14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.16);overflow:hidden}
-.join-progress-fill{position:absolute;inset:0;width:calc(100% * var(--progress));background:linear-gradient(90deg,var(--accent),var(--accent-2));box-shadow:0 0 18px rgba(123,92,255,0.45)}
-.join-stages{display:flex;justify-content:space-between;gap:12px;margin-top:12px}
-.join-stage{min-width:40px;text-align:center;background:rgba(255,255,255,0.08);border-radius:999px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 10px 26px rgba(7,6,24,0.4)}
-
 .page-brotherhood #why{
   background:
     radial-gradient(1000px 720px at 4% 12%, rgba(255,46,106,0.18), transparent 78%),
@@ -4343,26 +4337,311 @@ body.page-brotherhood section .section-sub{color:rgba(218,220,248,0.82)}
 }
 .page-brotherhood #why .card h3{font-size:clamp(20px,3vw,24px);margin-bottom:12px}
 
+
 .page-brotherhood #join{
   background:
-    radial-gradient(860px 560px at 96% 14%, rgba(123,92,255,0.2), transparent 76%),
-    linear-gradient(140deg, rgba(9,9,24,0.92), rgba(11,12,28,0.88));
-}
-.page-brotherhood #join .grid{gap:clamp(24px,4vw,32px)}
-.page-brotherhood #join .card{padding:26px;border-radius:22px;background:linear-gradient(160deg, rgba(255,255,255,0.08), rgba(8,10,24,0.76));border:1px solid rgba(255,255,255,0.12);box-shadow:0 24px 65px rgba(5,4,22,0.45)}
-.page-brotherhood #join .card:nth-child(1)::after,
-.page-brotherhood #join .card:nth-child(2)::after,
-.page-brotherhood #join .card:nth-child(3)::after{
-  content:"";
-  position:absolute;
-  inset:auto auto -26px 18px;
-  width:48px;
-  height:4px;
-  border-radius:999px;
-  background:linear-gradient(90deg,var(--accent),var(--accent-2));
-  opacity:.75;
+    radial-gradient(880px 540px at 92% 10%, rgba(123,92,255,0.22), transparent 75%),
+    radial-gradient(620px 420px at 8% 38%, rgba(255,46,106,0.18), transparent 70%),
+    linear-gradient(150deg, rgba(8,9,24,0.96), rgba(10,10,30,0.88));
 }
 
+.join-header{
+  max-width:640px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.page-brotherhood #join .section-title{
+  margin:0;
+  font-size:clamp(44px, 5.6vw, 58px);
+  background:linear-gradient(135deg, #ffffff, rgba(196,202,255,0.85));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 24px 60px rgba(0,0,0,0.55);
+}
+
+.join-sub{
+  margin:0;
+  color:rgba(216,218,250,0.72);
+  font-size:15px;
+  letter-spacing:.02em;
+  max-width:420px;
+}
+
+.join-gateway{
+  margin-top:40px;
+  display:grid;
+  gap:clamp(22px,4vw,32px);
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  position:relative;
+}
+
+.join-gateway::before{
+  content:"";
+  position:absolute;
+  inset:-30% 42% 55% -26%;
+  background:radial-gradient(circle at 50% 50%, rgba(255,46,106,0.18), transparent 72%);
+  filter:blur(36px);
+  opacity:.6;
+  pointer-events:none;
+}
+
+.join-step{
+  position:relative;
+  padding:30px 28px 34px;
+  border-radius:26px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:linear-gradient(160deg, rgba(15,15,34,0.82), rgba(7,9,26,0.72));
+  box-shadow:0 36px 90px rgba(5,4,22,0.52);
+  overflow:hidden;
+  isolation:isolate;
+}
+
+.join-step::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:inherit;
+  padding:1px;
+  background:linear-gradient(140deg, rgba(255,255,255,0.24), rgba(255,255,255,0.04));
+  -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  opacity:.55;
+  pointer-events:none;
+}
+
+.join-step::after{
+  content:"";
+  position:absolute;
+  inset:auto -40% -45% auto;
+  width:220px;
+  height:220px;
+  background:radial-gradient(circle at 50% 50%, rgba(123,92,255,0.34), transparent 70%);
+  opacity:.5;
+  filter:blur(.6px);
+  pointer-events:none;
+}
+
+.join-step--telegram::after{
+  background:radial-gradient(circle at 50% 45%, rgba(35,213,171,0.35), transparent 72%);
+}
+
+.join-step--youtube::after{
+  background:radial-gradient(circle at 60% 45%, rgba(255,130,67,0.4), transparent 72%);
+}
+
+.join-step--site::after{
+  background:radial-gradient(circle at 46% 64%, rgba(123,92,255,0.38), transparent 72%);
+}
+
+.join-step__header{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+  margin-bottom:16px;
+}
+
+.join-step__index{
+  display:grid;
+  place-items:center;
+  width:56px;
+  height:56px;
+  border-radius:18px;
+  font-weight:800;
+  font-size:20px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#fff;
+  background:linear-gradient(135deg, #ff2e6a, #7b5cff);
+  box-shadow:0 22px 48px rgba(123,92,255,0.4);
+}
+
+.join-step--telegram .join-step__index{
+  background:linear-gradient(135deg, #23d5ab, #5fdfd0);
+  box-shadow:0 22px 48px rgba(35,213,171,0.38);
+}
+
+.join-step--youtube .join-step__index{
+  background:linear-gradient(135deg, #ff8243, #ff2e6a);
+  box-shadow:0 22px 48px rgba(255,130,67,0.4);
+}
+
+.join-step--site .join-step__index{
+  background:linear-gradient(135deg, #7b5cff, #b572ff);
+}
+
+.join-step__heading{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.join-step__eyebrow{
+  text-transform:uppercase;
+  font-size:12px;
+  letter-spacing:.2em;
+  color:rgba(219,220,255,0.6);
+}
+
+.join-step__title{
+  margin:0;
+  font-size:clamp(26px, 3.2vw, 32px);
+  color:#fff;
+}
+
+.join-step__description{
+  margin:0;
+  color:rgba(213,215,246,0.82);
+  font-size:15px;
+  line-height:1.6;
+}
+
+.join-progress-panel{
+  margin-top:52px;
+  position:relative;
+  border-radius:28px;
+  padding:28px 32px 32px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:linear-gradient(160deg, rgba(14,14,34,0.88), rgba(10,12,30,0.78));
+  box-shadow:0 40px 110px rgba(5,4,24,0.6);
+  overflow:hidden;
+  isolation:isolate;
+}
+
+.join-progress-panel::before,
+.join-progress-panel::after{
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  pointer-events:none;
+}
+
+.join-progress-panel::before{
+  inset:-45% 55% auto -35%;
+  width:360px;
+  height:360px;
+  background:radial-gradient(circle at 50% 50%, rgba(255,46,106,0.28), transparent 70%);
+  opacity:.6;
+}
+
+.join-progress-panel::after{
+  inset:auto -48% -50% 42%;
+  width:340px;
+  height:340px;
+  background:radial-gradient(circle at 50% 50%, rgba(123,92,255,0.3), transparent 72%);
+  opacity:.55;
+}
+
+.join-progress-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:20px;
+}
+
+.join-progress-label{
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  font-size:11px;
+  color:rgba(214,214,240,0.65);
+}
+
+.join-progress-value{
+  font-weight:700;
+  letter-spacing:.14em;
+  font-size:12px;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+.join-progress-meter{
+  position:relative;
+  height:16px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+  overflow:hidden;
+}
+
+.join-progress-meter__fill{
+  position:absolute;
+  inset:0;
+  width:calc(var(--join-progress) * 100%);
+  background:linear-gradient(90deg, #ff2e6a 0%, #7b5cff 55%, #23d5ab 100%);
+  box-shadow:0 0 32px rgba(123,92,255,0.55);
+  transition:width .6s ease;
+}
+
+.join-progress-meter__fill::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(255,255,255,0.35), transparent 40%);
+  mix-blend-mode:screen;
+}
+
+.join-progress-marker{
+  position:absolute;
+  top:50%;
+  left:calc(var(--step) * 100%);
+  transform:translate(-50%, -50%);
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background:rgba(12,14,32,0.9);
+  border:1px solid rgba(255,255,255,0.28);
+  box-shadow:0 14px 32px rgba(0,0,0,0.55);
+  transition:border-color .3s ease;
+}
+
+.join-progress-marker::after{
+  content:"";
+  position:absolute;
+  inset:4px;
+  border-radius:inherit;
+  background:rgba(255,255,255,0.22);
+}
+
+.join-progress-marker.is-complete{
+  border-color:rgba(255,255,255,0.7);
+}
+
+.join-progress-marker.is-complete::after{
+  background:linear-gradient(135deg, #ff2e6a, #7b5cff);
+}
+
+.join-progress-stops{
+  margin-top:18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:rgba(217,215,255,0.65);
+}
+
+.join-progress-stop{
+  display:grid;
+  gap:6px;
+  justify-items:center;
+  min-width:80px;
+}
+
+.join-progress-stop b{
+  font-size:13px;
+  color:#fff;
+  letter-spacing:.2em;
+}
+
+.join-progress-stop span{
+  color:rgba(213,214,246,0.78);
+  letter-spacing:.12em;
+}
 .page-brotherhood #rooms{
   background:
     radial-gradient(720px 520px at 16% 18%, rgba(255,46,106,0.16), transparent 72%),
@@ -4526,8 +4805,13 @@ body.page-brotherhood section .section-sub{color:rgba(218,220,248,0.82)}
 
 @media (max-width:720px){
   .page-brotherhood main section{padding:88px 0}
-  .join-stages{justify-content:center}
-  .page-brotherhood #rooms .card,.page-brotherhood #ranks .card,.page-brotherhood #join .card{min-height:auto}
+  .join-gateway{grid-template-columns:minmax(0,1fr)}
+  .join-progress-panel{padding:26px 24px 28px}
+  .join-progress-top{flex-direction:column;align-items:flex-start;gap:8px}
+  .join-progress-stops{flex-direction:column;align-items:flex-start;gap:10px;text-transform:none;letter-spacing:.08em}
+  .join-progress-stops span{letter-spacing:.06em}
+  .join-progress-stop{justify-items:flex-start;min-width:0}
+  .page-brotherhood #rooms .card,.page-brotherhood #ranks .card{min-height:auto}
   .quest-radial-wrapper{width:220px}
   .quest-radial-number{font-size:28px}
   .leaderboard-head{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
