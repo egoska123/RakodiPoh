@@ -184,17 +184,112 @@
   </section>
 
   <!-- Награды и квесты -->
-  <section id="quests" class="reveal">
+  <section id="quests" class="reveal quest-section">
     <div class="container">
-      <h2 class="section-title">Квесты Братства</h2>
-      <p class="section-sub">Играй по-серьёзному. Создавай мемы, помогай сообществу — поднимайся по рангу.</p>
-      <div class="grid cols-3">
-        <div class="card"><h3>Огонь форума</h3><p class="muted">Подписка на YouTube + первый комментарий под тизером.</p><p class="small">Награда: Бэйдж «Новобранец» + [X] очков.</p></div>
-        <div class="card"><h3>Свиток дня</h3><p class="muted">Опубликуй мем в библиотеку (с правилами). Лучшие — на главной.</p><p class="small">Награда: Бэйдж «Смотритель» + [X] очков.</p></div>
-        <div class="card"><h3>Голос Консула</h3><p class="muted">Участие в голосовании по фичам/листингу.</p><p class="small">Награда: Бэйдж «Архивариус» + [X] очков.</p></div>
+      <div class="quest-header">
+        <div class="quest-text">
+          <h2 class="section-title">Квесты Братства</h2>
+          <p class="section-sub">Играй по-серьёзному. Создавай мемы, помогай сообществу — поднимайся по рангу.</p>
+          <div class="quest-meta">
+            <span class="quest-pill">12 активных заданий</span>
+            <span class="quest-pill">+320 участников недели</span>
+            <span class="quest-pill quest-pill-glow">Сезон «Origin»</span>
+          </div>
+        </div>
+        <div class="quest-infographic" aria-hidden="true">
+          <div class="quest-radial-wrapper" style="--progress:0.72">
+            <svg class="quest-radial" viewBox="0 0 160 160" role="presentation" focusable="false">
+              <defs>
+                <linearGradient id="quest-progress-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ff2e6a" />
+                  <stop offset="100%" stop-color="#7b5cff" />
+                </linearGradient>
+              </defs>
+              <circle class="quest-ring-bg" cx="80" cy="80" r="68"></circle>
+              <circle class="quest-ring-active" cx="80" cy="80" r="68"></circle>
+            </svg>
+            <div class="quest-radial-value">
+              <span class="quest-radial-number">72%</span>
+              <span class="quest-radial-label">прогресс сезона</span>
+            </div>
+          </div>
+          <div class="quest-infographic-caption">
+            <span class="metric-title">Боевой дух</span>
+            <span class="metric-delta">+12% за неделю</span>
+            <span class="metric-sub">обновляется каждые 24 ч</span>
+          </div>
+        </div>
       </div>
-      <div class="card" style="margin-top:12px"><b>Топ‑5 недели:</b> [ник — очки]</div>
-      <div class="hero-cta"><a href="#" class="btn">Начать первый квест</a></div>
+      <div class="quest-grid">
+        <article class="quest-card card">
+          <div class="quest-card-top">
+            <span class="quest-icon" data-icon="🔥"></span>
+            <span class="quest-tier">Ранг I</span>
+          </div>
+          <h3>Огонь форума</h3>
+          <p class="muted">Подписка на YouTube + первый комментарий под тизером.</p>
+          <div class="quest-reward">
+            <span class="label">Награда</span>
+            <span class="value">Бэйдж «Новобранец» + <strong>[X]</strong> очков</span>
+          </div>
+          <div class="quest-progress" data-label="социальный импульс">
+            <div class="quest-progress-bar" style="--progress:0.45"></div>
+          </div>
+        </article>
+        <article class="quest-card card">
+          <div class="quest-card-top">
+            <span class="quest-icon" data-icon="📜"></span>
+            <span class="quest-tier">Ранг II</span>
+          </div>
+          <h3>Свиток дня</h3>
+          <p class="muted">Опубликуй мем в библиотеку (с правилами). Лучшие — на главной.</p>
+          <div class="quest-reward">
+            <span class="label">Награда</span>
+            <span class="value">Бэйдж «Смотритель» + <strong>[X]</strong> очков</span>
+          </div>
+          <div class="quest-progress" data-label="медиатека">
+            <div class="quest-progress-bar" style="--progress:0.62"></div>
+          </div>
+        </article>
+        <article class="quest-card card">
+          <div class="quest-card-top">
+            <span class="quest-icon" data-icon="🎙️"></span>
+            <span class="quest-tier">Ранг III</span>
+          </div>
+          <h3>Голос Консула</h3>
+          <p class="muted">Участие в голосовании по фичам/листингу.</p>
+          <div class="quest-reward">
+            <span class="label">Награда</span>
+            <span class="value">Бэйдж «Архивариус» + <strong>[X]</strong> очков</span>
+          </div>
+          <div class="quest-progress" data-label="governance">
+            <div class="quest-progress-bar" style="--progress:0.38"></div>
+          </div>
+        </article>
+      </div>
+      <div class="quest-footer">
+        <div class="quest-leaderboard card">
+          <div class="quest-leaderboard-head">
+            <h4>Топ‑5 недели</h4>
+            <span class="leaderboard-period">обновление: пн 12:00 (UTC)</span>
+          </div>
+          <ul>
+            <li><span class="place">#1</span><span class="name">[ник]</span><span class="points">1280</span></li>
+            <li><span class="place">#2</span><span class="name">[ник]</span><span class="points">1120</span></li>
+            <li><span class="place">#3</span><span class="name">[ник]</span><span class="points">980</span></li>
+            <li><span class="place">#4</span><span class="name">[ник]</span><span class="points">860</span></li>
+            <li><span class="place">#5</span><span class="name">[ник]</span><span class="points">790</span></li>
+          </ul>
+        </div>
+        <div class="quest-cta card">
+          <h4>Начни путь героя</h4>
+          <p class="muted">Собери базовые задания, чтобы открыть секретные свитки и доступ к закрытым голосованиям.</p>
+          <div class="hero-cta">
+            <a href="#" class="btn">Войти в братство</a>
+            <a href="#" class="btn ghost">Смотреть награды</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

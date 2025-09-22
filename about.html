@@ -222,13 +222,111 @@
       </div></section>
 
   <!-- 8) Награды и квесты — «Играй по‑серьёзному» -->
-  <section id="quests" class="reveal">
+  <section id="quests" class="reveal quest-section">
     <div class="container">
-      <h2 class="section-title">Квесты Братства</h2>
-      <div class="grid cols-3">
-        <div class="card"><h3>I — Огонь форума</h3><p class="muted">Подпишись на YouTube и оставь осмысленный комментарий к последнему тизеру.</p><p class="small"><b>Награда:</b> бэйдж «Новобранец», очки сезонного рейтинга.</p></div>
-        <div class="card"><h3>II — Свиток дня</h3><p class="muted">Опубликуй мем/гайд в библиотеку по правилам.</p><p class="small"><b>Награда:</b> повышенные очки, шанс попасть в видео.</p></div>
-        <div class="card"><h3>III — Голос Консула</h3><p class="muted">Прими участие в голосовании по фичам/приоритетам.</p><p class="small"><b>Награда:</b> бэйдж «Смотритель», влияние в обсуждениях.</p></div>
+      <div class="quest-header">
+        <div class="quest-text">
+          <h2 class="section-title">Квесты Братства</h2>
+          <p class="section-sub">Практика, которая превращает зрителей в создателей. Выполняй задания — получай роли и голос.</p>
+          <div class="quest-meta">
+            <span class="quest-pill">Игровые и медиа‑квесты</span>
+            <span class="quest-pill">Награды за вклад</span>
+            <span class="quest-pill quest-pill-glow">Обновление каждую пятницу</span>
+          </div>
+        </div>
+        <div class="quest-infographic" aria-hidden="true">
+          <div class="quest-radial-wrapper" style="--progress:0.58">
+            <svg class="quest-radial" viewBox="0 0 160 160" role="presentation" focusable="false">
+              <defs>
+                <linearGradient id="quest-progress-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ff2e6a" />
+                  <stop offset="100%" stop-color="#7b5cff" />
+                </linearGradient>
+              </defs>
+              <circle class="quest-ring-bg" cx="80" cy="80" r="68"></circle>
+              <circle class="quest-ring-active" cx="80" cy="80" r="68"></circle>
+            </svg>
+            <div class="quest-radial-value">
+              <span class="quest-radial-number">58%</span>
+              <span class="quest-radial-label">комьюнити вовлечено</span>
+            </div>
+          </div>
+          <div class="quest-infographic-caption">
+            <span class="metric-title">Вклад недели</span>
+            <span class="metric-delta">+210 выполненных миссий</span>
+            <span class="metric-sub">данные за 7 последних дней</span>
+          </div>
+        </div>
+      </div>
+      <div class="quest-grid">
+        <article class="quest-card card">
+          <div class="quest-card-top">
+            <span class="quest-icon" data-icon="🔥"></span>
+            <span class="quest-tier">Этап I</span>
+          </div>
+          <h3>Огонь форума</h3>
+          <p class="muted">Подпишись на YouTube и оставь осмысленный комментарий к последнему тизеру.</p>
+          <div class="quest-reward">
+            <span class="label">Награда</span>
+            <span class="value">Бэйдж «Новобранец» и очки сезонного рейтинга</span>
+          </div>
+          <div class="quest-progress" data-label="онбординг">
+            <div class="quest-progress-bar" style="--progress:0.6"></div>
+          </div>
+        </article>
+        <article class="quest-card card">
+          <div class="quest-card-top">
+            <span class="quest-icon" data-icon="📜"></span>
+            <span class="quest-tier">Этап II</span>
+          </div>
+          <h3>Свиток дня</h3>
+          <p class="muted">Опубликуй мем или гайд в библиотеку по правилам и помоги другим с ревью.</p>
+          <div class="quest-reward">
+            <span class="label">Награда</span>
+            <span class="value">Повышенные очки, шанс попасть в видео</span>
+          </div>
+          <div class="quest-progress" data-label="контент">
+            <div class="quest-progress-bar" style="--progress:0.5"></div>
+          </div>
+        </article>
+        <article class="quest-card card">
+          <div class="quest-card-top">
+            <span class="quest-icon" data-icon="🎙️"></span>
+            <span class="quest-tier">Этап III</span>
+          </div>
+          <h3>Голос Консула</h3>
+          <p class="muted">Прими участие в голосовании по фичам и стратегическим приоритетам.</p>
+          <div class="quest-reward">
+            <span class="label">Награда</span>
+            <span class="value">Бэйдж «Смотритель» и влияние в обсуждениях</span>
+          </div>
+          <div class="quest-progress" data-label="governance">
+            <div class="quest-progress-bar" style="--progress:0.42"></div>
+          </div>
+        </article>
+      </div>
+      <div class="quest-footer">
+        <div class="quest-leaderboard card">
+          <div class="quest-leaderboard-head">
+            <h4>Топ‑5 недели</h4>
+            <span class="leaderboard-period">обновление: пятница</span>
+          </div>
+          <ul>
+            <li><span class="place">#1</span><span class="name">[ник]</span><span class="points">1280</span></li>
+            <li><span class="place">#2</span><span class="name">[ник]</span><span class="points">1120</span></li>
+            <li><span class="place">#3</span><span class="name">[ник]</span><span class="points">980</span></li>
+            <li><span class="place">#4</span><span class="name">[ник]</span><span class="points">860</span></li>
+            <li><span class="place">#5</span><span class="name">[ник]</span><span class="points">790</span></li>
+          </ul>
+        </div>
+        <div class="quest-cta card">
+          <h4>Забери первый бэйдж</h4>
+          <p class="muted">Нажми старт, пройди онбординг и получи доступ к закрытым каналам и бонусным миссиям.</p>
+          <div class="hero-cta">
+            <a href="#" class="btn">Стартовать</a>
+            <a href="#" class="btn ghost">Правила участия</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
