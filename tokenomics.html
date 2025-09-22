@@ -198,14 +198,51 @@
   </section>
 
   <!-- 5) Ликвидность -->
-  <section id="liquidity" class="reveal">
+  <section id="liquidity" class="reveal liquidity-section">
     <div class="container">
-      <h2 class="section-title">Ликвидность и рынок</h2>
-      <div class="grid cols-2">
-        <div class="card"><h3>Стартовая ликвидность</h3><p class="muted">[объём/пулы, если применимо]</p></div>
-        <div class="card"><h3>Статус LP‑токенов</h3><p class="muted">[заблокированы до дд.мм.гггг / сожжены / под мультисиг]</p></div>
+      <div class="liquidity-shell">
+        <div class="liquidity-header">
+          <span class="liquidity-eyebrow">MARKET FLOW</span>
+          <h2 class="section-title">Ликвидность и рынок</h2>
+          <p class="liquidity-lead">Сводка по управлению пулами, LP‑токенам и прозрачности сделок. Здесь фиксируем стартовые условия и точки контроля.</p>
+        </div>
+
+        <div class="liquidity-panels">
+          <article class="liquidity-card liquidity-card--launch">
+            <div class="liquidity-card__header">
+              <span class="liquidity-card__badge" aria-hidden="true">01</span>
+              <h3 class="liquidity-card__title">Стартовая ликвидность</h3>
+            </div>
+            <p class="liquidity-card__text">[объём/пулы, если применимо]</p>
+            <div class="liquidity-meta">
+              <span>Маркетмейкер: <b>[—]</b></span>
+              <span>Пулы: <b>[—/—]</b></span>
+            </div>
+          </article>
+
+          <article class="liquidity-card liquidity-card--locks">
+            <div class="liquidity-card__header">
+              <span class="liquidity-card__badge" aria-hidden="true">02</span>
+              <h3 class="liquidity-card__title">Статус LP‑токенов</h3>
+            </div>
+            <p class="liquidity-card__text">[заблокированы до дд.мм.гггг / сожжены / под мультисиг]</p>
+            <ul class="liquidity-list">
+              <li><span>Кастодиан</span><b>[указать]</b></li>
+              <li><span>Аудит трек</span><b>[ссылка/ID]</b></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="liquidity-note">
+          <div class="liquidity-note__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" focusable="false">
+              <path d="M12 2 2 7l10 5 10-5-10-5Zm0 7.82L6.47 7 12 4.18 17.53 7 12 9.82Z"/>
+              <path d="m4 10 8 4 8-4v4l-8 4-8-4v-4Zm0 6.18L12 20l8-3.82V17l-8 4-8-4v-.82Z" opacity=".6"/>
+            </svg>
+          </div>
+          <p>Рекомендуем выставлять адекватное проскальзывание и проверять адрес контракта. Актуальные транзакции и ссылки на обозреватели публикуем сразу после обновлений.</p>
+        </div>
       </div>
-      <div class="card" style="margin-top:10px"><p class="muted">Рекомендуем разумные параметры проскальзывания; избегай подозрительных зеркал токена. Транзакции и ссылки на обозреватели публикуем.</p></div>
     </div>
   </section>
 
