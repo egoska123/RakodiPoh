@@ -4468,10 +4468,162 @@ body.page-brotherhood section .section-sub{color:rgba(218,220,248,0.82)}
 .page-brotherhood #rituals .grid{gap:clamp(24px,4vw,32px)}
 .page-brotherhood #rituals .card{padding:26px 24px;border-radius:22px;border:1px solid rgba(255,255,255,0.12);background:linear-gradient(150deg, rgba(255,255,255,0.1), rgba(7,8,22,0.72));box-shadow:0 28px 70px rgba(5,4,20,0.52)}
 
-.page-brotherhood #social{background:radial-gradient(820px 640px at 6% 0%, rgba(123,92,255,0.16), transparent 72%), linear-gradient(165deg, rgba(8,10,24,0.92), rgba(10,9,24,0.86))}
-.page-brotherhood #social .exchanges{gap:16px}
-.page-brotherhood #social .exchanges a{padding:12px 18px;border-radius:18px;border:1px solid rgba(255,255,255,0.16);background:linear-gradient(120deg, rgba(255,255,255,0.12), rgba(8,10,24,0.7));font-weight:600;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 18px 50px rgba(5,4,22,0.46)}
-.page-brotherhood #social .exchanges a:hover{transform:translateY(-3px)}
+.page-brotherhood #social{
+  background:
+    radial-gradient(940px 660px at 10% -6%, rgba(123,92,255,0.24), transparent 74%),
+    radial-gradient(880px 620px at 92% -10%, rgba(48,189,255,0.14), transparent 70%),
+    linear-gradient(168deg, rgba(8,10,26,0.96), rgba(6,7,18,0.88));
+}
+.page-brotherhood #social .social-hub{
+  position:relative;
+  padding:clamp(32px, 5vw, 52px);
+  border-radius:36px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:linear-gradient(140deg, rgba(19,21,46,0.92), rgba(11,12,32,0.82));
+  box-shadow:0 32px 90px rgba(4,6,24,0.68);
+  display:grid;
+  gap:clamp(24px, 4vw, 36px);
+  text-align:center;
+  overflow:hidden;
+  isolation:isolate;
+}
+.page-brotherhood #social .social-hub::before,
+.page-brotherhood #social .social-hub::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  mix-blend-mode:screen;
+}
+.page-brotherhood #social .social-hub::before{
+  width:420px;
+  height:420px;
+  left:-180px;
+  top:-220px;
+  background:radial-gradient(circle at 50% 50%, rgba(255,46,106,0.35), transparent 68%);
+  opacity:0.8;
+}
+.page-brotherhood #social .social-hub::after{
+  width:520px;
+  height:520px;
+  right:-240px;
+  bottom:-260px;
+  background:radial-gradient(circle at 50% 50%, rgba(123,92,255,0.32), transparent 72%);
+  opacity:0.75;
+}
+.page-brotherhood #social .social-hub .section-title{
+  margin:0;
+  font-size:clamp(36px, 5vw, 48px);
+  justify-self:center;
+}
+.page-brotherhood #social .social-hub__grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:clamp(16px, 3vw, 24px);
+}
+.page-brotherhood #social .social-card{
+  --accent-a:rgba(123,92,255,0.48);
+  --accent-b:rgba(72,182,255,0.36);
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:clamp(10px, 2vw, 16px);
+  padding:clamp(18px, 3.6vw, 26px) clamp(22px, 4.6vw, 38px);
+  min-height:72px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.14);
+  background:linear-gradient(140deg, rgba(15,16,40,0.88), rgba(9,9,28,0.72));
+  box-shadow:0 22px 64px rgba(4,6,24,0.55);
+  text-transform:uppercase;
+  text-decoration:none;
+  transition:transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+  overflow:hidden;
+  isolation:isolate;
+}
+.page-brotherhood #social .social-card::before{
+  content:"";
+  position:absolute;
+  inset:1px;
+  border-radius:inherit;
+  background:linear-gradient(120deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  opacity:0.45;
+  z-index:0;
+}
+.page-brotherhood #social .social-card::after{
+  content:"";
+  position:absolute;
+  inset:-18% -30%;
+  border-radius:inherit;
+  background:
+    radial-gradient(80% 120% at 0% 50%, var(--accent-a), transparent 70%),
+    radial-gradient(80% 120% at 100% 50%, var(--accent-b), transparent 72%);
+  opacity:0.55;
+  transition:opacity .35s ease, transform .35s ease;
+  z-index:0;
+}
+.page-brotherhood #social .social-card span{
+  position:relative;
+  z-index:1;
+  line-height:1;
+}
+.page-brotherhood #social .social-card__network{
+  letter-spacing:.28em;
+  font-size:clamp(13px, 1.8vw, 15px);
+  font-weight:700;
+  color:rgba(232,234,255,0.82);
+}
+.page-brotherhood #social .social-card__tagline{
+  font-size:clamp(18px, 2.8vw, 24px);
+  font-weight:800;
+  letter-spacing:.08em;
+  display:flex;
+  align-items:center;
+  color:#fff;
+}
+.page-brotherhood #social .social-card__tagline::before{
+  content:"—";
+  font-weight:400;
+  margin:0 clamp(10px, 2.4vw, 18px) 0 clamp(6px, 1.4vw, 12px);
+  color:rgba(232,234,255,0.6);
+}
+.page-brotherhood #social .social-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(255,255,255,0.28);
+  box-shadow:0 28px 80px rgba(8,10,36,0.65);
+}
+.page-brotherhood #social .social-card:hover::after{
+  opacity:0.85;
+  transform:scale(1.04);
+}
+.page-brotherhood #social .social-card--youtube{--accent-a:rgba(255,46,106,0.55);--accent-b:rgba(255,118,152,0.38)}
+.page-brotherhood #social .social-card--telegram{--accent-a:rgba(88,185,255,0.52);--accent-b:rgba(123,92,255,0.42)}
+.page-brotherhood #social .social-card--matrix{--accent-a:rgba(121,132,255,0.48);--accent-b:rgba(255,255,255,0.28)}
+.page-brotherhood #social .social-card--reddit{--accent-a:rgba(255,116,76,0.55);--accent-b:rgba(255,188,136,0.42)}
+.page-brotherhood #social .social-hub__footer{
+  margin:0;
+  color:rgba(214,216,250,0.72);
+}
+
+@media (max-width:720px){
+  .page-brotherhood #social .social-hub{
+    padding:28px;
+    border-radius:30px;
+  }
+}
+
+@media (max-width:560px){
+  .page-brotherhood #social .social-card{
+    padding:18px 24px;
+  }
+  .page-brotherhood #social .social-card__network{
+    letter-spacing:.2em;
+  }
+  .page-brotherhood #social .social-card__tagline::before{
+    content:"";
+    margin:0;
+  }
+}
 
 .page-brotherhood #canon{background:linear-gradient(160deg, rgba(9,9,24,0.92), rgba(7,8,20,0.86))}
 .page-brotherhood #canon .timeline{padding-left:32px}
