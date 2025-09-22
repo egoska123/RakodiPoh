@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="page-brotherhood">
 
 <!-- Preloader -->
 <div id="preloader" style="position:fixed;inset:0;background:#0b0b12;display:grid;place-items:center;z-index:2000;transition:opacity .5s">
@@ -38,7 +38,7 @@
 <main>
 
   <!-- 1) Герой -->
-  <section id="hero-bro" class="reveal" style="padding-top:140px">
+  <section id="hero-bro" class="reveal">
     <div class="container">
       <div class="grid cols-2">
         <div class="feature-media">
@@ -49,7 +49,7 @@
         <div>
           <h1 class="section-title">Братство Ракоди</h1>
           <p class="section-sub">Новая Мем‑Александрия собирает людей, идеи и энергию. Вступай, создавай мемы, вливайся в ритуалы — и помогай вести проект к DEX.</p>
-          <div class="hero-cta" style="justify-content:flex-start">
+          <div class="hero-cta hero-cta--left">
             <a class="btn" href="#">Вступить в Telegram</a>
             <a class="btn ghost" href="#">Подписаться на YouTube</a>
           </div>
@@ -80,14 +80,14 @@
         <div class="card"><h3>II — YouTube</h3><p class="muted">Клиповые тизеры — сердце легенды. Комменты считаются активностью.</p></div>
         <div class="card"><h3>III — Сайт</h3><p class="muted">Подключи кошелёк (по желанию), получи бэйдж «Новобранец», начни квесты.</p></div>
       </div>
-      <div class="card" style="padding:12px;margin-top:10px">
-        <div style="height:8px;border-radius:8px;background:var(--glass);border:var(--border);overflow:hidden">
-          <div style="height:100%;width:33%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div>
+      <div class="card join-progress">
+        <div class="join-progress-track">
+          <div class="join-progress-fill"></div>
         </div>
-        <div class="statbar" style="margin-top:8px;justify-content:space-between">
-          <span class="badge">I</span>
-          <span class="badge">II</span>
-          <span class="badge">III</span>
+        <div class="join-stages">
+          <span class="badge join-stage">I</span>
+          <span class="badge join-stage">II</span>
+          <span class="badge join-stage">III</span>
         </div>
       </div>
     </div>
@@ -239,7 +239,7 @@
       <h2 class="section-title">Посвящённое братство</h2>
       <div class="grid cols-2">
         <div class="card"><h3>Описание</h3><p class="muted">Приватные комнаты для тех, кто доказал вклад: курация контента, сложные квесты, подготовка к листингам и партнёрствам.</p></div>
-        <div class="card"><h3>Доступ сейчас</h3><p class="muted">через активность в открытых палатах и/или критерии холда $RAKODI.</p><p class="small"><b>Важно:</b> На стадии памфан функционал токена ограничен; доступ строится вокруг вклада и репутации.</p><div class="hero-cta" style="margin-top:8px;justify-content:flex-start"><a class="btn small" href="#">Узнать условия доступа</a></div></div>
+        <div class="card"><h3>Доступ сейчас</h3><p class="muted">через активность в открытых палатах и/или критерии холда $RAKODI.</p><p class="small"><b>Важно:</b> На стадии памфан функционал токена ограничен; доступ строится вокруг вклада и репутации.</p><div class="hero-cta hero-cta--left hero-cta--tight"><a class="btn small" href="#">Узнать условия доступа</a></div></div>
       </div>
     </div>
   </section>
@@ -250,13 +250,13 @@
       <h2 class="section-title">Лидерборд</h2>
       <p class="section-sub">Кто тащит огонь Братства на этой неделе.</p>
       <div class="card">
-        <div class="grid cols-4" style="align-items:center">
+        <div class="grid cols-4 leaderboard-head">
           <div class="badge">Ник</div>
           <div class="badge">Очки</div>
           <div class="badge">Роль</div>
           <div class="badge">Последний вклад</div>
         </div>
-        <p class="small" style="margin-top:8px">Баллы начисляются за квесты, полезные мемы/гайды, помощь в модерации и онбординге.</p>
+        <p class="small leaderboard-note">Баллы начисляются за квесты, полезные мемы/гайды, помощь в модерации и онбординге.</p>
       </div>
     </div>
   </section>
@@ -271,7 +271,7 @@
         <div class="card"><h3>Форум Консулов</h3><p class="muted">обсуждение приоритетов на неделю, открытые заметки.</p></div>
         <div class="card"><h3>AMA/Гостевые стримы</h3><p class="muted">по анонсу — приглашённые друзья проекта.</p></div>
       </div>
-      <div class="hero-cta" style="justify-content:flex-start;margin-top:8px"><a class="btn small" href="#">Следить за расписанием</a></div>
+      <div class="hero-cta hero-cta--left hero-cta--tight"><a class="btn small" href="#">Следить за расписанием</a></div>
     </div>
   </section>
 
@@ -309,7 +309,7 @@
       <h2 class="section-title">Как принимаем решения</h2>
       <div class="grid cols-2">
         <div class="card"><h3>Сейчас</h3><p class="muted">опросы и обсуждения в Telegram, публичные сводки на сайте. <span class="badge">сейчас офчейн</span></p></div>
-        <div class="card"><h3>Дальше</h3><p class="muted">после DEX рассматриваем ончейн‑механики.</p><p class="small">Как предложить: оформи идею в Скриптории → обсуди → вынеси в Форум Консулов.</p><div class="hero-cta" style="justify-content:flex-start"><a class="btn small" href="#">Вынести предложение</a></div></div>
+        <div class="card"><h3>Дальше</h3><p class="muted">после DEX рассматриваем ончейн‑механики.</p><p class="small">Как предложить: оформи идею в Скриптории → обсуди → вынеси в Форум Консулов.</p><div class="hero-cta hero-cta--left hero-cta--tight"><a class="btn small" href="#">Вынести предложение</a></div></div>
       </div>
     </div>
   </section>
@@ -352,7 +352,7 @@
   <section id="cta-join" class="reveal">
     <div class="container">
       <h2 class="section-title">Присоединяйся к Братству</h2>
-      <div class="hero-cta" style="justify-content:flex-start">
+      <div class="hero-cta hero-cta--left">
         <a class="btn" href="#">Вступить в Telegram</a>
         <a class="btn ghost" href="#">Подписаться на YouTube</a>
       </div>
