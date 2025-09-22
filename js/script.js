@@ -90,11 +90,63 @@ function animateCounter(el){
 document.querySelectorAll('[data-counter]').forEach(animateCounter);
 
 // FAQ
-document.querySelectorAll('.faq-item h4').forEach(h=>{
-  h.addEventListener('click',()=>{
-    h.parentElement.classList.toggle('open');
+(function(){
+  const buttons = document.querySelectorAll('.faq-item__question');
+  if(!buttons.length) return;
+
+  document.body.classList.add('faq-ready');
+
+  const closeItem = (btn)=>{
+    const item = btn.closest('.faq-item');
+    const answer = item?.querySelector('.faq-item__answer');
+    if(!item || !answer) return;
+    item.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+    answer.setAttribute('aria-hidden','true');
+    answer.style.maxHeight = '0px';
+  };
+
+  const openItem = (btn)=>{
+    const item = btn.closest('.faq-item');
+    const answer = item?.querySelector('.faq-item__answer');
+    if(!item || !answer) return;
+    item.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+    answer.setAttribute('aria-hidden','false');
+    answer.style.maxHeight = `${answer.scrollHeight}px`;
+  };
+
+  buttons.forEach(btn=>{
+    const item = btn.closest('.faq-item');
+    const answer = item?.querySelector('.faq-item__answer');
+    if(answer){
+      answer.setAttribute('aria-hidden', item?.classList.contains('open') ? 'false' : 'true');
+      if(item?.classList.contains('open')){
+        btn.setAttribute('aria-expanded','true');
+        answer.style.maxHeight = `${answer.scrollHeight}px`;
+      }else{
+        btn.setAttribute('aria-expanded','false');
+        answer.style.maxHeight = '0px';
+      }
+    }
+
+    btn.addEventListener('click',()=>{
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      buttons.forEach(other=>{ if(other!==btn) closeItem(other); });
+      if(isOpen){
+        closeItem(btn);
+      }else{
+        openItem(btn);
+      }
+    });
   });
-});
+
+  window.addEventListener('resize',()=>{
+    document.querySelectorAll('.faq-item.open .faq-item__answer').forEach(ans=>{
+      ans.style.maxHeight = `${ans.scrollHeight}px`;
+    });
+  });
+})();
 
 // Scroll to top
 const topBtn = document.getElementById('scrolltop');
