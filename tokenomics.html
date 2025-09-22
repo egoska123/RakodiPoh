@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Токеномика $RAKODI</title>
+  <meta name="description" content="Структура токена RAKODI: параметры, распределение, комиссии, ликвидность и путь к DEX.">
+  <link rel="icon" href="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader" style="position:fixed;inset:0;background:#0b0b12;display:grid;place-items:center;z-index:2000;transition:opacity .5s">
+  <div class="spinner" style="width:52px;height:52px;border-radius:50%;border:3px solid #333;border-top-color:#ff2e6a;animation:spin 1s linear infinite"></div>
+  <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+</div>
+
+<header>
+  <div class="container nav">
+    <div class="logo"><img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="RAKODI"><div class="brand">RAKODI</div></div>
+    <button class="menu-toggle" aria-label="Меню"><span></span><span></span><span></span></button>
+    <nav class="links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="tokenomics.html">Токеномика</a>
+      <a href="brotherhood.html">Братство</a>
+      <a href="news.html">Новости</a>
+    </nav>
+    <div class="right">
+      <a class="btn small" href="#">Купить</a>
+      <a class="icon-btn" href="#" aria-label="Telegram"><img src="assets/telegram.svg" alt="Telegram"></a>
+      <a class="icon-btn" href="#" aria-label="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1) Герой — Свиток чисел -->
+  <section id="hero-token" class="reveal" style="padding-top:140px">
+    <div class="container">
+      <div class="grid cols-2">
+        <div class="feature-media">
+          <video autoplay muted loop playsinline poster="assets/city_girl.webp">
+            <source src="assets/feature_bg.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div>
+          <h1 class="section-title">Токеномика $RAKODI</h1>
+          <p class="section-sub">Мем-токен на стадии «памфан». Ничего лишнего: простая структура, прозрачные правила, упор на комьюнити. Дойдём до порога — перейдём на DEX.</p>
+          <div class="statbar" style="justify-content:flex-start">
+            <div class="stat"><b>Тикер</b>: $RAKODI</div>
+            <div class="stat"><b>Статус</b>: памфан</div>
+            <div class="stat"><b>Сеть</b>: [указать сеть]</div>
+          </div>
+          <div class="card" style="margin-top:10px">
+            <div class="badge" data-copy="#contract-address">Контракт: <span id="contract-address">[0x…]</span></div>
+            <div class="statbar" style="justify-content:flex-start;margin-top:10px">
+              <a class="btn small" href="#">Купить на памфан</a>
+              <a class="btn small ghost" href="#">Смотреть контракт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2) TL;DR -->
+  <section id="tldr" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Коротко о сути</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Мем‑токен</h3><p class="muted">Юмор и ирония для охвата. Ценность — в культуре и внимании сообщества.</p></div>
+        <div class="card"><h3>Ограниченный функционал</h3><p class="muted">На этапе памфан — без сложных утилит и governance. Фокус на росте комьюнити и ликвидности.</p></div>
+        <div class="card"><h3>Порог → DEX</h3><p class="muted">Достигаем целевых метрик (MC / холдеры / ликвидность) — запускаем переход на DEX.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Основные параметры -->
+  <section id="base-params" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Базовые параметры $RAKODI</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <ul>
+            <li><b>Название:</b> RAKODI (мем‑токен экосистемы «Новая Мем‑Александрия»)</li>
+            <li><b>Тикер:</b> $RAKODI</li>
+            <li><b>Адрес контракта:</b> <span class="badge" data-copy="#contract-address-2"><span id="contract-address-2">[0x…]</span> — копировать</span></li>
+            <li><b>Сеть:</b> [—]</li>
+            <li><b>Total Supply:</b> [—]</li>
+            <li><b>Decimals:</b> [—]</li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul>
+            <li><b>Минт/эмиссия:</b> фиксированное предложение / [уточнить]</li>
+            <li><b>Владение контрактом:</b> [отказано/мультисиг/EOA]</li>
+            <li><b>Статус исходника:</b> [верифицирован на обозревателе / ссылка]</li>
+            <li><b>Анти‑вейл лимиты:</b> [нет/есть: max tx — %, max wallet — %]</li>
+          </ul>
+          <p class="small">Числа заполним после финализации контракта.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) Распределение -->
+  <section id="distribution" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Как распределено предложение</h2>
+      <div class="grid cols-2">
+        <div>
+          <div class="token-donut"><div class="center">100%<br>Supply</div></div>
+        </div>
+        <div class="card">
+          <ul>
+            <li><b>Ликвидность/рынок:</b> [—]% — стартовая ликвидность на памфан, поддержка торгов.</li>
+            <li><b>Комьюнити/награды:</b> [—]% — квесты, мем‑конкурсы, активность Братства.</li>
+            <li><b>Фонд развития:</b> [—]% — сайт, видео, инструменты, маркетинг.</li>
+            <li><b>Команда (вестинг):</b> [—]% — долгий горизонт, линейные анлоки.</li>
+            <li><b>Партнёрства/резерв:</b> [—]% — коллаборации и интеграции.</li>
+            <li><b>Сжигание (если есть):</b> [—]% — «ритуалы свитков».</li>
+          </ul>
+          <p class="small">Никаких скрытых карманов: движения — ончейн и публичны.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) Ликвидность -->
+  <section id="liquidity" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Ликвидность и рынок</h2>
+      <div class="grid cols-2">
+        <div class="card"><h3>Стартовая ликвидность</h3><p class="muted">[объём/пулы, если применимо]</p></div>
+        <div class="card"><h3>Статус LP‑токенов</h3><p class="muted">[заблокированы до дд.мм.гггг / сожжены / под мультисиг]</p></div>
+      </div>
+      <div class="card" style="margin-top:10px"><p class="muted">Рекомендуем разумные параметры проскальзывания; избегай подозрительных зеркал токена. Транзакции и ссылки на обозреватели публикуем.</p></div>
+    </div>
+  </section>
+
+  <!-- 6) Комиссии и механики -->
+  <section id="fees" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Комиссии и поведение контракта</h2>
+      <div class="grid cols-2">
+        <div class="card"><h3>Комиссии (buy/sell)</h3><p class="muted">[0%/0% или указать фактические]</p></div>
+        <div class="card"><h3>Механики</h3>
+          <ul>
+            <li>Рефлексы/дивиденды: [нет/есть — как]</li>
+            <li>Автосжигание: [нет/есть — как]</li>
+            <li>Чёрный список/лимиты: [нет/есть — правила]</li>
+          </ul>
+          <p class="small">На этапе памфан — главное прозрачность и предсказуемость.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) Утилита сейчас -->
+  <section id="utility" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Что даёт $RAKODI сейчас</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Участие в Братстве</h3><p class="muted">Роли, бэйджи, внутренняя система квестов и сезонные лидеры.</p></div>
+        <div class="card"><h3>Мем‑библиотека</h3><p class="muted">Влияние на контент‑повестку: лучшие мемы и гайды попадают на витрину и в видео.</p></div>
+        <div class="card"><h3>Социальные сигналы</h3><p class="muted">Рост узнаваемости, коллаборации, путь к порогу DEX.</p></div>
+      </div>
+      <p class="small">Governance и расширенная утилита рассматриваются после перехода на DEX.</p>
+    </div>
+  </section>
+
+  <!-- 8) Вестинг и анлоки -->
+  <section id="vesting" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Когда и как открываются доли</h2>
+      <div class="timeline">
+        <div class="milestone"><div class="when">Команда</div><div>Клифф [X мес], вестинг [Y мес], анлок каждые [Z] мес.</div></div>
+        <div class="milestone"><div class="when">Фонд развития</div><div>Траты по публичным отчётам/решениям, x%/мес максимум.</div></div>
+        <div class="milestone"><div class="when">Партнёрства</div><div>Анлок по факту интеграций/листингов.</div></div>
+        <div class="milestone"><div class="when">Календарь</div><div>Интерактивная таблица анлоков появится здесь.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9) Порог и переход на DEX -->
+  <section id="dex-path" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Путь к DEX</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <ul>
+            <li><b>MC:</b> цель [—]</li>
+            <li><b>Холдеры:</b> цель [—]</li>
+            <li><b>Ликвидность:</b> цель [—]</li>
+            <li><b>Техготовность:</b> аудит/ревью, документация</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Прогресс</h3>
+          <div style="height:10px;border-radius:10px;background:var(--glass);border:var(--border);overflow:hidden"><div style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>
+          <p class="small" style="margin:6px 0 0">Готовность: <b>[XX%]</b> • Осталось по метрикам: [краткая строка]</p>
+        </div>
+      </div>
+      <p class="small">Как только чекпоинты зелёные — объявляем процедуру перехода.</p>
+    </div>
+  </section>
+
+  <!-- 10) Прозрачность и безопасность -->
+  <section id="transparency" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Что открыто публично</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <ul>
+            <li>Адрес контракта и метаданные — закреплены на сайте и в соцсетях.</li>
+            <li>Исходник контракта — [верифицирован/ссылка].</li>
+            <li>Ончейн‑дашборды: цена, объём, холдеры, ликвидность.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul>
+            <li>Статус аудита/код‑ревью — [в процессе/готово/ссылка].</li>
+            <li>Коммуникации по изменениям — сначала анонс, затем действие.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11) Как купить на памфан -->
+  <section id="how-to-buy" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Покупка $RAKODI на памфан</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>I — Подключи кошелёк</h3><p class="muted">WalletConnect/поддерживаемые кошельки.</p></div>
+        <div class="card"><h3>II — Выбери $RAKODI</h3><p class="muted">Сверяй тикер и сетку.</p></div>
+        <div class="card"><h3>III — Проверь контракт</h3><p class="muted">Используй адрес с этой страницы.</p></div>
+        <div class="card"><h3>IV — Соверши своп</h3><p class="muted">Задай объём, подтверди транзакцию.</p></div>
+        <div class="card"><h3>V — Добавь токен</h3><p class="muted">Чтобы видеть баланс.</p></div>
+      </div>
+      <div class="card" style="padding:12px;margin-top:10px">
+        <div style="height:8px;border-radius:8px;background:var(--glass);border:var(--border);overflow:hidden">
+          <div style="height:100%;width:20%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div>
+        </div>
+        <div class="statbar" style="margin-top:8px;justify-content:space-between">
+          <span class="badge">I</span>
+          <span class="badge">II</span>
+          <span class="badge">III</span>
+          <span class="badge">IV</span>
+          <span class="badge">V</span>
+        </div>
+      </div>
+      <p class="small">Будь внимателен к фейковым токенам и зеркалам.</p>
+    </div>
+  </section>
+
+  <!-- 12) Дисклеймер -->
+  <section id="disclaimer" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Дисклеймер</h2>
+      <div class="card"><p>$RAKODI — мем‑токен сообщества. Ничто на сайте не является финансовой рекомендацией. Криптовалюты рискованны: проводи собственное исследование (DYOR) и принимай решения самостоятельно.</p></div>
+    </div>
+  </section>
+
+  <!-- 13) FAQ -->
+  <section id="faq-token" class="reveal">
+    <div class="container">
+      <h2 class="section-title">FAQ</h2>
+      <div class="faq-item"><h4>Есть ли у токена утилиты сейчас?</h4><p>На этапе памфан — социальные: квесты, роли, мем‑библиотека. Расширение рассматриваем после DEX.</p></div>
+      <div class="faq-item"><h4>Будут ли налоги на сделки?</h4><p>Указаны в блоке «Комиссии и механики». Изменения — только с публичным анонсом.</p></div>
+      <div class="faq-item"><h4>Куда идут средства с комиссий (если есть)?</h4><p>На развитие, мем‑кампании, поддержание ликвидности — согласно отчётам.</p></div>
+      <div class="faq-item"><h4>Как контролируется ликвидность?</h4><p>Статус LP‑токенов (лок/сжигание/мультисиг) указан выше; транзакции — ончейн.</p></div>
+      <div class="faq-item"><h4>Когда переход на DEX?</h4><p>После достижения всех чекпоинтов. Прогресс — в блоке «Путь к DEX».</p></div>
+      <div class="faq-item"><h4>Как защититься от скам‑копий?</h4><p>Сверяй адрес контракта и ссылки только с этой страницы и официальных каналов.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="RAKODI" width="42" height="42">
+    <div class="footer-links">
+      <a href="#">Политика приватности</a>
+      <a href="#">Пользовательское соглашение</a>
+      <a href="#">Terms</a>
+      <a href="#">Audit</a>
+      <a href="#">Docs</a>
+      <a href="#">Whitepaper</a>
+      <a href="#">Bug bounty</a>
+      <a href="#">Brand kit</a>
+      <a href="mailto:hi@rakodi.io">Контакты</a>
+    </div>
+    <p class="small">© 2025 RAKODI Protocol. RAKODI — мем‑токен. Материалы не являются финансовыми рекомендациями.</p>
+  </div>
+</footer>
+
+<a id="scrolltop" class="scrolltop" href="#" aria-label="scroll to top">↑</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

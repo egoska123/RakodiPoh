@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Новости и Мем‑библиотека — RAKODI</title>
+  <meta name="description" content="Лента Нової Мем‑Александрии: мемы, апдейты, объявления и видео. Фильтры, теги, главный свиток и форма подачи контента.">
+  <link rel="icon" href="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader" style="position:fixed;inset:0;background:#0b0b12;display:grid;place-items:center;z-index:2000;transition:opacity .5s">
+  <div class="spinner" style="width:52px;height:52px;border-radius:50%;border:3px solid #333;border-top-color:#ff2e6a;animation:spin 1s linear infinite"></div>
+  <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+</div>
+
+<header>
+  <div class="container nav">
+    <div class="logo"><img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="RAKODI"><div class="brand">RAKODI</div></div>
+    <button class="menu-toggle" aria-label="Меню"><span></span><span></span><span></span></button>
+    <nav class="links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="tokenomics.html">Токеномика</a>
+      <a href="brotherhood.html">Братство</a>
+      <a href="news.html">Новости</a>
+    </nav>
+    <div class="right">
+      <a class="btn small" href="#">Купить</a>
+      <a class="icon-btn" href="#" aria-label="Telegram"><img src="assets/telegram.svg" alt="Telegram"></a>
+      <a class="icon-btn" href="#" aria-label="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1) Герой — Лента Мем‑Александрии -->
+  <section id="hero-news" class="reveal" style="padding-top:140px">
+    <div class="container">
+      <h1 class="section-title">Новости и Мем‑библиотека</h1>
+      <p class="section-sub">Здесь живёт хроника Нової Мем‑Александрии: мемы, апдейты, объявления и видео. Всё, что зажигает сообщество и движет нас к DEX.</p>
+      <div class="card" style="margin-top:8px">
+        <div class="statbar" style="justify-content:flex-start;gap:12px">
+          <span class="badge">Сегодня в ленте:</span>
+          <span class="badge">мемов — —</span>
+          <span class="badge">новостей — —</span>
+          <span class="badge">объявлений — —</span>
+        </div>
+        <div style="margin-top:8px;display:flex;gap:10px;align-items:center">
+          <input placeholder="Найди свиток по тегу, теме или слову…" style="flex:1;padding:12px 14px;border-radius:12px;border:var(--border);background:var(--glass);color:var(--text)" />
+          <button class="btn small">Искать</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2) Навигация ленты — табы и фильтры -->
+  <section id="nav-filters" class="reveal">
+    <div class="container">
+      <h2 class="section-title" style="position:absolute;left:-9999px">Навигация по ленте</h2>
+      <div class="card" style="text-align:center">
+        <span class="badge">Новости</span>
+        <span style="opacity:.6">↔</span>
+        <span class="badge">Мемы</span>
+        <span style="opacity:.6">↔</span>
+        <span class="badge">Объявления</span>
+        <span style="opacity:.6">↔</span>
+        <span class="badge">Гайды</span>
+        <span style="opacity:.6">↔</span>
+        <span class="badge">Архив</span>
+      </div>
+      <div class="card" style="margin-top:10px">
+        <div class="statbar" style="justify-content:flex-start;gap:10px;flex-wrap:wrap">
+          <span class="badge">Период</span>
+          <span class="badge">Сегодня</span><span class="badge">Неделя</span><span class="badge">Месяц</span><span class="badge">Всё время</span>
+        </div>
+        <div class="statbar" style="justify-content:flex-start;gap:10px;flex-wrap:wrap">
+          <span class="badge">Формат</span>
+          <span class="badge">Текст</span><span class="badge">Видео</span><span class="badge">Тред</span><span class="badge">Анонс</span>
+        </div>
+        <div class="statbar" style="justify-content:flex-start;gap:10px;flex-wrap:wrap">
+          <span class="badge">Теги</span>
+          <span class="badge">#roadtoDEX</span><span class="badge">#памфан</span><span class="badge">#гайд</span><span class="badge">#мем_дня</span><span class="badge">#обновление</span>
+        </div>
+        <div class="statbar" style="justify-content:flex-start;gap:10px;flex-wrap:wrap">
+          <span class="badge">Сортировка</span>
+          <span class="badge">По новизне</span><span class="badge">По огню</span><span class="badge">По обсуждаемости</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Главный свиток -->
+  <section id="top-story" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Главное сегодня</h2>
+      <div class="grid cols-2">
+        <div class="feature-media">
+          <video autoplay muted loop playsinline poster="assets/city_girl.webp"><source src="assets/feature_bg.mp4" type="video/mp4"></video>
+        </div>
+        <div class="card">
+          <div class="badge">Объявление</div>
+          <h3>«Братство запускает сезон квестов: Свиток №1»</h3>
+          <p class="muted">Новые задания, бэйджи и витрина лучших мемов — уже на этой неделе.</p>
+          <p class="small">Сегодня • Автор: Скрипторий • Теги: #квесты #мем_дня</p>
+          <div class="hero-cta" style="justify-content:flex-start"><a class="btn small" href="#">Читать полностью</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) Грид карточек 3×N -->
+  <section id="grid" class="reveal">
+    <div class="container">
+      <div class="grid cols-3">
+        <div class="card"><div class="badge">Новость</div><h3>«Когда библиотеку не сжечь — её токенизируют»</h3><p class="muted">Ирония как инструмент виральности и роста комьюнити.</p><p class="small">12.03 • Автор: Consul • Теги: #roadtoDEX</p><div class="statbar" style="gap:10px"><span class="badge">▲128</span><span class="badge">💬42</span><span class="badge">↗︎1.2k</span><a class="btn small ghost" href="#">Открыть свиток</a></div></div>
+        <div class="card"><div class="badge">Мем</div><h3>«Свиток, который нельзя сжечь»</h3><p class="muted">Классическая ирония о цензуре и блокчейне.</p><p class="small">11.03 • Автор: Archivarius • Теги: #мем_дня</p><div class="statbar" style="gap:10px"><span class="badge">▲420</span><span class="badge">💬90</span><span class="badge">↗︎3.4k</span><a class="btn small ghost" href="#">Открыть свиток</a></div></div>
+        <div class="card"><div class="badge">Гайд</div><h3>«Безопасный старт: кошелёк и основные проверки»</h3><p class="muted">Три шага, чтобы не ловить фишинг и подмены.</p><p class="small">10.03 • Автор: Guide • Теги: #гайд</p><div class="statbar" style="gap:10px"><span class="badge">▲77</span><span class="badge">💬12</span><span class="badge">↗︎980</span><a class="btn small ghost" href="#">Открыть свиток</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) Видео‑сводка -->
+  <section id="video" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Видео‑новости</h2>
+      <p class="section-sub">Клиповые тизеры — наш язык. Смотри, комментируй, передавай факел дальше.</p>
+      <div class="grid cols-2">
+        <div class="feature-media"><video autoplay muted loop playsinline poster="assets/20250922_0953_Hellenistic Cat Majesty_remix_01k5r6ey56ftjtzazr0xg1mmjp.png"><source src="assets/hero_bg.mp4" type="video/mp4"></video></div>
+        <div class="card"><h3>«Свитки будущего»</h3><p class="muted">Короткий взгляд на путь комьюнити к DEX и роль мемов в росте.</p><div class="hero-cta" style="justify-content:flex-start"><a class="btn small" href="#">Смотреть клип</a><a class="btn small ghost" href="#">Перейти на YouTube</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6) Доска объявлений -->
+  <section id="board" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Объявления</h2>
+      <div class="grid cols-2">
+        <div class="card"><h3>📜 Премьера в пятницу 20:00 — общий сбор в Telegram</h3><p class="muted">Обсуждаем тизер в чате, выбираем мем недели.</p></div>
+        <div class="card"><h3>📜 Обновлённые правила подачи мемов</h3><p class="muted">Две строки про формат и источники.</p></div>
+      </div>
+      <div class="hero-cta" style="justify-content:flex-start"><a class="btn small" href="#">Все объявления</a></div>
+    </div>
+  </section>
+
+  <!-- 7) Сигналы рынка / Путь к DEX -->
+  <section id="dex-short" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Путь к DEX</h2>
+      <div class="card" style="padding:12px">
+        <div style="height:8px;border-radius:8px;background:var(--glass);border:var(--border);overflow:hidden"><div style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>
+        <p class="small" style="margin:6px 0 8px">Готовность: <b>[XX%]</b> • До порога осталось: <i>[кратко]</i></p>
+        <div class="statbar" style="justify-content:center"><span class="badge">MC</span><span class="badge">Холдеры</span><span class="badge">Ликвидность</span><span class="badge">Техготовность</span></div>
+        <p class="small">Сейчас торгуемся на памфан; расширенный функционал — после перехода на DEX.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8) Апдейты разработки -->
+  <section id="updates" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Что сделали на этой неделе</h2>
+      <div class="timeline">
+        <div class="milestone"><div class="when">дд.мм</div><div>Мем‑библиотека 1.1: фильтры и теги. Добавили сортировку по огню и быстрые чипы тегов.</div></div>
+        <div class="milestone"><div class="when">дд.мм</div><div>Видео‑лента: плейлист тизеров, предпросмотр.</div></div>
+      </div>
+      <div class="hero-cta" style="justify-content:flex-start"><a class="btn small" href="#">Все апдейты</a></div>
+    </div>
+  </section>
+
+  <!-- 9) Мем недели -->
+  <section id="meme-week" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Мем недели</h2>
+      <div class="card"><h3>«Свиток, который нельзя сжечь»</h3><p class="muted">Ирония про библиотеку и блокчейн — лучший комментарий комьюнити.</p><p class="small">Автор: [ник] • Выбор: голосование Братства</p><div class="hero-cta" style="justify-content:flex-start"><a class="btn small" href="#">Смотреть в библиотеке</a></div></div>
+    </div>
+  </section>
+
+  <!-- 10) Афиша событий -->
+  <section id="calendar" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Ближайшие события</h2>
+    <div class="card"><h3>Премьера тизера «Свитки будущего»</h3><p class="muted">Пятница, 20:00 (MSK) • YouTube + сбор в Telegram</p><div class="hero-cta" style="justify-content:flex-start"><a class="btn small" href="#">Напомнить в Telegram</a></div></div>
+    </div>
+  </section>
+
+  <!-- 11) Подать свиток -->
+  <section id="submit" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Предложить в ленту</h2>
+      <div class="card">
+        <div class="grid cols-2">
+          <div>
+            <input placeholder="Заголовок: Коротко и цепко…" style="width:100%;padding:12px;border-radius:12px;border:var(--border);background:var(--glass);color:var(--text);margin:6px 0" />
+            <input placeholder="Ссылка на пост/изображение/видео…" style="width:100%;padding:12px;border-radius:12px;border:var(--border);background:var(--glass);color:var(--text);margin:6px 0" />
+          </div>
+          <div>
+            <textarea placeholder="Описание: 1–3 строки сути…" style="width:100%;height:88px;padding:12px;border-radius:12px;border:var(--border);background:var(--glass);color:var(--text);margin:6px 0;resize:vertical"></textarea>
+            <input placeholder="Теги: #roadtoDEX, #гайд…" style="width:100%;padding:12px;border-radius:12px;border:var(--border);background:var(--glass);color:var(--text);margin:6px 0" />
+          </div>
+        </div>
+        <label class="small" style="display:flex;gap:8px;align-items:flex-start;margin-top:6px"><input type="checkbox" style="margin-top:3px"> Я подтверждаю, что контент мой или с корректными источниками, и он соответствует Кодексу Братства.</label>
+        <div class="hero-cta" style="justify-content:flex-start;margin-top:8px"><a class="btn" href="#">Отправить на модерацию</a></div>
+        <p class="small">Модерация: 24–72 часа. Лучшее — на витрину и в видео.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12) Редполитика -->
+  <section id="policy" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Редакционная политика ленты</h2>
+      <div class="card"><ol>
+        <li>Остроумно, но уважительно.</li>
+        <li>По делу: мем должен вести к идее.</li>
+        <li>Источники указываем, фейки — в огонь (в корзину).</li>
+        <li>Без токсичности, скама и фишинга.</li>
+        <li>Сначала анонс — потом действие (прозрачность).</li>
+      </ol><p class="small">Нарушения ведут к скрытию и ограничению доступа.</p></div>
+    </div>
+  </section>
+
+  <!-- 13) Подписки и уведомления -->
+  <section id="subs" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Не пропусти огонь</h2>
+      <div class="exchanges">
+        <a href="#">YouTube — премьеры и хайлайты</a>
+        <a href="#">Telegram — обсуждения и анонсы</a>
+        <a href="#">X/Instagram — быстрые сигналы</a>
+        <a href="#">Reddit (по ситуации) — англ‑ветка</a>
+      </div>
+      <div class="hero-cta" style="justify-content:flex-start;margin-top:8px"><a class="btn small" href="#">Подписаться везде</a></div>
+    </div>
+  </section>
+
+  <!-- 14) FAQ ленты -->
+  <section id="faq" class="reveal">
+    <div class="container">
+      <h2 class="section-title">FAQ</h2>
+      <div class="faq-item"><h4>Как попадает контент в ленту?</h4><p>Отправляешь через форму → модерация Братства → публикация.</p></div>
+      <div class="faq-item"><h4>Как выбраться на витрину «Главное сегодня»?</h4><p>Полезность + реакция комьюнити + соответствие редполитике.</p></div>
+      <div class="faq-item"><h4>Можно ли продвигать сторонние проекты?</h4><p>Только по правилам и с прозрачной пометкой. Иначе — отклонение.</p></div>
+      <div class="faq-item"><h4>Где смотреть прогресс к DEX?</h4><p>В блоке «Путь к DEX» и в отдельных апдейтах.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="RAKODI" width="42" height="42">
+    <div class="footer-links">
+      <a href="#">Политика приватности</a>
+      <a href="#">Пользовательское соглашение</a>
+      <a href="#">Terms</a>
+      <a href="#">Audit</a>
+      <a href="#">Docs</a>
+      <a href="#">Whitepaper</a>
+      <a href="#">Bug bounty</a>
+      <a href="#">Brand kit</a>
+      <a href="mailto:hi@rakodi.io">Контакты</a>
+    </div>
+    <p class="small">© 2025 RAKODI Protocol. RAKODI — мем‑токен. Материалы не являются финансовыми рекомендациями.</p>
+  </div>
+</footer>
+
+<a id="scrolltop" class="scrolltop" href="#" aria-label="scroll to top">↑</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

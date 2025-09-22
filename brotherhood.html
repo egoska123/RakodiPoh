@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Братство RAKODI</title>
+  <meta name="description" content="Братство Ракоди: роли, палаты, квесты, лидерборд и ритуалы. Киберпанк в древнем Риме.">
+  <link rel="icon" href="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader" style="position:fixed;inset:0;background:#0b0b12;display:grid;place-items:center;z-index:2000;transition:opacity .5s">
+  <div class="spinner" style="width:52px;height:52px;border-radius:50%;border:3px solid #333;border-top-color:#ff2e6a;animation:spin 1s linear infinite"></div>
+  <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+</div>
+
+<header>
+  <div class="container nav">
+    <div class="logo"><img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="RAKODI"><div class="brand">RAKODI</div></div>
+    <button class="menu-toggle" aria-label="Меню"><span></span><span></span><span></span></button>
+    <nav class="links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="tokenomics.html">Токеномика</a>
+      <a href="brotherhood.html">Братство</a>
+      <a href="news.html">Новости</a>
+    </nav>
+    <div class="right">
+      <a class="btn small" href="#">Купить</a>
+      <a class="icon-btn" href="#" aria-label="Telegram"><img src="assets/telegram.svg" alt="Telegram"></a>
+      <a class="icon-btn" href="#" aria-label="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1) Герой -->
+  <section id="hero-bro" class="reveal" style="padding-top:140px">
+    <div class="container">
+      <div class="grid cols-2">
+        <div class="feature-media">
+          <video autoplay muted loop playsinline poster="assets/20250922_0953_Hellenistic Cat Majesty_remix_01k5r6ey56ftjtzazr0xg1mmjp.png">
+            <source src="assets/hero_bg.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div>
+          <h1 class="section-title">Братство Ракоди</h1>
+          <p class="section-sub">Новая Мем‑Александрия собирает людей, идеи и энергию. Вступай, создавай мемы, вливайся в ритуалы — и помогай вести проект к DEX.</p>
+          <div class="hero-cta" style="justify-content:flex-start">
+            <a class="btn" href="#">Вступить в Telegram</a>
+            <a class="btn ghost" href="#">Подписаться на YouTube</a>
+          </div>
+          <p class="small">Видео разжигают интерес → ведут на сайт → сайт укрепляет Братство и токен.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2) Зачем Братство -->
+  <section id="why" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Зачем мы объединяемся</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Легенда</h3><p class="muted">История о потерянной библиотеке — наш символ. Мы превратили её в мем‑язык и двигатель виральности.</p></div>
+        <div class="card"><h3>Практика</h3><p class="muted">YouTube — эмоция и охват, Telegram — форум и ритуалы, сайт — нервный центр и структура.</p></div>
+        <div class="card"><h3>Результат</h3><p class="muted">Комьюнити генерирует внимание → внимание двигает капитализацию → путь к DEX становится ближе.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Как вступить -->
+  <section id="join" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Твой вход в Братство</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>I — Telegram</h3><p class="muted">Публичный чат, анонсы, обсуждения, мемы дня.</p></div>
+        <div class="card"><h3>II — YouTube</h3><p class="muted">Клиповые тизеры — сердце легенды. Комменты считаются активностью.</p></div>
+        <div class="card"><h3>III — Сайт</h3><p class="muted">Подключи кошелёк (по желанию), получи бэйдж «Новобранец», начни квесты.</p></div>
+      </div>
+      <div class="card" style="padding:12px;margin-top:10px">
+        <div style="height:8px;border-radius:8px;background:var(--glass);border:var(--border);overflow:hidden">
+          <div style="height:100%;width:33%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div>
+        </div>
+        <div class="statbar" style="margin-top:8px;justify-content:space-between">
+          <span class="badge">I</span>
+          <span class="badge">II</span>
+          <span class="badge">III</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) Палаты -->
+  <section id="rooms" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Палаты Братства</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Скрипторий <span class="badge">открыто</span></h3><p class="muted">тексты, сценарии, идеи для роликов.</p></div>
+        <div class="card"><h3>Арсенал мемов <span class="badge">открыто</span></h3><p class="muted">исходники, шаблоны, советы по виральности.</p></div>
+        <div class="card"><h3>Форум Консулов <span class="badge">приватно</span></h3><p class="muted">обсуждения приоритетов, повестка недели.</p></div>
+        <div class="card"><h3>Кафедра гайдов <span class="badge">открыто</span></h3><p class="muted">how‑to по кошелькам, биржам, безопасности.</p></div>
+        <div class="card"><h3>Архив <span class="badge">открыто</span></h3><p class="muted">лучшие мемы/посты, канон проекта.</p></div>
+        <div class="card"><h3>Посвящённое братство <span class="badge">приватно</span></h3><p class="muted">роли, квесты повышенной сложности, закрытые обсуждения.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) Роли и ранги -->
+  <section id="ranks" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Роли и ранги</h2>
+      <div class="grid cols-4">
+        <div class="card"><h3>Новобранец</h3><p class="muted">входной бэйдж, базовые квесты, доступ к открытым палатам.</p></div>
+        <div class="card"><h3>Смотритель</h3><p class="muted">куратор мем‑библиотеки и гайдов, право предлагать отбор в канон.</p></div>
+        <div class="card"><h3>Архивариус</h3><p class="muted">формирует «свитки» знаний, помогает со структурой контента.</p></div>
+        <div class="card"><h3>Консул</h3><p class="muted">ведёт дискуссии, запускает инициативы, модерирует ритуалы.</p></div>
+      </div>
+      <p class="small">Повышение — за вклад: квесты, мемы, модерация, идеи, помощь новичкам.</p>
+    </div>
+  </section>
+
+  <!-- 6) Квесты и награды -->
+  <section id="quests" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Квесты Братства</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>I — Огонь форума</h3><p class="muted">Подпишись на YouTube и оставь осмысленный комментарий к последнему тизеру.</p><p class="small"><b>Награда:</b> бэйдж «Новобранец», очки сезона.</p></div>
+        <div class="card"><h3>II — Свиток дня</h3><p class="muted">Опубликуй мем/гайд по правилам, помоги с обратной связью другим.</p><p class="small"><b>Награда:</b> очки, шанс на витрину и упоминание в ролике.</p></div>
+        <div class="card"><h3>III — Голос Консула</h3><p class="muted">Поучаствуй в опросах/голосовании по фичам и приоритетам недели.</p><p class="small"><b>Награда:</b> бэйдж «Смотритель», повышение веса голоса.</p></div>
+      </div>
+      <div class="card" style="padding:12px;margin-top:10px">
+        <div style="height:8px;border-radius:8px;background:var(--glass);border:var(--border);overflow:hidden">
+          <div style="height:100%;width:40%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div>
+        </div>
+        <p class="small" style="margin:6px 0 0">Рейтинги — сезонные. Лучшие получают особые упоминания и ролики‑кредиты.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) Посвящённое братство -->
+  <section id="dedicated" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Посвящённое братство</h2>
+      <div class="grid cols-2">
+        <div class="card"><h3>Описание</h3><p class="muted">Приватные комнаты для тех, кто доказал вклад: курация контента, сложные квесты, подготовка к листингам и партнёрствам.</p></div>
+        <div class="card"><h3>Доступ сейчас</h3><p class="muted">через активность в открытых палатах и/или критерии холда $RAKODI.</p><p class="small"><b>Важно:</b> На стадии памфан функционал токена ограничен; доступ строится вокруг вклада и репутации.</p><div class="hero-cta" style="margin-top:8px;justify-content:flex-start"><a class="btn small" href="#">Узнать условия доступа</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8) Лидерборд -->
+  <section id="leaderboard" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Лидерборд</h2>
+      <p class="section-sub">Кто тащит огонь Братства на этой неделе.</p>
+      <div class="card">
+        <div class="grid cols-4" style="align-items:center">
+          <div class="badge">Ник</div>
+          <div class="badge">Очки</div>
+          <div class="badge">Роль</div>
+          <div class="badge">Последний вклад</div>
+        </div>
+        <p class="small" style="margin-top:8px">Баллы начисляются за квесты, полезные мемы/гайды, помощь в модерации и онбординге.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9) Ритуальный календарь -->
+  <section id="rituals" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Ритуалы и события</h2>
+      <div class="grid cols-2">
+        <div class="card"><h3>Премьеры YouTube</h3><p class="muted">еженедельно/по расписанию — общий сбор в Telegram‑чате.</p></div>
+        <div class="card"><h3>Советы Скриптория</h3><p class="muted">раз в неделю — воркшоп по мемам и сценариям.</p></div>
+        <div class="card"><h3>Форум Консулов</h3><p class="muted">обсуждение приоритетов на неделю, открытые заметки.</p></div>
+        <div class="card"><h3>AMA/Гостевые стримы</h3><p class="muted">по анонсу — приглашённые друзья проекта.</p></div>
+      </div>
+      <div class="hero-cta" style="justify-content:flex-start;margin-top:8px"><a class="btn small" href="#">Следить за расписанием</a></div>
+    </div>
+  </section>
+
+  <!-- 10) Соц-хаб -->
+  <section id="social" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Где нас найти</h2>
+      <div class="exchanges">
+        <a href="#">YouTube — ядро</a>
+        <a href="#">Telegram — форум</a>
+        <a href="#">X и Instagram — сетка</a>
+        <a href="#">Reddit — англ. ветка</a>
+      </div>
+      <p class="small">Все дороги ведут на сайт — нервный центр Братства.</p>
+    </div>
+  </section>
+
+  <!-- 11) Путь в канон -->
+  <section id="canon" class="reveal">
+    <div class="container">
+      <h2 class="section-title">От идеи до канона</h2>
+      <div class="timeline">
+        <div class="milestone"><div class="when">1. Подача</div><div>публикуешь мем/гайд по правилам.</div></div>
+        <div class="milestone"><div class="when">2. Обсуждение</div><div>обратная связь в Арсенале мемов.</div></div>
+        <div class="milestone"><div class="when">3. Отбор</div><div>Смотрители и Архивариусы рекомендуют лучшие.</div></div>
+        <div class="milestone"><div class="when">4. Канон</div><div>витрина на сайте, шанс попасть в видео.</div></div>
+      </div>
+      <p class="small">Правила коротко: остроумно, по делу, уважительно; указывай источники.</p>
+    </div>
+  </section>
+
+  <!-- 12) Голосования и предложения -->
+  <section id="voting" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Как принимаем решения</h2>
+      <div class="grid cols-2">
+        <div class="card"><h3>Сейчас</h3><p class="muted">опросы и обсуждения в Telegram, публичные сводки на сайте. <span class="badge">сейчас офчейн</span></p></div>
+        <div class="card"><h3>Дальше</h3><p class="muted">после DEX рассматриваем ончейн‑механики.</p><p class="small">Как предложить: оформи идею в Скриптории → обсуди → вынеси в Форум Консулов.</p><div class="hero-cta" style="justify-content:flex-start"><a class="btn small" href="#">Вынести предложение</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13) Кодекс -->
+  <section id="code" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Кодекс Братства</h2>
+      <div class="card">
+        <ol>
+          <li>Создавай и уважай.</li>
+          <li>Юмор — без токсичности и личных атак.</li>
+          <li>Без спама, фейков и фишинга.</li>
+          <li>Соблюдай законы своей юрисдикции.</li>
+          <li>Сначала анонс — потом действие. Прозрачность во всём.</li>
+        </ol>
+        <p class="small">Нарушения ведут к предупреждениям/ограничениям доступа.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14) Безопасность -->
+  <section id="security" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Безопасность в крипте</h2>
+      <div class="grid cols-2">
+        <div class="card"><ul>
+          <li>Проверяй адрес контракта только на сайте и в официальных соцсетях.</li>
+          <li>Не переходи по случайным ссылкам, не раскрывай seed‑фразы.</li>
+        </ul></div>
+        <div class="card"><ul>
+          <li>Внимательно сверяй тикер $RAKODI: остерегайся клонов.</li>
+          <li>Любые изменения — сначала публичный анонс.</li>
+        </ul><p class="small">$RAKODI — мем‑токен; ничего здесь не является финсоветом (DYOR).</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15) CTA -->
+  <section id="cta-join" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Присоединяйся к Братству</h2>
+      <div class="hero-cta" style="justify-content:flex-start">
+        <a class="btn" href="#">Вступить в Telegram</a>
+        <a class="btn ghost" href="#">Подписаться на YouTube</a>
+      </div>
+      <p class="small">Хочешь глубже? Узнай условия доступа в Посвящённое братство.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="RAKODI" width="42" height="42">
+    <div class="footer-links">
+      <a href="#">Политика приватности</a>
+      <a href="#">Пользовательское соглашение</a>
+      <a href="#">Terms</a>
+      <a href="#">Audit</a>
+      <a href="#">Docs</a>
+      <a href="#">Whitepaper</a>
+      <a href="#">Bug bounty</a>
+      <a href="#">Brand kit</a>
+      <a href="mailto:hi@rakodi.io">Контакты</a>
+    </div>
+    <p class="small">© 2025 RAKODI Protocol. RAKODI — мем‑токен. Материалы не являются финансовыми рекомендациями.</p>
+  </div>
+</footer>
+
+<a id="scrolltop" class="scrolltop" href="#" aria-label="scroll to top">↑</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
