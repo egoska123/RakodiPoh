@@ -112,26 +112,64 @@
   <section id="base-params" class="reveal">
     <div class="container">
       <h2 class="section-title">Базовые параметры $RAKODI</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <ul>
-            <li><b>Название:</b> RAKODI (мем‑токен экосистемы «Новая Мем‑Александрия»)</li>
-            <li><b>Тикер:</b> $RAKODI</li>
-            <li><b>Адрес контракта:</b> <span class="badge" data-copy="#contract-address-2"><span id="contract-address-2">[0x…]</span> — копировать</span></li>
-            <li><b>Сеть:</b> [—]</li>
-            <li><b>Total Supply:</b> [—]</li>
-            <li><b>Decimals:</b> [—]</li>
+      <div class="token-params">
+        <article class="token-params__panel token-params__panel--primary">
+          <ul class="token-params__list">
+            <li class="token-params__item">
+              <span class="token-params__label">Название</span>
+              <span class="token-params__value">RAKODI (мем‑токен экосистемы «Новая Мем‑Александрия»)</span>
+            </li>
+            <li class="token-params__item">
+              <span class="token-params__label">Тикер</span>
+              <span class="token-params__value">$RAKODI</span>
+            </li>
+            <li class="token-params__item token-params__item--copy">
+              <span class="token-params__label">Адрес контракта</span>
+              <span class="token-params__value">
+                <button class="token-params__copy" type="button" data-copy="#contract-address-2">
+                  <span id="contract-address-2">[0x…]</span>
+                  <svg aria-hidden="true" viewBox="0 0 20 20" focusable="false">
+                    <path d="M6.5 3.5A2.5 2.5 0 0 1 9 1h6a2.5 2.5 0 0 1 2.5 2.5v6A2.5 2.5 0 0 1 15 12h-6a2.5 2.5 0 0 1-2.5-2.5z" opacity=".4" />
+                    <path d="M4 6h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3zm0 2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" />
+                  </svg>
+                </button>
+              </span>
+            </li>
+            <li class="token-params__item">
+              <span class="token-params__label">Сеть</span>
+              <span class="token-params__value">[—]</span>
+            </li>
+            <li class="token-params__item">
+              <span class="token-params__label">Total Supply</span>
+              <span class="token-params__value">[—]</span>
+            </li>
+            <li class="token-params__item">
+              <span class="token-params__label">Decimals</span>
+              <span class="token-params__value">[—]</span>
+            </li>
           </ul>
-        </div>
-        <div class="card">
-          <ul>
-            <li><b>Минт/эмиссия:</b> фиксированное предложение / [уточнить]</li>
-            <li><b>Владение контрактом:</b> [отказано/мультисиг/EOA]</li>
-            <li><b>Статус исходника:</b> [верифицирован на обозревателе / ссылка]</li>
-            <li><b>Анти‑вейл лимиты:</b> [нет/есть: max tx — %, max wallet — %]</li>
+        </article>
+        <article class="token-params__panel token-params__panel--secondary">
+          <ul class="token-params__list">
+            <li class="token-params__item">
+              <span class="token-params__label">Минт/эмиссия</span>
+              <span class="token-params__value">фиксированное предложение / [уточнить]</span>
+            </li>
+            <li class="token-params__item">
+              <span class="token-params__label">Владение контрактом</span>
+              <span class="token-params__value">[отказано/мультисиг/EOA]</span>
+            </li>
+            <li class="token-params__item">
+              <span class="token-params__label">Статус исходника</span>
+              <span class="token-params__value">[верифицирован на обозревателе / ссылка]</span>
+            </li>
+            <li class="token-params__item">
+              <span class="token-params__label">Анти‑вейл лимиты</span>
+              <span class="token-params__value">[нет/есть: max tx — %, max wallet — %]</span>
+            </li>
           </ul>
-          <p class="small">Числа заполним после финализации контракта.</p>
-        </div>
+          <p class="token-params__note">Числа заполним после финализации контракта.</p>
+        </article>
       </div>
     </div>
   </section>
