@@ -38,27 +38,46 @@
 <main>
 
   <!-- 1) Герой — Свиток чисел -->
-  <section id="hero-token" class="reveal" style="padding-top:140px">
+  <section id="hero-token" class="hero-token reveal">
     <div class="container">
-      <div class="grid cols-2">
-        <div class="feature-media">
-          <video autoplay muted loop playsinline poster="assets/city_girl.webp">
-            <source src="assets/feature_bg.mp4" type="video/mp4">
-          </video>
+      <div class="hero-token__shell">
+        <div class="hero-token__media">
+          <figure class="hero-token__media-card">
+            <img src="assets/photo_2025-09-22_11-34-07.jpg" alt="Силуэт на неоновой улице">
+            <figcaption class="hero-token__tag">Neon drip</figcaption>
+            <span class="hero-token__shine hero-token__shine--pink" aria-hidden="true"></span>
+            <span class="hero-token__shine hero-token__shine--violet" aria-hidden="true"></span>
+          </figure>
         </div>
-        <div>
+        <div class="hero-token__content">
+          <span class="hero-token__eyebrow">MEM-SCROLL ECONOMY</span>
           <h1 class="section-title">Токеномика $RAKODI</h1>
           <p class="section-sub">Мем-токен на стадии «памфан». Ничего лишнего: простая структура, прозрачные правила, упор на комьюнити. Дойдём до порога — перейдём на DEX.</p>
-          <div class="statbar" style="justify-content:flex-start">
-            <div class="stat"><b>Тикер</b>: $RAKODI</div>
-            <div class="stat"><b>Статус</b>: памфан</div>
-            <div class="stat"><b>Сеть</b>: [указать сеть]</div>
+          <div class="hero-token__stats">
+            <div class="hero-token__stat">
+              <span class="hero-token__stat-label">Тикер</span>
+              <span class="hero-token__stat-value">$RAKODI</span>
+            </div>
+            <div class="hero-token__stat">
+              <span class="hero-token__stat-label">Статус</span>
+              <span class="hero-token__stat-value">памфан</span>
+            </div>
+            <div class="hero-token__stat">
+              <span class="hero-token__stat-label">Сеть</span>
+              <span class="hero-token__stat-value">[указать сеть]</span>
+            </div>
           </div>
-          <div class="card" style="margin-top:10px">
-            <div class="badge" data-copy="#contract-address">Контракт: <span id="contract-address">[0x…]</span></div>
-            <div class="statbar" style="justify-content:flex-start;margin-top:10px">
-              <a class="btn small" href="#">Купить на памфан</a>
-              <a class="btn small ghost" href="#">Смотреть контракт</a>
+          <div class="hero-token__contract">
+            <div class="hero-token__contract-head">
+              <span class="hero-token__contract-label">Контракт</span>
+              <button class="hero-token__copy" type="button" data-copy="#contract-address">Скопировать</button>
+            </div>
+            <div class="hero-token__contract-body">
+              <span id="contract-address">[0x…]</span>
+            </div>
+            <div class="hero-token__actions">
+              <a class="btn hero-token__btn" href="#">Купить на памфан</a>
+              <a class="btn ghost hero-token__btn" href="#">Смотреть контракт</a>
             </div>
           </div>
         </div>
