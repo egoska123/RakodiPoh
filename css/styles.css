@@ -4369,9 +4369,43 @@ body.page-brotherhood section .section-sub{color:rgba(218,220,248,0.82)}
     radial-gradient(820px 520px at 84% 18%, rgba(123,92,255,0.18), transparent 70%),
     linear-gradient(160deg, rgba(7,9,22,0.94), rgba(12,11,28,0.88));
 }
-.page-brotherhood #rooms .grid{gap:clamp(22px,4vw,30px)}
-.page-brotherhood #rooms .card{padding:26px 24px 28px;border-radius:22px;background:linear-gradient(150deg, rgba(255,255,255,0.08), rgba(7,9,24,0.76));border:1px solid rgba(255,255,255,0.14);min-height:170px;display:flex;flex-direction:column;gap:10px}
-.page-brotherhood #rooms .badge{margin-left:12px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);text-transform:uppercase;letter-spacing:.12em;font-size:11px}
+.page-brotherhood #rooms .rooms-head{display:flex;align-items:flex-end;justify-content:space-between;gap:clamp(18px,4vw,36px);flex-wrap:wrap}
+.page-brotherhood #rooms .rooms-head__text{flex:1 1 320px;max-width:640px}
+.page-brotherhood #rooms .rooms-head__legend{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:18px;border:1px solid rgba(255,255,255,0.08);background:rgba(14,16,32,0.6);box-shadow:0 20px 40px rgba(6,6,20,0.4)}
+.rooms-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:999px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:rgba(236,235,255,0.9);border:1px solid transparent;position:relative}
+.rooms-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.75}
+.rooms-pill--open{background:linear-gradient(135deg,rgba(255,46,106,0.28),rgba(255,46,106,0.1));border-color:rgba(255,46,106,0.4);color:rgba(255,214,232,0.96)}
+.rooms-pill--private{background:linear-gradient(135deg,rgba(123,92,255,0.24),rgba(123,92,255,0.08));border-color:rgba(123,92,255,0.4);color:rgba(224,219,255,0.95)}
+.rooms-grid{display:grid;gap:clamp(24px,4.2vw,36px);grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:clamp(30px,6vw,52px)}
+.chamber-card{position:relative;padding:40px 30px 32px;border-radius:26px;border:1px solid rgba(255,255,255,0.14);background:
+  radial-gradient(140% 120% at 0% 0%, rgba(255,46,106,0.12), transparent 66%),
+  radial-gradient(120% 140% at 100% 0%, rgba(123,92,255,0.16), transparent 70%),
+  linear-gradient(160deg, rgba(19,20,42,0.92), rgba(8,8,22,0.86));
+box-shadow:0 32px 80px rgba(6,6,28,0.55);backdrop-filter:blur(16px);overflow:hidden;transition:transform .28s ease, box-shadow .28s ease}
+.chamber-card::before{content:"";position:absolute;inset:auto auto -28px 24px;width:54px;height:4px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));opacity:.85}
+.chamber-card::after{content:"";position:absolute;inset:-40% auto auto -36%;width:220px;height:220px;background:radial-gradient(circle at 50% 50%,rgba(255,255,255,0.08),transparent 70%);opacity:.65;transition:opacity .28s ease}
+.chamber-card:hover{transform:translateY(-6px);box-shadow:0 42px 90px rgba(8,8,32,0.6)}
+.chamber-card:hover::after{opacity:.85}
+.chamber-card__index{position:absolute;top:18px;right:24px;font-size:clamp(28px,4vw,38px);font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.12);pointer-events:none}
+.chamber-card__header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+.chamber-card__title{margin:0;font-size:clamp(20px,3vw,24px);letter-spacing:.02em}
+.chamber-card__status{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:rgba(236,235,255,0.92);border:1px solid transparent;background:rgba(255,255,255,0.08)}
+.chamber-card[data-state="open"] .chamber-card__status{background:rgba(255,46,106,0.22);border-color:rgba(255,46,106,0.4);color:rgba(255,232,240,0.95)}
+.chamber-card[data-state="private"] .chamber-card__status{background:rgba(123,92,255,0.22);border-color:rgba(123,92,255,0.45);color:rgba(228,224,255,0.95)}
+.chamber-card__desc{margin:0;color:rgba(220,222,248,0.8);font-size:15px;line-height:1.55}
+.chamber-card[data-state="private"] .chamber-card__desc{color:rgba(226,224,255,0.82)}
+.chamber-card[data-state="open"]::before{background:linear-gradient(90deg,rgba(255,46,106,0.85),rgba(255,167,209,0.6))}
+.chamber-card[data-state="private"]::before{background:linear-gradient(90deg,rgba(123,92,255,0.85),rgba(178,158,255,0.6))}
+
+@media (max-width: 620px){
+  .page-brotherhood #rooms .rooms-head__legend{width:100%;justify-content:center;padding:12px 16px}
+}
+@media (max-width: 540px){
+  .chamber-card{padding:34px 24px 28px}
+  .chamber-card__header{flex-direction:column;align-items:flex-start;gap:10px}
+  .chamber-card__status{align-self:flex-start}
+}
+
 
 .page-brotherhood #ranks{
   background:

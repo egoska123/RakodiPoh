@@ -96,14 +96,65 @@
   <!-- 4) Палаты -->
   <section id="rooms" class="reveal">
     <div class="container">
-      <h2 class="section-title">Палаты Братства</h2>
-      <div class="grid cols-3">
-        <div class="card"><h3>Скрипторий <span class="badge">открыто</span></h3><p class="muted">тексты, сценарии, идеи для роликов.</p></div>
-        <div class="card"><h3>Арсенал мемов <span class="badge">открыто</span></h3><p class="muted">исходники, шаблоны, советы по виральности.</p></div>
-        <div class="card"><h3>Форум Консулов <span class="badge">приватно</span></h3><p class="muted">обсуждения приоритетов, повестка недели.</p></div>
-        <div class="card"><h3>Кафедра гайдов <span class="badge">открыто</span></h3><p class="muted">how‑to по кошелькам, биржам, безопасности.</p></div>
-        <div class="card"><h3>Архив <span class="badge">открыто</span></h3><p class="muted">лучшие мемы/посты, канон проекта.</p></div>
-        <div class="card"><h3>Посвящённое братство <span class="badge">приватно</span></h3><p class="muted">роли, квесты повышенной сложности, закрытые обсуждения.</p></div>
+      <div class="rooms-head">
+        <div class="rooms-head__text">
+          <h2 class="section-title">Палаты Братства</h2>
+          <p class="section-sub">Шесть пространств, где идея превращается в мем, ритуал и стратегию продвижения.</p>
+        </div>
+        <div class="rooms-head__legend" aria-label="Статусы палат">
+          <span class="rooms-pill rooms-pill--open">открыто</span>
+          <span class="rooms-pill rooms-pill--private">приватно</span>
+        </div>
+      </div>
+      <div class="rooms-grid">
+        <article class="chamber-card" data-state="open">
+          <span class="chamber-card__index">I</span>
+          <header class="chamber-card__header">
+            <h3 class="chamber-card__title">Скрипторий</h3>
+            <span class="chamber-card__status">открыто</span>
+          </header>
+          <p class="chamber-card__desc">тексты, сценарии, идеи для роликов.</p>
+        </article>
+        <article class="chamber-card" data-state="open">
+          <span class="chamber-card__index">II</span>
+          <header class="chamber-card__header">
+            <h3 class="chamber-card__title">Арсенал мемов</h3>
+            <span class="chamber-card__status">открыто</span>
+          </header>
+          <p class="chamber-card__desc">исходники, шаблоны, советы по виральности.</p>
+        </article>
+        <article class="chamber-card" data-state="private">
+          <span class="chamber-card__index">III</span>
+          <header class="chamber-card__header">
+            <h3 class="chamber-card__title">Форум Консулов</h3>
+            <span class="chamber-card__status">приватно</span>
+          </header>
+          <p class="chamber-card__desc">обсуждения приоритетов, повестка недели.</p>
+        </article>
+        <article class="chamber-card" data-state="open">
+          <span class="chamber-card__index">IV</span>
+          <header class="chamber-card__header">
+            <h3 class="chamber-card__title">Кафедра гайдов</h3>
+            <span class="chamber-card__status">открыто</span>
+          </header>
+          <p class="chamber-card__desc">how‑to по кошелькам, биржам, безопасности.</p>
+        </article>
+        <article class="chamber-card" data-state="open">
+          <span class="chamber-card__index">V</span>
+          <header class="chamber-card__header">
+            <h3 class="chamber-card__title">Архив</h3>
+            <span class="chamber-card__status">открыто</span>
+          </header>
+          <p class="chamber-card__desc">лучшие мемы/посты, канон проекта.</p>
+        </article>
+        <article class="chamber-card" data-state="private">
+          <span class="chamber-card__index">VI</span>
+          <header class="chamber-card__header">
+            <h3 class="chamber-card__title">Посвящённое братство</h3>
+            <span class="chamber-card__status">приватно</span>
+          </header>
+          <p class="chamber-card__desc">роли, квесты повышенной сложности, закрытые обсуждения.</p>
+        </article>
       </div>
     </div>
   </section>
