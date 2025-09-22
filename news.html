@@ -151,11 +151,66 @@
   <section id="dex-short" class="reveal">
     <div class="container">
       <h2 class="section-title">Путь к DEX</h2>
-      <div class="card" style="padding:12px">
-        <div style="height:8px;border-radius:8px;background:var(--glass);border:var(--border);overflow:hidden"><div style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-2));"></div></div>
-        <p class="small" style="margin:6px 0 8px">Готовность: <b>[XX%]</b> • До порога осталось: <i>[кратко]</i></p>
-        <div class="statbar" style="justify-content:center"><span class="badge">MC</span><span class="badge">Холдеры</span><span class="badge">Ликвидность</span><span class="badge">Техготовность</span></div>
-        <p class="small">Сейчас торгуемся на памфан; расширенный функционал — после перехода на DEX.</p>
+      <div class="dex-track dex-track--compact">
+        <article class="dex-track__card dex-track__card--targets">
+          <div class="dex-track__header">
+            <span class="dex-track__eyebrow">Чекпоинты</span>
+            <span class="dex-track__tag">Еженедельный апдейт статуса</span>
+          </div>
+          <ul class="dex-targets">
+            <li>
+              <span class="dex-targets__icon">MC</span>
+              <div class="dex-targets__body">
+                <span class="dex-targets__label">Рыночная капитализация</span>
+                <span class="dex-targets__value">Цель [—]</span>
+              </div>
+              <span class="dex-targets__status">В работе</span>
+            </li>
+            <li>
+              <span class="dex-targets__icon">HLD</span>
+              <div class="dex-targets__body">
+                <span class="dex-targets__label">Количество холдеров</span>
+                <span class="dex-targets__value">Цель [—]</span>
+              </div>
+              <span class="dex-targets__status">В работе</span>
+            </li>
+            <li>
+              <span class="dex-targets__icon">LQ</span>
+              <div class="dex-targets__body">
+                <span class="dex-targets__label">Ликвидность пула</span>
+                <span class="dex-targets__value">Цель [—]</span>
+              </div>
+              <span class="dex-targets__status">В работе</span>
+            </li>
+            <li>
+              <span class="dex-targets__icon">TECH</span>
+              <div class="dex-targets__body">
+                <span class="dex-targets__label">Техническая готовность</span>
+                <span class="dex-targets__value">Аудит/ревью, документация</span>
+              </div>
+              <span class="dex-targets__status">На ревью</span>
+            </li>
+          </ul>
+        </article>
+        <article class="dex-track__card dex-track__card--progress">
+          <div class="dex-progress">
+            <div class="dex-progress__header">
+              <span class="dex-progress__badge">Прогресс</span>
+              <span class="dex-progress__tag">Следим за динамикой в реальном времени</span>
+            </div>
+            <div class="dex-progress__meter" style="--progress:0%;">
+              <div class="dex-progress__value"></div>
+            </div>
+            <p class="dex-progress__summary">Готовность: <b>[XX%]</b> • До порога осталось: <i>[кратко]</i></p>
+            <div class="dex-progress__chips">
+              <span class="dex-chip">MC</span>
+              <span class="dex-chip">Холдеры</span>
+              <span class="dex-chip">Ликвидность</span>
+              <span class="dex-chip">Техготовность</span>
+            </div>
+            <p class="dex-progress__note">Сейчас торгуемся на памфан. Расширенный функционал включаем после перехода на DEX.</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
