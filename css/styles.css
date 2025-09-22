@@ -162,6 +162,257 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .card h3{margin-top:0}
 .card .muted{color:var(--muted)}
 
+/* Mission — cinematic infoblock */
+.mission-section{
+  position:relative;
+  padding:140px 0;
+  background:
+    radial-gradient(1100px 640px at 12% 6%, rgba(123,92,255,0.16), transparent 70%),
+    radial-gradient(960px 640px at 88% 14%, rgba(255,46,106,0.12), transparent 68%),
+    linear-gradient(120deg,var(--bg-1),var(--bg-2));
+  overflow:hidden;
+}
+.mission-section::before{
+  content:"";
+  position:absolute;
+  inset:-36% -8% auto -12%;
+  height:320px;
+  background:radial-gradient(circle at 45% 0%, rgba(255,255,255,0.08), transparent 70%);
+  opacity:.8;
+  pointer-events:none;
+}
+.mission-headline{display:grid;gap:12px;max-width:760px;margin-bottom:46px}
+.mission-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 14px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.18);
+  background:rgba(14,16,28,0.68);
+  text-transform:uppercase;
+  letter-spacing:.24em;
+  font-size:12px;
+  color:#fff9;
+}
+.mission-chip::before{content:"◎";font-size:14px;color:var(--accent)}
+.mission-layout{display:grid;gap:36px;grid-template-columns:minmax(0,1.15fr) minmax(0,0.95fr);align-items:stretch}
+.mission-stack{display:grid;gap:26px;position:relative}
+.mission-card{
+  position:relative;
+  padding:30px;
+  border-radius:26px;
+  border:1px solid rgba(123,92,255,0.35);
+  background:linear-gradient(160deg,rgba(255,255,255,0.09),rgba(14,12,28,0.78));
+  box-shadow:0 30px 80px rgba(5,4,20,0.55);
+  overflow:hidden;
+}
+.mission-card::before{
+  content:"";
+  position:absolute;
+  inset:-48% 40% 62% -42%;
+  background:radial-gradient(circle at 20% 40%, rgba(255,46,106,0.4), transparent 60%);
+  opacity:.35;
+  pointer-events:none;
+}
+.mission-card-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.mission-card h3{margin:0;font-size:24px}
+.mission-step{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  border-radius:16px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff;
+  box-shadow:0 12px 30px rgba(255,46,106,0.35);
+}
+.mission-list{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.mission-list li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start}
+.mission-list li::before{
+  content:"▹";
+  color:var(--accent);
+  font-size:18px;
+  line-height:1;
+  margin-top:2px;
+}
+.mission-list-title{font-weight:700;letter-spacing:.02em}
+.mission-list-text{color:var(--muted)}
+.mission-flow{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.mission-flow-item{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 14px;
+  border-radius:999px;
+  border:1px solid rgba(123,92,255,0.35);
+  background:rgba(123,92,255,0.14);
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  font-size:12px;
+}
+.mission-flow-arrow{
+  position:relative;
+  width:32px;
+  height:2px;
+  background:linear-gradient(90deg,rgba(255,255,255,0.6),transparent);
+}
+.mission-flow-arrow::after{
+  content:"";
+  position:absolute;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+  border:5px solid transparent;
+  border-left-color:rgba(255,255,255,0.7);
+}
+.mission-principle{margin:0;font-size:16px;line-height:1.6;color:#f1f1ff}
+.mission-checks{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+.mission-check{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:6px 14px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.16);
+  background:rgba(12,16,32,0.74);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  color:#dde0ff;
+}
+.mission-check::before{content:"✔";color:var(--accent);font-size:12px}
+.mission-infographic{
+  position:relative;
+  border-radius:28px;
+  padding:32px 30px 36px;
+  border:1px solid rgba(110,140,255,0.32);
+  background:linear-gradient(200deg,rgba(255,255,255,0.08),rgba(10,14,28,0.75));
+  box-shadow:0 26px 70px rgba(4,2,20,0.58);
+  overflow:hidden;
+}
+.mission-infographic::before{
+  content:"";
+  position:absolute;
+  inset:-38% -30% 45% -25%;
+  background:radial-gradient(circle at 30% 32%, rgba(123,92,255,0.55), transparent 70%);
+  opacity:.4;
+  pointer-events:none;
+}
+.mission-visual{position:relative;z-index:1;display:grid;gap:24px}
+.mission-radar{
+  position:relative;
+  margin:0 auto;
+  width:min(360px,100%);
+  aspect-ratio:1/1;
+}
+.mission-ring{
+  position:absolute;
+  border-radius:50%;
+  border:1px dashed rgba(255,255,255,0.08);
+}
+.mission-ring--outer{inset:6%}
+.mission-ring--inner{inset:22%;border-style:solid;border-color:rgba(255,255,255,0.05)}
+.mission-core{
+  position:absolute;
+  inset:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:20px;
+  background:linear-gradient(160deg,rgba(255,46,106,0.22),rgba(123,92,255,0.3));
+  border:1px solid rgba(255,255,255,0.24);
+  box-shadow:0 18px 40px rgba(8,4,26,0.6);
+}
+.mission-core span{font-size:20px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.mission-core small{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#fff9}
+.mission-node{
+  position:absolute;
+  width:156px;
+  padding:16px 14px;
+  border-radius:20px;
+  text-align:center;
+  background:rgba(10,14,28,0.82);
+  border:1px solid rgba(255,255,255,0.16);
+  box-shadow:0 20px 60px rgba(2,0,14,0.55);
+  backdrop-filter:blur(10px);
+}
+.mission-node::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  width:1px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.6), transparent);
+  transform:translateX(-50%);
+}
+.mission-node--memes{top:-18px;left:50%;transform:translate(-50%,0)}
+.mission-node--memes::before{bottom:-76px;height:76px}
+.mission-node--videos{top:56%;left:-4%;transform:translate(-30%,-50%)}
+.mission-node--videos::before{
+  top:50%;
+  right:-72px;
+  left:auto;
+  width:72px;
+  height:1px;
+  background:linear-gradient(90deg, rgba(255,255,255,0.55), transparent);
+  transform:translateY(-50%);
+}
+.mission-node--quests{top:56%;right:-4%;transform:translate(30%,-50%)}
+.mission-node--quests::before{
+  top:50%;
+  left:-72px;
+  width:72px;
+  height:1px;
+  background:linear-gradient(270deg, rgba(255,255,255,0.55), transparent);
+  transform:translateY(-50%);
+}
+.node-value{display:block;font-size:32px;font-weight:800;letter-spacing:.08em;color:#fff}
+.node-label{display:block;margin-top:4px;text-transform:uppercase;letter-spacing:.24em;font-size:12px;color:var(--accent)}
+.node-meta{display:block;margin-top:2px;font-size:12px;color:var(--muted);letter-spacing:.02em}
+.mission-caption{text-align:center}
+.mission-caption p{margin:0;color:#dfe0ff;font-size:15px;line-height:1.7}
+.mission-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:18px}
+.mission-tag{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 16px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.18);
+  background:rgba(255,255,255,0.06);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-size:11px;
+  color:#fff;
+}
+
+@media (max-width:1080px){
+  .mission-layout{grid-template-columns:1fr}
+  .mission-infographic{order:-1}
+}
+@media (max-width:720px){
+  .mission-section{padding:110px 0}
+  .mission-card{padding:26px}
+  .mission-card h3{font-size:22px}
+  .mission-infographic{padding:26px}
+}
+@media (max-width:640px){
+  .mission-headline{margin-bottom:32px}
+  .mission-chip{letter-spacing:.18em}
+  .mission-radar{width:100%;display:flex;flex-direction:column;align-items:center;gap:18px;aspect-ratio:auto}
+  .mission-ring,.mission-node::before{display:none}
+  .mission-core{position:relative;transform:none;inset:auto;width:180px;height:180px}
+  .mission-node{position:relative;transform:none;left:auto;right:auto;top:auto;bottom:auto;margin:0 auto;width:100%;max-width:280px}
+  .mission-node + .mission-node{margin-top:18px}
+}
+
 .quest-section{
   overflow:hidden;
   background:
