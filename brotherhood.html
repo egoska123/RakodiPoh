@@ -471,9 +471,23 @@
   <section id="voting" class="reveal">
     <div class="container">
       <h2 class="section-title">Как принимаем решения</h2>
-      <div class="grid cols-2">
-        <div class="card"><h3>Сейчас</h3><p class="muted">опросы и обсуждения в Telegram, публичные сводки на сайте. <span class="badge">сейчас офчейн</span></p></div>
-        <div class="card"><h3>Дальше</h3><p class="muted">после DEX рассматриваем ончейн‑механики.</p><p class="small">Как предложить: оформи идею в Скриптории → обсуди → вынеси в Форум Консулов.</p><div class="hero-cta hero-cta--left hero-cta--tight"><a class="btn small" href="#">Вынести предложение</a></div></div>
+      <div class="decision-grid">
+        <article class="decision-card decision-card--now">
+          <span class="decision-card__pill">Сейчас</span>
+          <p class="decision-card__text">Опросы и обсуждения в Telegram, публичные сводки на сайте.</p>
+          <span class="decision-card__badge">сейчас офчейн</span>
+        </article>
+        <article class="decision-card decision-card--next">
+          <span class="decision-card__pill">Дальше</span>
+          <p class="decision-card__text">После DEX рассматриваем ончейн‑механики.</p>
+          <span class="decision-card__hint">Как предложить:</span>
+          <ol class="decision-roadmap">
+            <li>Оформи идею в Скриптории.</li>
+            <li>Обсуди её с Братством.</li>
+            <li>Вынеси в Форум Консулов.</li>
+          </ol>
+          <a class="btn small decision-card__cta" href="#">Вынести предложение</a>
+        </article>
       </div>
     </div>
   </section>
