@@ -597,6 +597,109 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 }
 @media (max-width:540px){
   .token-params__value{font-size:16px}
+/* Tokenomics — TLDR tiles */
+.tldr-section{position:relative;z-index:1}
+.tldr-shell{
+  position:relative;
+  padding:clamp(36px, 6vw, 58px);
+  border-radius:34px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:
+    radial-gradient(780px 520px at 12% -8%, rgba(255,46,106,0.28), transparent 70%),
+    radial-gradient(780px 520px at 92% -16%, rgba(123,92,255,0.24), transparent 70%),
+    linear-gradient(155deg, rgba(16,14,36,0.95), rgba(8,6,22,0.88));
+  box-shadow:0 38px 90px rgba(4,3,18,0.55);
+  overflow:hidden;
+}
+.tldr-shell::before,
+.tldr-shell::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  mix-blend-mode:screen;
+}
+.tldr-shell::before{
+  inset:-36% auto auto -26%;
+  width:340px;
+  height:340px;
+  background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.22), transparent 72%);
+  filter:blur(2px);
+}
+.tldr-shell::after{
+  inset:auto -32% -44% auto;
+  width:280px;
+  height:280px;
+  background:radial-gradient(circle at 50% 50%, rgba(123,92,255,0.35), transparent 72%);
+  filter:blur(2px);
+  opacity:.8;
+}
+.tldr-shell .section-title{margin:0 0 clamp(28px,4vw,36px)}
+.tldr-grid{
+  position:relative;
+  z-index:1;
+  display:grid;
+  gap:clamp(20px, 3.2vw, 28px);
+  grid-template-columns:repeat(3, minmax(0,1fr));
+}
+.tldr-card{
+  position:relative;
+  padding:clamp(24px, 3vw, 34px);
+  border-radius:26px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:linear-gradient(165deg, rgba(255,255,255,0.10), rgba(18,16,36,0.78));
+  box-shadow:0 26px 70px rgba(6,4,22,0.52);
+  display:grid;
+  gap:14px;
+  min-height:100%;
+  transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.tldr-card::before{
+  content:"";
+  position:absolute;
+  inset:-48px auto auto -48px;
+  width:180px;
+  height:180px;
+  background:radial-gradient(circle at 50% 50%, rgba(255,46,106,0.42), transparent 70%);
+  opacity:.65;
+  pointer-events:none;
+}
+.tldr-card::after{
+  content:"";
+  position:absolute;
+  inset:auto -52px -60px auto;
+  width:180px;
+  height:180px;
+  background:radial-gradient(circle at 50% 50%, rgba(123,92,255,0.45), transparent 72%);
+  opacity:.55;
+  pointer-events:none;
+}
+.tldr-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(255,255,255,0.22);
+  box-shadow:0 34px 80px rgba(6,4,26,0.6);
+}
+.tldr-card__title{
+  margin:0;
+  font-size:clamp(20px, 3vw, 24px);
+  font-weight:700;
+  letter-spacing:.01em;
+}
+.tldr-card__text{
+  margin:0;
+  color:rgba(232,231,245,0.88);
+  line-height:1.65;
+  font-size:16px;
+}
+@media (max-width:1080px){
+  .tldr-grid{grid-template-columns:repeat(2, minmax(0,1fr))}
+}
+@media (max-width:720px){
+  .tldr-shell{padding:28px;border-radius:28px}
+  .tldr-grid{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .tldr-shell{padding:24px;border-radius:24px}
+  .tldr-card{padding:22px}
 }
 
 /* Token role block */
