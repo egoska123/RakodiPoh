@@ -1,10 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RAKODI вЂ” РјРёРєСЂРѕСЂРѕСЏР»С‚Рё Рё СЃС‚СЂРёРјРёРЅРіРѕРІС‹Рµ РїР»Р°С‚РµР¶Рё РЅР° Solana</title>
-  <meta name="description" content="RAKODI вЂ” РёРЅРЅРѕРІР°С†РёРѕРЅРЅС‹Р№ С‚РѕРєРµРЅ СЌРєРѕСЃРёСЃС‚РµРјС‹ Solana РґР»СЏ РјРёРєСЂРѕСЂРѕСЏР»С‚Рё, РїРѕРґРїРёСЃРѕРє Рё СЃС‚СЂРёРјРёРЅРіРѕРІС‹С… РїР»Р°С‚РµР¶РµР№. Р”РµС†РµРЅС‚СЂР°Р»РёР·РѕРІР°РЅРЅР°СЏ СЌРєРѕРЅРѕРјРёРєР° РєСЂРµР°С‚РѕСЂРѕРІ Рё РёРіСЂ.">
+  <title>RAKODI — Миссия мем-города</title>
+  <meta name="description" content="RAKODI — город без координат. Узнай миссию мем-ордена, почувствуй кинематографичный лор и выбери точку входа в комьюнити Solana.">
   <link rel="icon" href="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,14 +21,19 @@
     <div class="logo"><img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="RAKODI"><div class="brand">RAKODI</div></div>
     <button class="menu-toggle" aria-label="Меню"><span></span><span></span><span></span></button>
     <nav class="links">
-      <a href="index.html">Главная</a>
-      <a href="about.html">О проекте</a>
-      <a href="tokenomics.html">Токеномика</a>
-      <a href="brotherhood.html">Братство.</a>
-      <a href="news.html">Мемы</a>
+      <a href="index.html" data-i18n="nav.home">Главная</a>
+      <a href="about.html" data-i18n="nav.mission">Миссия</a>
+      <a href="tokenomics.html" data-i18n="nav.tokenomics">Токеномика</a>
+      <a href="brotherhood.html" data-i18n="nav.brotherhood">Братство.</a>
+      <a href="news.html" data-i18n="nav.news">Мемы</a>
     </nav>
     <div class="right">
-      <a class="btn small" href="#">Купить</a>
+      <button type="button" class="lang-toggle" data-current="ru" aria-label="Сменить язык" title="Сменить язык">
+        <span class="lang-toggle__option" data-lang-code="ru">RU</span>
+        <span class="lang-toggle__divider">/</span>
+        <span class="lang-toggle__option" data-lang-code="en">EN</span>
+      </button>
+      <a class="btn small" href="#" data-i18n="nav.buy">Купить</a>
       <a class="icon-btn" href="#" aria-label="Telegram"><img src="assets/telegram.svg" alt="Telegram"></a>
       <a class="icon-btn" href="#" aria-label="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a>
     </div>
@@ -37,25 +42,76 @@
 
 <main>
 
-  <!-- 1) Кинематографический пролог — «Огонь, который помнит» -->
-  <section id="prologue" class="reveal">
-    <div class="container">
-      <div class="prologue-layout">
-        <div class="prologue-content">
-          <span class="badge prologue-badge">Видео-пролог</span>
-          <h1 class="section-title">Ракоди — Новая Мем-Александрия</h1>
-          <p class="section-sub">Человечество снова собирает знания, энергию и идеи — теперь в криптосообществе. Мы превратили серьёзную легенду о сгоревшей библиотеке в ироничные мемы и рабочий механизм роста.</p>
-          <div class="hero-cta">
-            <a href="#" class="btn">Смотреть основное видео</a>
+  <!-- 1) Миссия — кинематографичный город вне карт -->
+  <section id="mission-hero" class="mission-hero reveal">
+    <div class="mission-hero__backdrop" aria-hidden="true">
+      <span class="mission-hero__backdrop-gradient"></span>
+      <span class="mission-hero__backdrop-noise"></span>
+    </div>
+    <div class="container mission-hero__container">
+      <div class="mission-hero__grid">
+        <div class="mission-hero__panel">
+          <span class="mission-hero__tag" data-i18n="hero.tag">Миссия RAKODI</span>
+          <h1 class="mission-hero__title" data-i18n-html="hero.title">Город, который <span class="mission-hero__accent">зажигает мем-орден.</span></h1>
+          <p class="mission-hero__lead" data-i18n="hero.lead">Мы строим кинематографичный мир на Solana, где мемы, видео и ритуалы работают как инфраструктура.</p>
+          <div class="mission-hero__meta">
+            <span data-i18n="hero.meta1">Solana · Мем-город · Орден</span>
+            <span data-i18n="hero.meta2">Видео • Мемы • Ритуалы</span>
           </div>
-          <p class="small prologue-note">Видео-тизеры — наш язык. Они разжигают интерес, ведут на YouTube, а оттуда — в «нервный центр» проекта.</p>
+          <div class="mission-hero__editions" role="list">
+            <div class="mission-hero__edition mission-hero__edition--active" role="listitem">
+              <div class="mission-hero__edition-head">
+                <span class="mission-hero__edition-label" data-i18n="edition.standard.label">Стартовая точка</span>
+                <span class="mission-hero__edition-tag" data-i18n="edition.standard.tag">Включено</span>
+              </div>
+              <div class="mission-hero__edition-body">
+                <span class="mission-hero__edition-price" data-i18n="edition.standard.price">0.00 SOL</span>
+                <p data-i18n="edition.standard.desc">Доступ к мем-библиотеке, Telegram-ритуалам и сезонным обновлениям ордена.</p>
+              </div>
+            </div>
+            <div class="mission-hero__edition" role="listitem">
+              <div class="mission-hero__edition-head">
+                <span class="mission-hero__edition-label" data-i18n="edition.deluxe.label">Расширенная миссия</span>
+                <span class="mission-hero__edition-tag" data-i18n="edition.deluxe.tag">Премиум</span>
+              </div>
+              <div class="mission-hero__edition-body">
+                <span class="mission-hero__edition-price" data-i18n="edition.deluxe.price">0.42 SOL</span>
+                <p data-i18n="edition.deluxe.desc">Кинематографичные дропы, закулисье и ранний доступ к квестам Братства.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mission-hero__actions">
+            <a href="#" class="btn" data-i18n="hero.primaryCta">Вступить в Орден</a>
+            <a href="#legend" class="btn ghost" data-i18n="hero.secondaryCta">Смотреть тизер</a>
+          </div>
         </div>
-        <div class="prologue-media">
-          <div class="prologue-media__frame">
-            <video class="prologue-media__video" autoplay muted playsinline loop poster="assets/city_girl.webp">
-              <source src="assets/cyber-odisey.mp4" type="video/mp4">
-            </video>
+        <aside class="mission-hero__visual" aria-hidden="true">
+          <div class="mission-hero__frame">
+            <img src="assets/20250922_1248_Cyberpunk Neon Warrior_simple_compose_01k5rghga2eg58bgf6pc0b3y8v.png" alt="">
           </div>
+          <div class="mission-hero__lore-card">
+            <span class="mission-hero__lore-chip" data-i18n="lore.card.label">Лор-досье</span>
+            <strong class="mission-hero__lore-title" data-i18n="lore.card.title">Сезон I · Возвращение огня</strong>
+            <span class="mission-hero__lore-note" data-i18n="lore.card.note">Новый тизер — октябрь 2024</span>
+          </div>
+        </aside>
+      </div>
+      <div class="mission-hero__specs">
+        <div class="mission-hero__spec">
+          <span class="mission-hero__spec-label" data-i18n="spec.release.label">Релиз</span>
+          <span class="mission-hero__spec-value" data-i18n="spec.release.value">Октябрь 2024</span>
+        </div>
+        <div class="mission-hero__spec">
+          <span class="mission-hero__spec-label" data-i18n="spec.community.label">Комьюнити</span>
+          <span class="mission-hero__spec-value" data-i18n="spec.community.value">10 000+ хранителей</span>
+        </div>
+        <div class="mission-hero__spec">
+          <span class="mission-hero__spec-label" data-i18n="spec.platform.label">Платформы</span>
+          <span class="mission-hero__spec-value" data-i18n="spec.platform.value">Solana · Telegram · Web</span>
+        </div>
+        <div class="mission-hero__spec">
+          <span class="mission-hero__spec-label" data-i18n="spec.format.label">Формат</span>
+          <span class="mission-hero__spec-value" data-i18n="spec.format.value">Видео, мемы, квесты</span>
         </div>
       </div>
     </div>

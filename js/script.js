@@ -7,6 +7,137 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
+// Language toggle
+const RAKODI_LANG_KEY = 'rakodi-lang';
+const translations = {
+  ru: {
+    'meta.title': 'RAKODI — Миссия мем-города',
+    'meta.description': 'RAKODI — город без координат. Узнай миссию мем-ордена, почувствуй кинематографичный лор и выбери точку входа в комьюнити Solana.',
+    'nav.home': 'Главная',
+    'nav.mission': 'Миссия',
+    'nav.tokenomics': 'Токеномика',
+    'nav.brotherhood': 'Братство.',
+    'nav.news': 'Мемы',
+    'nav.buy': 'Купить',
+    'hero.tag': 'Миссия RAKODI',
+    'hero.title': 'Город, который <span class="mission-hero__accent">зажигает мем-орден.</span>',
+    'hero.lead': 'Мы строим кинематографичный мир на Solana, где мемы, видео и ритуалы работают как инфраструктура.',
+    'hero.primaryCta': 'Вступить в Орден',
+    'hero.secondaryCta': 'Смотреть тизер',
+    'hero.meta1': 'Solana · Мем-город · Орден',
+    'hero.meta2': 'Видео • Мемы • Ритуалы',
+    'edition.standard.label': 'Стартовая точка',
+    'edition.standard.tag': 'Включено',
+    'edition.standard.price': '0.00 SOL',
+    'edition.standard.desc': 'Доступ к мем-библиотеке, Telegram-ритуалам и сезонным обновлениям ордена.',
+    'edition.deluxe.label': 'Расширенная миссия',
+    'edition.deluxe.tag': 'Премиум',
+    'edition.deluxe.price': '0.42 SOL',
+    'edition.deluxe.desc': 'Кинематографичные дропы, закулисье и ранний доступ к квестам Братства.',
+    'lore.card.label': 'Лор-досье',
+    'lore.card.title': 'Сезон I · Возвращение огня',
+    'lore.card.note': 'Новый тизер — октябрь 2024',
+    'spec.release.label': 'Релиз',
+    'spec.release.value': 'Октябрь 2024',
+    'spec.community.label': 'Комьюнити',
+    'spec.community.value': '10 000+ хранителей',
+    'spec.platform.label': 'Платформы',
+    'spec.platform.value': 'Solana · Telegram · Web',
+    'spec.format.label': 'Формат',
+    'spec.format.value': 'Видео, мемы, квесты',
+    'lang.aria': 'Сменить язык',
+    'header.menu': 'Меню'
+  },
+  en: {
+    'meta.title': 'RAKODI — Mission of the Meme City',
+    'meta.description': 'RAKODI is a city without coordinates. Explore the mission of the meme order, feel the cinematic lore, and choose your entry into the Solana community.',
+    'nav.home': 'Home',
+    'nav.mission': 'Mission',
+    'nav.tokenomics': 'Tokenomics',
+    'nav.brotherhood': 'Brotherhood.',
+    'nav.news': 'Memes',
+    'nav.buy': 'Buy',
+    'hero.tag': 'Mission of RAKODI',
+    'hero.title': 'The city that <span class="mission-hero__accent">ignites the meme order.</span>',
+    'hero.lead': 'We forge a cinematic world on Solana where memes, videos, and rituals become living infrastructure.',
+    'hero.primaryCta': 'Join the Order',
+    'hero.secondaryCta': 'Watch the teaser',
+    'hero.meta1': 'Solana · Meme City · Order',
+    'hero.meta2': 'Videos • Memes • Rituals',
+    'edition.standard.label': 'Initiate access',
+    'edition.standard.tag': 'Included',
+    'edition.standard.price': '0.00 SOL',
+    'edition.standard.desc': 'Unlock the meme library, Telegram rituals, and seasonal order updates.',
+    'edition.deluxe.label': 'Lorekeeper mission',
+    'edition.deluxe.tag': 'Premium',
+    'edition.deluxe.price': '0.42 SOL',
+    'edition.deluxe.desc': 'Cinematic drops, behind-the-scenes, and early entry to Brotherhood quests.',
+    'lore.card.label': 'Lore dossier',
+    'lore.card.title': 'Season I · Return of the Flame',
+    'lore.card.note': 'Next teaser — October 2024',
+    'spec.release.label': 'Release',
+    'spec.release.value': 'October 2024',
+    'spec.community.label': 'Community',
+    'spec.community.value': '10,000+ keepers',
+    'spec.platform.label': 'Platforms',
+    'spec.platform.value': 'Solana · Telegram · Web',
+    'spec.format.label': 'Format',
+    'spec.format.value': 'Video, memes, quests',
+    'lang.aria': 'Switch language',
+    'header.menu': 'Menu'
+  }
+};
+
+let currentLang = (typeof localStorage !== 'undefined' && localStorage.getItem(RAKODI_LANG_KEY) === 'en') ? 'en' : 'ru';
+
+function updateLangToggles(){
+  document.querySelectorAll('.lang-toggle').forEach(btn=>{
+    btn.dataset.current = currentLang;
+    btn.classList.toggle('lang-ru', currentLang === 'ru');
+    btn.classList.toggle('lang-en', currentLang === 'en');
+    const label = translations[currentLang]?.['lang.aria'] || '';
+    if(label){
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+    }
+  });
+}
+
+function applyLanguage(lang){
+  if(!translations[lang]) return;
+  currentLang = lang;
+  try{ localStorage.setItem(RAKODI_LANG_KEY, lang); }catch(e){ /* ignore */ }
+  document.documentElement.lang = lang;
+  document.title = translations[lang]['meta.title'];
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if(metaDesc){ metaDesc.setAttribute('content', translations[lang]['meta.description']); }
+  const menuToggle = document.querySelector('.menu-toggle');
+  if(menuToggle){
+    const menuLabel = translations[lang]['header.menu'];
+    if(menuLabel) menuToggle.setAttribute('aria-label', menuLabel);
+  }
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    const text = translations[lang][key];
+    if(typeof text === 'string') el.textContent = text;
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{
+    const key = el.getAttribute('data-i18n-html');
+    const html = translations[lang][key];
+    if(typeof html === 'string') el.innerHTML = html;
+  });
+  updateLangToggles();
+}
+
+applyLanguage(currentLang);
+
+document.addEventListener('click', (event)=>{
+  const toggle = event.target.closest('.lang-toggle');
+  if(!toggle) return;
+  event.preventDefault();
+  applyLanguage(currentLang === 'ru' ? 'en' : 'ru');
+});
+
 // Preloader (simple fade-out)
 window.addEventListener('load', ()=>{
   const pre = document.getElementById('preloader');
