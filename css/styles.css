@@ -178,7 +178,6 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   position:relative;
   isolation:isolate;
   overflow:hidden;
-<<<<<<< HEAD
   padding:clamp(140px,24vw,220px) 0 clamp(96px,16vw,150px);
   background:
     radial-gradient(140% 120% at 15% -10%, rgba(255,63,98,0.35), transparent 65%),
@@ -192,7 +191,6 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .mission-hero__texture,
 .mission-hero__flare{position:absolute;inset:0}
 .mission-hero__gradient{background:url('../assets/city_girl.webp') center/cover no-repeat;opacity:.22;filter:saturate(1.1) contrast(1.05) brightness(0.72)}
-.mission-hero__texture{background-image:url('data:image/svg+xml,%3Csvg width="200" height="200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="n" x="0" y="0" width="1" height="1"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/%3E%3CfeColorMatrix type="saturate" values="0"/%3E%3C/filter%3E%3Crect width="200" height="200" filter="url(%23n)" opacity="0.22"/%3E%3C/svg%3E');mix-blend-mode:screen}
 .mission-hero__flare{mix-blend-mode:screen;opacity:.6}
 .mission-hero__flare--left{background:radial-gradient(circle at 10% 20%, rgba(255,102,136,0.7), transparent 60%)}
 .mission-hero__flare--right{background:radial-gradient(circle at 92% 12%, rgba(255,188,122,0.55), transparent 62%)}
@@ -212,14 +210,12 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   padding:10px 22px;
   border-radius:999px;
   border:1px solid rgba(255,255,255,0.28);
-  background:linear-gradient(120deg,rgba(255,255,255,0.18),rgba(255,255,255,0.02));
   letter-spacing:.28em;
   text-transform:uppercase;
   font-size:12px;
   color:rgba(255,244,244,0.92);
-  backdrop-filter:blur(10px);
 }
-.mission-hero__title{margin:0;font-size:clamp(38px,5.3vw,60px);line-height:1.02;font-weight:800;text-shadow:0 18px 48px rgba(0,0,0,0.55)}
+.mission-hero__title{margin:0;font-size:clamp(38px,4vw,60px);line-height:1.02;font-weight:800;text-shadow:0 18px 48px rgba(0,0,0,0.55)}
 .mission-hero__accent{display:inline-block;background:linear-gradient(110deg,#ffe0f0 0%,#fff5d6 90%);-webkit-background-clip:text;color:transparent}
 .mission-hero__lead{margin:0;font-size:clamp(18px,2.1vw,24px);line-height:1.55;color:rgba(255,232,236,0.9)}
 .mission-hero__bundle{display:grid;gap:18px;padding:26px 28px;border-radius:28px;background:linear-gradient(150deg,rgba(28,12,26,0.75),rgba(12,6,22,0.78));border:1px solid rgba(255,255,255,0.08);box-shadow:0 28px 70px rgba(9,0,23,0.55);backdrop-filter:blur(14px)}
@@ -281,16 +277,13 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   .mission-hero__actions{flex-direction:column}
 }
   padding:clamp(140px,24vw,240px) 0 clamp(120px,18vw,180px);
-=======
-  padding:clamp(140px,2vw,240px) 0 clamp(120px,18vw,180px);
->>>>>>> cf1a77c (commit)
   border-bottom:var(--border);
 }
 .mission-hero__backdrop{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:-1;}
 .mission-hero__bg{position:absolute;inset:0;}
 .mission-hero__bg--gradient{background:radial-gradient(120% 80% at 25% 0%, rgba(202,165,95,0.58), transparent 70%),radial-gradient(90% 80% at 80% -20%, rgba(94,56,28,0.55), transparent 68%);opacity:.8;}
 .mission-hero__bg--noise{background-image:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"%3E%3Cfilter id="n" x="0" y="0" width="1" height="1"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="4"/%3E%3C/filter%3E%3Crect width="160" height="160" filter="url(%23n)" opacity="0.22"/%3E%3C/svg%3E');mix-blend-mode:soft-light;opacity:.35;}
-.mission-hero__grid{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:clamp(36px,6vw,88px);align-items:end;}
+.mission-hero__grid{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);gap:clamp(36px,6vw,88px);align-items:start;}
 .mission-hero__content{display:flex;flex-direction:column;gap:clamp(18px,3vw,28px);max-width:640px;font-family:'EB Garamond',serif;}
 .mission-hero__eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border-radius:999px;background:rgba(32,24,18,0.6);border:1px solid rgba(240,204,132,0.32);letter-spacing:.26em;text-transform:uppercase;font-size:12px;font-family:'Cinzel',serif;color:rgba(248,241,223,0.78);backdrop-filter:blur(12px);}
 .mission-hero__banner{display:inline-flex;align-items:center;padding:10px 26px;border-radius:999px;background:linear-gradient(115deg,rgba(65,42,22,0.92),rgba(116,72,30,0.85));border:1px solid rgba(240,204,132,0.45);letter-spacing:.32em;text-transform:uppercase;font-size:11px;font-family:'Cinzel',serif;color:var(--mission-gold-bright);box-shadow:0 26px 70px rgba(12,6,2,0.55);}
