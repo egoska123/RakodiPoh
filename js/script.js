@@ -58,7 +58,30 @@ const translations = {
     'pharos.paragraph1': 'Маяк Фарос был не просто башней из камня, но голосом вечности, обращённым к людям. Его свет пронзал мрак, шепча морякам: «Путь есть. Даже если ты один посреди безграничного моря». Он был создан человеком, но в его сиянии чувствовалось присутствие богов — словно сама Вселенная протягивала руку тем, кто осмеливался выйти за горизонт.',
     'pharos.paragraph2': 'Для древнего мира Фарос был чудом света, воплощением веры в то, что человеческий разум и воля способны вознести огонь к небесам. Для нас он остаётся символом надежды, мужества и выбора. Свет всегда можно зажечь, даже когда вокруг тьма, и именно он способен стать ориентиром для других.',
     'pharos.paragraph3': 'Каждый человек носит в себе свой собственный Фарос — внутренний огонь, который способен не только освещать дорогу самому, но и вдохновлять тех, кто идёт рядом.',
-    'pharos.caption': 'Зажги маяк. Подними сигнал.'
+    'pharos.caption': 'Зажги маяк. Подними сигнал.',
+    'cinema.chip': 'Сигнальное кино',
+    'cinema.title': 'Хранители поднятого света',
+    'cinema.subtitle': 'Лёгкая эллинистическая карусель с основным фильмом и трендом поднятых фонариков.',
+    'cinema.intro1.title': 'Хореография сигналов',
+    'cinema.intro1.text': 'Рандомный текст-заглушка о том, как мы выстраиваем поднятые огни, собирая мудборды и раскадровки для каждого релиза.',
+    'cinema.intro2.title': 'Пульс города',
+    'cinema.intro2.text': 'Ещё одна заглушка о креативных лабораториях, которые полируют монтаж, цвет и лор перед запуском маяка.',
+    'cinema.prev': 'Предыдущее видео',
+    'cinema.next': 'Следующее видео',
+    'cinema.dot1': 'К видео 1',
+    'cinema.dot2': 'К видео 2',
+    'cinema.dot3': 'К видео 3',
+    'cinema.slide1.tag': 'Фильм проекта',
+    'cinema.slide1.title': 'Rakodi: Свет над городом',
+    'cinema.slide1.text': 'Кинематографичный основной тизер с пролётами над невидимым городом, залитым морем огней.',
+    'cinema.slide2.tag': 'Тренд маяка',
+    'cinema.slide2.title': 'Подборка поднятых фонариков',
+    'cinema.slide2.text': 'Динамичный монтаж создателей, поднимающих свет вверх — настроение, энергия и чистый мемный импульс.',
+    'cinema.slide3.tag': 'Тренд маяка',
+    'cinema.slide3.title': 'POV ритуала маяка',
+    'cinema.slide3.text': 'Иммерсивный POV ритуала с поднятым фонариком, смешанный с реакциями толпы и синтовыми свеллами.',
+    'cinema.manifest.title': 'Свет, который мы храним',
+    'cinema.manifest.text': 'Любить — значит открывать сердце миру и позволять ему звучать в тебе. Мечтать — значит видеть дальше горизонта и не бояться создавать невозможное. Смелость рождается там, где ты выбираешь идти вперёд, даже когда путь скрыт во тьме. А вера в себя — это тот свет, который никогда не гаснет, если ты сам его хранишь. Мы строим пространство, где любовь становится движением, мечты — основой, а вера — ключом к будущему. Мир ждёт тех, кто осмелится быть собой и прожить жизнь в полную силу. Ты с нами?'
   },
   en: {
     'meta.title': 'RAKODI — Mission of the Meme City',
@@ -108,7 +131,30 @@ const translations = {
     'pharos.paragraph1': 'The Lighthouse of Pharos was not merely a tower of stone, but a voice of eternity speaking to humankind. Its light pierced through the darkness, whispering to sailors: “There is a path. Even if you are alone upon the boundless sea.” Born of human hands, yet touched by the divine, its radiance felt as though the universe itself was reaching out to those daring enough to sail beyond the horizon.',
     'pharos.paragraph2': 'For the ancient world, Pharos was a wonder, a living testament that human will and intellect could lift fire to the heavens. For us, it remains a symbol of hope, courage, and choice. Light can always be kindled, even in the deepest darkness, and once lit, it becomes a beacon for others to follow.',
     'pharos.paragraph3': 'Within each of us lies our own Pharos — an inner flame, capable not only of illuminating our own journey but also of inspiring those who walk beside us.',
-    'pharos.caption': 'Light your beacon. Raise the signal.'
+    'pharos.caption': 'Light your beacon. Raise the signal.',
+    'cinema.chip': 'Signal Cinema',
+    'cinema.title': 'Keepers of the Raised Light',
+    'cinema.subtitle': 'A gentle Hellenistic carousel that holds our core film and the torchlifting trend.',
+    'cinema.intro1.title': 'Signal Choreography',
+    'cinema.intro1.text': 'Placeholder copy about how we align the raised lights, shaping moodboards and storyboards for every drop.',
+    'cinema.intro2.title': 'City Pulse Notes',
+    'cinema.intro2.text': 'Another placeholder about the creative labs that polish edits, color, and lore before the beacon goes live.',
+    'cinema.prev': 'Previous video',
+    'cinema.next': 'Next video',
+    'cinema.dot1': 'Go to video 1',
+    'cinema.dot2': 'Go to video 2',
+    'cinema.dot3': 'Go to video 3',
+    'cinema.slide1.tag': 'Project Film',
+    'cinema.slide1.title': 'Rakodi: Light Over the City',
+    'cinema.slide1.text': 'Cinematic core teaser with sweeping shots of the invisible city rising under a sea of torches.',
+    'cinema.slide2.tag': 'Beacon Trend',
+    'cinema.slide2.title': 'Torch Trend Compilation',
+    'cinema.slide2.text': 'Quick-cut reel of creators lifting the light upward — mood, energy, and pure meme momentum.',
+    'cinema.slide3.tag': 'Beacon Trend',
+    'cinema.slide3.title': 'Beacon POV Sequence',
+    'cinema.slide3.text': 'Immersive point-of-view of the raised flashlight ritual, stitched with crowd reactions and synth swells.',
+    'cinema.manifest.title': 'The Light We Guard',
+    'cinema.manifest.text': 'To love means opening your heart to the world and letting it resonate within you. To dream means seeing beyond the horizon and daring to create the impossible. Courage is born the moment you choose to move forward, even when the path is hidden in darkness. And believing in yourself is the light that never fades, as long as you guard it within. We are building a space where love becomes movement, dreams become foundation, and faith becomes the key to the future. The world is waiting for those who dare to be themselves and live life to its fullest. Are you with us?'
   }
 };
 
@@ -169,6 +215,78 @@ document.addEventListener('click', (event)=>{
   applyLanguage(currentLang === 'ru' ? 'en' : 'ru');
 });
 
+function initMissionCarousel(){
+  document.querySelectorAll('[data-carousel]').forEach(root=>{
+    const track = root.querySelector('[data-carousel-track]');
+    if(!track) return;
+    const slides = Array.from(track.querySelectorAll('[data-carousel-slide]'));
+    if(!slides.length) return;
+    const prev = root.querySelector('[data-carousel-prev]');
+    const next = root.querySelector('[data-carousel-next]');
+    const dots = Array.from(root.querySelectorAll('[data-carousel-dot]'));
+    const viewport = root.querySelector('.mission-cinema__viewport') || root;
+    let index = 0;
+    const goTo = (newIndex)=>{
+      if(!slides.length) return;
+      index = (newIndex + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+      slides.forEach((slide, idx)=>{
+        const isActive = idx === index;
+        slide.classList.toggle('is-active', isActive);
+        slide.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+      });
+      dots.forEach((dot, idx)=>{
+        const isActive = idx === index;
+        dot.classList.toggle('is-active', isActive);
+        dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+      });
+    };
+    prev?.addEventListener('click', ()=>goTo(index - 1));
+    next?.addEventListener('click', ()=>goTo(index + 1));
+    dots.forEach((dot, dotIndex)=>{
+      dot.addEventListener('click', ()=>goTo(dotIndex));
+    });
+    root.addEventListener('keydown', event=>{
+      if(event.key === 'ArrowLeft'){
+        event.preventDefault();
+        goTo(index - 1);
+      }else if(event.key === 'ArrowRight'){
+        event.preventDefault();
+        goTo(index + 1);
+      }
+    });
+    let pointerActive = false;
+    let startX = 0;
+    let deltaX = 0;
+    const start = event=>{
+      pointerActive = true;
+      const point = event.touches ? event.touches[0] : event;
+      startX = point?.clientX ?? 0;
+      deltaX = 0;
+    };
+    const move = event=>{
+      if(!pointerActive) return;
+      const point = event.touches ? event.touches[0] : event;
+      const currentX = point?.clientX ?? startX;
+      deltaX = currentX - startX;
+    };
+    const end = ()=>{
+      if(!pointerActive) return;
+      pointerActive = false;
+      if(Math.abs(deltaX) > 60){
+        goTo(deltaX > 0 ? index - 1 : index + 1);
+      }
+    };
+    viewport.addEventListener('mousedown', start);
+    viewport.addEventListener('touchstart', start, {passive:true});
+    window.addEventListener('mousemove', move);
+    window.addEventListener('touchmove', move, {passive:true});
+    window.addEventListener('mouseup', end);
+    window.addEventListener('touchend', end);
+    goTo(0);
+  });
+}
+
 // Preloader (simple fade-out)
 window.addEventListener('load', ()=>{
   const pre = document.getElementById('preloader');
@@ -206,6 +324,8 @@ window.addEventListener('load', ()=>{
       });
     });
   }catch(e){ /* no-op */ }
+
+  initMissionCarousel();
 });
 
 // Reveal on scroll
