@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0f2e"/>
+      <stop offset="0.5" stop-color="#3d1a4a"/>
+      <stop offset="1" stop-color="#0b1f3d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.6">
+      <stop offset="0" stop-color="#ff70d7" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="#8b5bff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#1a1030" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#05d5ff"/>
+      <stop offset="1" stop-color="#ff2e6a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg)"/>
+  <rect x="80" y="90" width="480" height="620" rx="80" fill="#080812" stroke="#f0d79a" stroke-opacity="0.4" stroke-width="4"/>
+  <ellipse cx="320" cy="320" rx="280" ry="260" fill="url(#glow)"/>
+  <path d="M200 478c16-88 74-158 136-158s120 70 136 158c-21 36-88 58-136 58s-115-22-136-58z" fill="#221a3a"/>
+  <path d="M208 322c18-76 65-138 112-138s94 62 112 138c-24 22-76 38-112 38s-88-16-112-38z" fill="#2b2148"/>
+  <path d="M184 474c-8 20 28 70 136 70s144-50 136-70-56 10-136 10-128-30-136-10z" fill="#141022"/>
+  <rect x="190" y="356" width="260" height="52" rx="26" fill="#05050a" stroke="#8fd9ff" stroke-opacity="0.5" stroke-width="3"/>
+  <rect x="198" y="364" width="244" height="36" rx="18" fill="url(#visor)" opacity="0.75"/>
+  <path d="M258 214c24-32 52-50 78-50s54 18 78 50c-6 36-42 58-78 58s-72-22-78-58z" fill="#2c1f4b"/>
+  <circle cx="260" cy="346" r="10" fill="#0ff4ff"/>
+  <circle cx="380" cy="346" r="10" fill="#ff7ad1"/>
+  <text x="50%" y="680" font-family="'Cinzel', 'EB Garamond', serif" font-size="36" letter-spacing="0.28em" text-anchor="middle" fill="#f0d79a" opacity="0.68">PLACEHOLDER</text>
+</svg>
