@@ -189,99 +189,61 @@
     </div>
   </section>
 
-  <!-- 6) Мем-библиотека — «Архив, который смеётся» -->
-  <section id="memlib" class="reveal">
-    <div class="container memlib">
-      <div class="memlib-head">
-        <div class="memlib-head__copy">
-          <h2 class="section-title">Мем-библиотека</h2>
-          <p class="section-sub">Это наш живой архив: от ироничных артов до полезных гайдов. Лучшие находки попадают на главную, в ролики и в подборки Братства.</p>
-        </div>
-        <div class="memlib-head__meta">
-          <span class="memlib-pill">#rakodi-archive</span>
-          <span class="memlib-pill memlib-pill--ghost">Обновление каждую неделю</span>
-        </div>
-      </div>
+  <!-- 6) Ценности — «Силы, что ведут вперёд» -->
+  <section id="mission-values" class="reveal mission-values">
+    <div class="mission-values__backdrop" aria-hidden="true"></div>
+    <div class="container mission-values__grid">
+      <header class="mission-values__header">
+        <span class="mission-values__chip" data-i18n="values.chip">Inner Forces of Rakodi</span>
+        <h2 class="mission-values__title" data-i18n="values.title">The Powers That Guide Us Forward</h2>
+        <p class="mission-values__intro" data-i18n="values.intro">Between the sparks of our trends we pause to name the forces that keep the flame alive. These values soften the armor, sharpen the focus, and hint at the future we are building.</p>
+      </header>
 
-      <div class="memlib-panels">
-        <article class="memlib-panel">
-          <span class="memlib-panel__eyebrow">Путь артефактов</span>
-          <h3 class="memlib-panel__title">Как попадает контент</h3>
-          <p class="memlib-panel__text">Весь поток проходит через гильдию кураторов, чтобы мемы оставались остроумными и в тему.</p>
-          <div class="memlib-chain" aria-hidden="true">
-            <span>Предложи мем</span>
-            <span>Модерация</span>
-            <span>Публикация</span>
-            <span>Награды</span>
+      <div class="mission-values__cards">
+        <article class="mission-values__card">
+          <figure class="mission-values__art">
+            <img src="assets/placeholders/value-love.svg" alt="Abstract illustration representing love" loading="lazy">
+          </figure>
+          <div class="mission-values__body">
+            <h3 class="mission-values__card-title" data-i18n="values.love.title">Love</h3>
+            <p class="mission-values__card-text" data-i18n="values.love.text">Love is what makes us truly human. It gives birth to kindness and inspiration, fills our steps with meaning, and turns even the smallest act into something great.</p>
           </div>
         </article>
 
-        <article class="memlib-panel">
-          <span class="memlib-panel__eyebrow">Каталоги</span>
-          <h3 class="memlib-panel__title">Фильтры</h3>
-          <p class="memlib-panel__text">Навигация по разделам помогает быстро найти нужную эмоцию или инструкцию.</p>
-          <ul class="memlib-panel__list">
-            <li>Мемы и хроники</li>
-            <li>Новости и отчёты</li>
-            <li>Гайды и свитки</li>
-            <li>Архив редкостей</li>
-          </ul>
+        <article class="mission-values__card">
+          <figure class="mission-values__art">
+            <img src="assets/placeholders/value-freedom.svg" alt="Abstract illustration representing freedom" loading="lazy">
+          </figure>
+          <div class="mission-values__body">
+            <h3 class="mission-values__card-title" data-i18n="values.freedom.title">Freedom</h3>
+            <p class="mission-values__card-text" data-i18n="values.freedom.text">Freedom is the breath of the soul. It is not confined by walls or borders, for it lives in our choices and in the courage to be ourselves.</p>
+          </div>
         </article>
 
-        <article class="memlib-panel">
-          <span class="memlib-panel__eyebrow">Этика</span>
-          <h3 class="memlib-panel__title">Правила коротко</h3>
-          <ul class="memlib-panel__list memlib-panel__list--bullets">
-            <li>Остроумно, без токсичности.</li>
-            <li>Мем должен подводить к идее.</li>
-            <li>Если используешь референсы — отмечай авторов.</li>
-          </ul>
+        <article class="mission-values__card">
+          <figure class="mission-values__art">
+            <img src="assets/placeholders/value-dream.svg" alt="Abstract illustration representing a dream" loading="lazy">
+          </figure>
+          <div class="mission-values__body">
+            <h3 class="mission-values__card-title" data-i18n="values.dream.title">Dream</h3>
+            <p class="mission-values__card-text" data-i18n="values.dream.text">A dream is the star we see in the darkness. It leads us toward realities not yet created and reminds us that “impossible” is only a word, never a verdict.</p>
+          </div>
+        </article>
+
+        <article class="mission-values__card">
+          <figure class="mission-values__art">
+            <img src="assets/placeholders/value-curiosity.svg" alt="Abstract illustration representing curiosity" loading="lazy">
+          </figure>
+          <div class="mission-values__body">
+            <h3 class="mission-values__card-title" data-i18n="values.curiosity.title">Curiosity</h3>
+            <p class="mission-values__card-text" data-i18n="values.curiosity.text">Curiosity is the spark from which every discovery begins. It compels us to look beyond the horizon, to ask questions, and to seek answers even when no path has yet been drawn.</p>
+          </div>
         </article>
       </div>
 
-      <div class="memlib-stats">
-        <div class="memlib-stat" role="meter" aria-label="Видео и хроники" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-          <div class="memlib-stat__meta">
-            <span class="memlib-stat__label">Видео и хроники</span>
-            <span class="memlib-stat__value">~40%</span>
-          </div>
-          <div class="memlib-bar" style="--progress:40%">
-            <span class="memlib-bar__fill"></span>
-          </div>
-        </div>
-
-        <div class="memlib-stat" role="meter" aria-label="Свитки-мемы" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-          <div class="memlib-stat__meta">
-            <span class="memlib-stat__label">Свитки-мемы</span>
-            <span class="memlib-stat__value">~30%</span>
-          </div>
-          <div class="memlib-bar" style="--progress:30%">
-            <span class="memlib-bar__fill"></span>
-          </div>
-        </div>
-
-        <div class="memlib-stat" role="meter" aria-label="Истории и гайды" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-          <div class="memlib-stat__meta">
-            <span class="memlib-stat__label">Истории и гайды</span>
-            <span class="memlib-stat__value">~20%</span>
-          </div>
-          <div class="memlib-bar" style="--progress:20%">
-            <span class="memlib-bar__fill"></span>
-          </div>
-        </div>
-
-        <div class="memlib-stat" role="meter" aria-label="Код и инфраструктура" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-          <div class="memlib-stat__meta">
-            <span class="memlib-stat__label">Код и инфраструктура</span>
-            <span class="memlib-stat__value">~10%</span>
-          </div>
-          <div class="memlib-bar" style="--progress:10%">
-            <span class="memlib-bar__fill"></span>
-          </div>
-        </div>
-      </div>
-
-      <p class="memlib-note small">Задача архива — удерживать живую историю комьюнити. Присылай находки, чтобы расширять канон Ракоди.</p>
+      <footer class="mission-values__footer">
+        <p class="mission-values__closing" data-i18n="values.closing">All these forces dwell within each of us. Together, they form a human being capable of love and creation, of moving forward and opening new worlds.</p>
+      </footer>
     </div>
   </section>
 
