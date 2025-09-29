@@ -1,0 +1,22 @@
+<svg width="640" height="800" viewBox="0 0 640 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c0b16" />
+      <stop offset="1" stop-color="#201424" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 320) rotate(90) scale(420 380)">
+      <stop offset="0" stop-color="#f4c16e" stop-opacity="0.65" />
+      <stop offset="0.5" stop-color="#a46bff" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#0c0b16" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#bg)" rx="32" />
+  <rect width="640" height="800" fill="url(#glow)" />
+  <g opacity="0.6" stroke="#ffcc80" stroke-width="2">
+    <path d="M180 640L460 160" stroke-linecap="round" stroke-dasharray="12 16" />
+    <path d="M140 180C240 120 320 120 420 180C520 240 560 340 520 460C480 580 380 660 260 660C180 660 120 620 100 560" />
+  </g>
+  <circle cx="470" cy="210" r="54" fill="#f4c16e" fill-opacity="0.35" stroke="#f4c16e" stroke-width="2" />
+  <text x="50%" y="720" fill="#f9dcb4" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" text-anchor="middle" letter-spacing="0.12em">RAKODI PLACEHOLDER</text>
+  <text x="50%" y="760" fill="#c8b4ff" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" text-anchor="middle" letter-spacing="0.3em">SWAP WITH YOUR ART</text>
+</svg>
