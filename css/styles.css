@@ -356,6 +356,10 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .mission-cinema .container{display:grid;gap:clamp(36px,5vw,52px);}
 .mission-cinema__carousel{
   position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(16px,3vw,28px);
   display:grid;
   grid-template-columns:auto minmax(0,1fr) auto;
   gap:clamp(16px,3vw,28px);
@@ -368,6 +372,8 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   backdrop-filter:blur(14px);
 }
 .mission-cinema__nav{
+  position:absolute;
+  top:50%;
   display:grid;
   place-items:center;
   width:58px;
@@ -378,6 +384,34 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   background:radial-gradient(circle at 50% 30%, rgba(240,204,132,0.38), rgba(32,18,12,0.52));
   cursor:pointer;
   transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  transform:translateY(-50%);
+}
+.mission-cinema__nav--prev{left:calc(-1 * clamp(48px,6vw,72px));}
+.mission-cinema__nav--next{right:calc(-1 * clamp(48px,6vw,72px));}
+.mission-cinema__nav svg{width:22px;height:22px;stroke:currentColor;}
+.mission-cinema__nav:hover{transform:translateY(calc(-50% - 2px));box-shadow:0 22px 46px rgba(240,204,132,0.3);background:linear-gradient(140deg,rgba(240,204,132,0.55),rgba(32,18,12,0.6));}
+.mission-cinema__nav:focus-visible{outline:3px solid rgba(240,204,132,0.65);outline-offset:4px;}
+.mission-cinema__viewport{
+  position:relative;
+  overflow:hidden;
+  border-radius:30px;
+  width:min(780px,100%);
+  margin-inline:auto;
+}
+.mission-cinema__track{
+  display:flex;
+  width:100%;
+  gap:0;
+  transition:transform .45s ease;
+}
+.mission-cinema__slide{
+  flex:0 0 100%;
+  display:grid;
+  gap:clamp(18px,3vw,28px);
+  padding-inline:clamp(16px,4vw,32px);
+  color:rgba(248,241,223,0.92);
+  box-sizing:border-box;
+
 }
 .mission-cinema__nav svg{width:22px;height:22px;stroke:currentColor;}
 .mission-cinema__nav:hover{transform:translateY(-2px);box-shadow:0 22px 46px rgba(240,204,132,0.3);background:linear-gradient(140deg,rgba(240,204,132,0.55),rgba(32,18,12,0.6));}
@@ -405,6 +439,9 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   background:rgba(10,4,0,0.65);
   border:1px solid rgba(240,204,132,0.22);
   box-shadow:0 32px 80px rgba(8,3,0,0.6);
+  width:min(640px,100%);
+  margin-inline:auto;
+
 }
 .mission-cinema__frame iframe{
   position:absolute;
@@ -413,6 +450,13 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   height:100%;
   border:0;
   border-radius:inherit;
+}
+.mission-cinema__meta{
+  display:grid;
+  gap:10px;
+  padding:0 clamp(4px,1vw,6px);
+  width:min(640px,100%);
+  margin-inline:auto;
 }
 .mission-cinema__meta{display:grid;gap:10px;padding:0 clamp(4px,1vw,6px);}
 .mission-cinema__tag{
@@ -461,6 +505,10 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .mission-cinema__manifest-text{margin:0;font-family:'EB Garamond',serif;font-size:clamp(18px,2.2vw,22px);line-height:1.8;color:rgba(248,241,223,0.86);}
 
 @media (max-width:1100px){
+  .mission-cinema__viewport{width:min(700px,100%);}
+  .mission-cinema__nav--prev{left:calc(-1 * clamp(40px,5vw,60px));}
+  .mission-cinema__nav--next{right:calc(-1 * clamp(40px,5vw,60px));}
+
   .mission-cinema__carousel{grid-template-columns:minmax(0,1fr);}
   .mission-cinema__nav{order:-1;justify-self:center;}
   .mission-cinema__nav--next{order:1;}
@@ -472,11 +520,19 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   .mission-cinema{padding:clamp(72px,26vw,120px) 0 clamp(60px,18vw,100px);}
   .mission-cinema__carousel{padding:24px;border-radius:32px;gap:18px;}
   .mission-cinema__nav{width:52px;height:52px;}
+  .mission-cinema__nav--prev{left:-32px;}
+  .mission-cinema__nav--next{right:-32px;}
+  .mission-cinema__viewport{width:min(620px,100%);}
+
   .mission-cinema__frame{border-radius:24px;}
 }
 
 @media (max-width:520px){
   .mission-cinema__carousel{gap:14px;}
+  .mission-cinema__nav{width:48px;height:48px;}
+  .mission-cinema__nav--prev{left:-24px;}
+  .mission-cinema__nav--next{right:-24px;}
+
   .mission-cinema__meta{gap:8px;}
   .mission-cinema__tag{letter-spacing:.22em;font-size:10px;padding:6px 12px;}
   .mission-cinema__slide-title{font-size:22px;}
