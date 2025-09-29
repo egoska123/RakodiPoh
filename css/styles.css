@@ -2722,7 +2722,7 @@ body.mission-page .mission-cinema{
 
 .mission-cinema__track{
   display:flex;
-  gap:clamp(18px,3vw,28px);
+  gap:0;
   transition:transform .6s cubic-bezier(.5,0,.25,1);
 }
 
