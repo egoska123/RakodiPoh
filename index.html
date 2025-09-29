@@ -21,14 +21,19 @@
     <div class="logo"><img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="RAKODI"><div style="font-size: 1.6vw;" class="brand">RAKODI</div></div>
     <button class="menu-toggle" aria-label="Меню"><span></span><span></span><span></span></button>
     <nav class="links">
-      <a href="index.html">Главная</a>
-      <a href="about.html">О проекте</a>
-      <a href="tokenomics.html">Токеномика</a>
-      <a href="brotherhood.html">Братство.</a>
-      <a href="news.html">Мемы</a>
+      <a href="index.html" data-i18n="nav.home">Главная</a>
+      <a href="about.html" data-i18n="nav.mission">Миссия</a>
+      <a href="tokenomics.html" data-i18n="nav.tokenomics">Токеномика</a>
+      <a href="brotherhood.html" data-i18n="nav.brotherhood">Братство.</a>
+      <a href="news.html" data-i18n="nav.news">Мемы</a>
     </nav>
     <div class="right">
-      <a class="btn small" href="#">Купить</a>
+      <button type="button" class="lang-toggle" data-current="en" aria-label="Switch language" title="Switch language">
+        <span class="lang-toggle__option" data-lang-code="ru">RU</span>
+        <span class="lang-toggle__divider">/</span>
+        <span class="lang-toggle__option" data-lang-code="en">EN</span>
+      </button>
+      <a class="btn small" href="#" data-i18n="nav.buy">Купить</a>
       <a class="icon-btn" href="#" aria-label="Telegram"><img src="assets/telegram.svg" alt="Telegram"></a>
       <a class="icon-btn" href="#" aria-label="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a>
     </div>

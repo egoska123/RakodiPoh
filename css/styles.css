@@ -1457,6 +1457,123 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 
 .buy-note strong{color:#ffd9e6;font-weight:700;}
 
+/* Trend — Pharos */
+.pharos-section{
+  position:relative;
+  padding:120px 0;
+  background:#020208;
+  overflow:hidden;
+  color:#f4e9d0;
+}
+.pharos-section__bg{
+  position:absolute;
+  inset:0;
+  background:radial-gradient(120% 120% at 50% 40%,rgba(187,138,74,0.24) 0%,rgba(60,41,74,0.14) 36%,rgba(14,9,21,0) 70%);
+  opacity:0.9;
+  pointer-events:none;
+}
+.pharos-section--mission .pharos-section__bg{
+  background:
+    radial-gradient(120% 120% at 58% 38%,rgba(191,149,92,0.32) 0%,rgba(58,40,74,0.18) 44%,rgba(14,9,21,0) 70%),
+    linear-gradient(90deg,rgba(2,2,8,0.94) 0%,rgba(2,2,8,0) 28%,rgba(2,2,8,0) 72%,rgba(2,2,8,0.94) 100%);
+}
+.pharos-shell{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,0.92fr) minmax(0,1.1fr);
+  gap:60px;
+  align-items:stretch;
+}
+.pharos-visual{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:18px;
+  height:100%;
+}
+.pharos-visual__frame{
+  flex:1 1 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:26px;
+  overflow:hidden;
+  background:linear-gradient(160deg,rgba(40,26,52,0.85),rgba(10,7,14,0.9));
+  box-shadow:0 34px 68px rgba(5,3,12,0.78);
+  height:100%;
+}
+.pharos-visual__frame img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.pharos-visual__caption{
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:0.42em;
+  color:rgba(244,233,208,0.55);
+  text-align:center;
+}
+.pharos-content{
+  display:flex;
+  flex-direction:column;
+  gap:28px;
+  padding:34px 36px 40px;
+}
+.pharos-header{margin:0;}
+.pharos-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:6px 16px;
+  border-radius:999px;
+  color:#f4e9d0;
+  font-size:13px;
+  letter-spacing:0.32em;
+  text-transform:uppercase;
+  background:linear-gradient(120deg,rgba(191,164,100,0.32),rgba(76,217,253,0.12));
+}
+.pharos-title{
+  margin:18px 0 8px;
+  font-size:42px;
+  line-height:1.12;
+  font-family:'Cinzel', 'Times New Roman', serif;
+  letter-spacing:0.08em;
+  color:#fbe8b4;
+}
+.pharos-subtitle{
+  margin:0;
+  font-size:18px;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:rgba(244,233,208,0.7);
+}
+.pharos-text{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  font-size:16px;
+  line-height:1.7;
+  color:rgba(255,248,235,0.92);
+}
+.pharos-text p{margin:0;}
+
+@media (max-width:1100px){
+  .pharos-shell{grid-template-columns:1fr;gap:48px;}
+  .pharos-content{padding:24px 24px 32px;}
+  .pharos-title{font-size:36px;}
+}
+@media (max-width:640px){
+  .pharos-section{padding:88px 0;}
+  .pharos-content{padding:0 18px 28px;}
+  .pharos-title{font-size:30px;letter-spacing:0.05em;}
+  .pharos-subtitle{font-size:15px;letter-spacing:0.12em;}
+  .pharos-chip{font-size:11px;letter-spacing:0.24em;}
+}
+
+
 @media (max-width:1280px){
   .buy-grid{grid-template-columns:repeat(4,minmax(0,1fr));}
   .buy-card--wide{grid-column:span 4;flex-direction:column;}
