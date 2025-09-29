@@ -2546,7 +2546,6 @@ body.mission-page #mission-dream{
 body.mission-page #mission-values{
   position:relative;
   padding:clamp(94px,18vw,160px) 0;
-  background:radial-gradient(130% 140% at 50% 0%, rgba(124,78,38,0.28) 0%, rgba(22,12,6,0.92) 58%, rgba(8,4,12,0.96) 100%);
   overflow:hidden;
 }
 
@@ -2555,10 +2554,6 @@ body.mission-page #mission-values{
   position:absolute;
   inset:4% 8%;
   border-radius:32px;
-  background:linear-gradient(140deg, rgba(222,166,108,0.16), rgba(82,46,28,0.28));
-  box-shadow:0 34px 120px rgba(8,4,12,0.75);
-  opacity:0.85;
-  filter:blur(0px);
   pointer-events:none;
 }
 
