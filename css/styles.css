@@ -2246,7 +2246,7 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   display:grid;
   grid-template-columns:minmax(0,1.1fr) minmax(0,0.7fr);
   gap:clamp(32px,6vw,72px);
-  align-items:start;
+  align-items:stretch;
 }
 
 .dream-section__text{
@@ -2303,6 +2303,7 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   flex-direction:column;
   gap:16px;
   align-items:flex-start;
+  align-self:stretch;
 }
 
 .dream-section__frame{
@@ -2310,31 +2311,26 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   max-width:360px;
   border-radius:28px;
   border:1px solid rgba(245,210,115,0.45);
-  background:linear-gradient(150deg, rgba(20,18,35,0.92), rgba(9,9,20,0.88));
-  box-shadow:0 24px 60px rgba(5,5,15,0.55);
-  padding:clamp(18px,3vw,26px);
-  backdrop-filter:blur(6px);
+  background:transparent;
+  box-shadow:none;
+  padding:0;
+  backdrop-filter:none;
+  height:100%;
+  display:flex;
+  flex:1;
 }
 
 .dream-section__frame::after{
-  content:"";
-  position:absolute;
-  inset:-12% -18% auto auto;
-  width:140px;
-  height:140px;
-  background:radial-gradient(circle at 50% 50%, rgba(245,210,115,0.3), transparent 70%);
-  filter:blur(14px);
-  opacity:.7;
-  pointer-events:none;
+  display:none;
 }
 
 .dream-section__frame img{
   display:block;
   width:100%;
-  height:auto;
-  border-radius:18px;
+  height:100%;
+  border-radius:inherit;
   object-fit:cover;
-  background:rgba(255,255,255,0.04);
+  background:transparent;
 }
 
 .dream-section__caption{
@@ -2352,8 +2348,7 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 }
 
 @media (max-width:640px){
-  .dream-section__frame{padding:20px;border-radius:22px}
-  .dream-section__frame img{border-radius:14px}
+  .dream-section__frame{border-radius:22px}
   .dream-section__eyebrow{letter-spacing:.24em}
 }
 
