@@ -32,6 +32,34 @@ body{
   overflow-x:hidden;
 }
 
+body.mission-page{
+  position:relative;
+  background:#05030a;
+}
+
+body.mission-page main{
+  position:relative;
+  z-index:0;
+}
+
+body.mission-page main::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url('../assets/mission-bg1.png') center top/cover no-repeat;
+  z-index:-1;
+  pointer-events:none;
+}
+
+body.mission-page main::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:linear-gradient(180deg, rgba(5,3,12,0.38) 0%, rgba(5,3,12,0.82) 100%);
+  z-index:-1;
+  pointer-events:none;
+}
+
 a{color:inherit;text-decoration:none}
 .container{width:min(1200px, 92%);margin-inline:auto;position:relative}
 /* Header-specific container spacing: fixed-but-adaptive side padding */
@@ -2376,6 +2404,46 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   transform:translateY(-3px);
   border-color:rgba(255,255,255,0.16);
   box-shadow:0 28px 70px rgba(10,10,30,0.55);
+}
+
+/* Mission page static background adjustments */
+body.mission-page .alexandria-section{
+  background:
+    radial-gradient(1200px 780px at 10% -5%, rgba(255,46,106,0.16), transparent 65%),
+    radial-gradient(900px 680px at 92% 8%, rgba(123,92,255,0.18), transparent 62%),
+    linear-gradient(160deg, rgba(10,9,22,0.82) 0%, rgba(27,15,31,0.78) 48%, rgba(6,7,18,0.82) 100%);
+}
+
+body.mission-page .legend-section{
+  background:
+    radial-gradient(960px 540px at 12% 0%, rgba(123,92,255,0.12), transparent 72%),
+    radial-gradient(820px 520px at 88% 12%, rgba(255,46,106,0.08), transparent 70%),
+    linear-gradient(120deg, rgba(11,11,20,0.78), rgba(18,8,26,0.82));
+}
+
+body.mission-page #fraternity{
+  background:
+    radial-gradient(880px 520px at 12% 12%, rgba(123,92,255,0.18), transparent 70%),
+    radial-gradient(720px 520px at 86% 0%, rgba(255,46,106,0.16), transparent 72%),
+    linear-gradient(180deg, rgba(12,12,26,0.78), rgba(8,8,20,0.82));
+}
+
+body.mission-page #memlib{
+  background:radial-gradient(120% 140% at 50% 0%, rgba(123,92,255,0.18) 0%, rgba(22,15,56,0.52) 58%, rgba(9,7,24,0.78) 100%);
+}
+
+body.mission-page #roadmap-about .roadmap-board{
+  background:
+    radial-gradient(140% 120% at 16% -10%, rgba(255,46,106,0.28), transparent 62%),
+    radial-gradient(120% 120% at 84% 0%, rgba(123,92,255,0.24), transparent 68%),
+    linear-gradient(160deg, rgba(20,20,36,0.82), rgba(12,12,28,0.74));
+}
+
+body.mission-page .faq-section{
+  background:
+    radial-gradient(1200px 560px at 12% 0%, rgba(123,92,255,0.22), transparent 68%),
+    radial-gradient(1080px 640px at 88% 18%, rgba(255,46,106,0.16), transparent 72%),
+    linear-gradient(180deg, rgba(16,16,30,0.72), rgba(9,9,18,0.78));
 }
 
 .faq-item__question{
