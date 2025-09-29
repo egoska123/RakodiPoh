@@ -2543,6 +2543,34 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .mission-ethos__frame{position:relative;display:flex;width:100%;height:100%;border-radius:28px;overflow:hidden;border: 1px solid rgba(255, 223, 155, .28);box-shadow:0 24px 60px rgba(12,6,24,.65);max-width:100%;background:rgba(16,12,24,.6);}
 .mission-ethos__frame::after{content:"";position:absolute;inset:12px;border-radius:20px;pointer-events:none;}
 .mission-ethos__frame img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.02);}
+.mission-memes{position:relative;padding:clamp(80px,18vw,140px) 0;background:radial-gradient(120% 140% at 0% 0%,rgba(38,18,8,0.92),transparent 70%),linear-gradient(140deg,rgba(20,10,6,0.96),rgba(8,4,12,0.92));color:var(--mission-ink);overflow:hidden}
+.mission-memes::before{content:"";position:absolute;inset:0;background:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"%3E%3Cfilter id="n" x="0" y="0" width="1" height="1"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="4"/%3E%3C/filter%3E%3Crect width="160" height="160" filter="url(%23n)" opacity="0.28"/%3E%3C/svg%3E') center/220px repeat;opacity:.18;mix-blend-mode:soft-light;pointer-events:none}
+.mission-memes__layout{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,70px);align-items:center}
+.mission-memes__art{position:relative;display:grid;gap:14px;justify-items:center}
+.mission-memes__frame{position:relative;width:100%;max-width:520px;border-radius:34px;padding:clamp(18px,2.6vw,28px);background:linear-gradient(130deg,rgba(65,34,18,0.72),rgba(22,12,32,0.9));border:1px solid rgba(240,204,132,0.32);box-shadow:0 42px 110px rgba(10,4,16,0.62);backdrop-filter:blur(14px)}
+.mission-memes__frame::before{content:"";position:absolute;inset:18%;border-radius:26px;background:radial-gradient(circle at 18% 12%,rgba(255,166,97,0.52),transparent 62%);filter:blur(40px);opacity:.8;pointer-events:none}
+.mission-memes__frame img{display:block;width:100%;height:auto;border-radius:24px;object-fit:cover;filter:saturate(1.08) contrast(1.05)}
+.mission-memes__caption{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,204,132,0.62);font-family:'Cinzel',serif}
+.mission-memes__content{display:flex;flex-direction:column;gap:clamp(18px,3vw,28px);font-family:'EB Garamond',serif}
+.mission-memes__chip{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:10px 22px;border-radius:999px;background:rgba(54,28,18,0.6);border:1px solid rgba(240,204,132,0.42);letter-spacing:.28em;text-transform:uppercase;font-size:12px;font-family:'Cinzel',serif;color:rgba(240,204,132,0.86);backdrop-filter:blur(14px)}
+.mission-memes__chip::before{content:"✦";color:var(--mission-gold-bright);letter-spacing:0}
+.mission-memes__title{margin:0;font-size:clamp(36px,5vw,60px);letter-spacing:.02em;text-transform:uppercase;color:var(--mission-ink);text-shadow:0 22px 60px rgba(5,3,0,0.42)}
+.mission-memes__intro{margin:0;font-size:clamp(18px,2.1vw,24px);line-height:1.6;color:rgba(248,241,223,0.9)}
+.mission-memes__body{margin:0;font-size:clamp(17px,2vw,22px);line-height:1.65;color:rgba(248,241,223,0.82)}
+.mission-memes__cta{display:flex;flex-wrap:wrap;gap:14px}
+.mission-memes__cta .btn{min-width:180px;justify-content:center}
+.mission-memes__footer{display:grid;gap:18px}
+.mission-memes__note{margin:0;font-size:clamp(16px,1.8vw,20px);line-height:1.6;color:rgba(240,204,132,0.86)}
+.mission-memes__hashtags{display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0;list-style:none;font-family:'Cinzel',serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:rgba(240,204,132,0.72)}
+.mission-memes__hashtags li{padding:8px 18px;border-radius:999px;background:rgba(38,18,8,0.5);border:1px solid rgba(240,204,132,0.32)}
+@media (max-width:1024px){
+  .mission-memes__layout{grid-template-columns:minmax(0,1fr)}
+  .mission-memes__art{order:-1}
+  .mission-memes__content{align-items:center;text-align:center}
+  .mission-memes__chip{align-self:center}
+  .mission-memes__cta{justify-content:center}
+  .mission-memes__hashtags{justify-content:center}
+}
 .mission-ethos__media-note{display:block;margin-top:1.1rem;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;text-align:center;color:rgba(244,233,212,.72);}
 
 @media (max-width:1100px){
