@@ -2351,10 +2351,6 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .future-section{
   position:relative;
   padding:clamp(96px,24vw,168px) 0 clamp(86px,20vw,148px);
-  background:
-    radial-gradient(160% 120% at 0% 100%, rgba(118,74,201,0.22), transparent 68%),
-    radial-gradient(120% 150% at 100% 0%, rgba(214,137,79,0.18), transparent 70%),
-    linear-gradient(160deg, #0b0613, #140910 55%, #0a0510);
   overflow:hidden;
 }
 
@@ -2399,9 +2395,6 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .future-section__glow{
   position:absolute;
   inset:-14% -18% -22% 6%;
-  background:
-    radial-gradient(60% 80% at 30% 20%, rgba(255,214,142,0.38), transparent 70%),
-    radial-gradient(80% 60% at 70% 80%, rgba(132,92,255,0.32), transparent 80%);
   filter:blur(28px);
   opacity:.7;
   pointer-events:none;
