@@ -1487,7 +1487,7 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   display:grid;
   grid-template-columns:minmax(0,0.92fr) minmax(0,1.1fr);
   gap:60px;
-  align-items:stretch;
+  align-items:flex-start;
 }
 .mission-page .pharos-content{
   padding:0;
