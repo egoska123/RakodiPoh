@@ -358,40 +358,20 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   position:relative;
   display:grid;
   grid-template-columns:minmax(0,1.05fr) minmax(0,0.9fr);
-  gap:clamp(36px,6.5vw,84px);
+  gap:clamp(36px,6vw,80px);
   align-items:stretch;
   z-index:1;
 }
 .alexandria-content{
-  display:grid;
-  gap:clamp(18px,2.4vw,28px);
-  align-content:start;
+  display:flex;
+  flex-direction:column;
+  gap:clamp(18px,2.2vw,28px);
   font-family:'EB Garamond',serif;
-}
-.alexandria-chip{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  padding:8px 18px;
-  border-radius:999px;
-  border:1px solid rgba(240,215,154,0.6);
-  background:linear-gradient(135deg,rgba(240,215,154,0.16),rgba(123,92,255,0.14));
-  font-family:'Cinzel',serif;
-  font-size:12px;
-  letter-spacing:.3em;
-  text-transform:uppercase;
-  color:rgba(255,245,230,0.86);
-  box-shadow:0 18px 48px rgba(8,4,16,0.45);
-}
-.alexandria-chip::before{
-  content:'✹';
-  color:var(--accent);
-  font-size:14px;
 }
 .alexandria-title{
   margin:0;
   font-family:'Cinzel',serif;
-  font-size:clamp(38px,4.8vw,60px);
+  font-size:clamp(32px,4.2vw,52px);
   line-height:1.1;
   letter-spacing:.02em;
   text-transform:none;
@@ -406,125 +386,59 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   line-height:1.72;
   max-width:720px;
 }
-.alexandria-details{
-  margin-top:10px;
-  display:grid;
-  gap:18px;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-}
-.alexandria-detail{
-  position:relative;
-  padding:22px 22px 24px;
-  border-radius:22px;
-  border:1px solid rgba(123,92,255,0.28);
-  background:linear-gradient(150deg,rgba(16,10,30,0.85),rgba(32,18,44,0.72));
-  box-shadow:0 26px 60px rgba(6,3,18,0.55);
-  overflow:hidden;
-}
-.alexandria-detail::before{
-  content:'';
-  position:absolute;
-  inset:-40% 45% 52% -35%;
-  background:radial-gradient(circle at 40% 50%, rgba(255,46,106,0.4), transparent 70%);
-  opacity:.4;
-  pointer-events:none;
-}
-.alexandria-detail__label{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  font-family:'Cinzel',serif;
-  font-size:15px;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:var(--mission-gold-bright);
-}
-.alexandria-detail__label::before{
-  content:'▹';
-  color:var(--accent);
-  font-size:18px;
-}
-.alexandria-detail__text{
-  margin:10px 0 0;
-  color:rgba(226,222,240,0.92);
-  font-size:16px;
-  line-height:1.6;
-}
-.alexandria-meme{
-  position:relative;
+.alexandria-media{
   margin:0;
-  display:flex;
-  flex-direction:column;
-  gap:18px;
-  align-items:center;
-  text-align:center;
+  display:grid;
+  grid-template-rows:1fr auto;
+  gap:16px;
+  align-self:stretch;
+  justify-self:end;
+  width:min(420px,100%);
+  height:100%;
 }
-.alexandria-meme__frame{
-  position:relative;
-  padding:22px;
-  border-radius:36px;
-  border:1px solid rgba(240,215,154,0.45);
-  background:linear-gradient(160deg,rgba(240,215,154,0.08),rgba(21,18,36,0.82));
-  box-shadow:0 40px 120px rgba(8,4,24,0.65);
-  overflow:hidden;
-}
-.alexandria-meme__glow{
-  position:absolute;
-  inset:-18% -28% -12% -28%;
-  background:radial-gradient(circle at 40% 30%, rgba(255,96,150,0.4), transparent 70%),
-             radial-gradient(circle at 80% 20%, rgba(120,190,255,0.35), transparent 72%);
-  filter:blur(28px);
-  opacity:.8;
-  pointer-events:none;
-}
-.alexandria-meme__frame img{
-  position:relative;
+.alexandria-media img{
   display:block;
-  width:min(420px,68vw);
-  height:auto;
-  border-radius:26px;
+  width:100%;
+  height:100%;
   object-fit:cover;
-  box-shadow:0 28px 80px rgba(4,2,18,0.6);
+  border-radius:18px;
 }
-.alexandria-meme__tag{
-  position:absolute;
-  top:18px;
-  left:24px;
-  padding:8px 16px;
-  border-radius:14px;
-  border:1px solid rgba(240,215,154,0.45);
-  background:linear-gradient(135deg,rgba(240,215,154,0.22),rgba(123,92,255,0.18));
-  font-family:'Cinzel',serif;
-  font-size:12px;
-  letter-spacing:.28em;
-  text-transform:uppercase;
-  color:#fff;
-  box-shadow:0 18px 46px rgba(8,4,20,0.55);
-}
-.alexandria-meme__caption{
+.alexandria-media__caption{
+  margin:0;
   font-family:'EB Garamond',serif;
-  font-size:18px;
-  letter-spacing:.16em;
+  font-size:16px;
+  letter-spacing:.12em;
   text-transform:uppercase;
-  color:rgba(240,215,154,0.92);
+  color:rgba(240,215,154,0.85);
 }
 
 @media (max-width:1080px){
-  .alexandria-shell{grid-template-columns:1fr;}
-  .alexandria-meme{order:-1;}
-  .alexandria-details{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .alexandria-shell{
+    grid-template-columns:1fr;
+    gap:40px;
+    align-items:start;
+  }
+  .alexandria-media{
+    justify-self:start;
+    align-self:start;
+    width:100%;
+    max-width:420px;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+  }
+  .alexandria-media img{
+    height:auto;
+  }
 }
 @media (max-width:760px){
   .alexandria-section{padding:120px 0;}
-  .alexandria-details{grid-template-columns:1fr;}
-  .alexandria-detail{padding:20px;}
+  .alexandria-media img{width:100%;}
 }
 @media (max-width:520px){
-  .alexandria-chip{letter-spacing:.22em;padding:6px 14px;}
   .alexandria-title{font-size:clamp(32px,8vw,44px);}
-  .alexandria-meme__frame{padding:18px;border-radius:28px;}
-  .alexandria-meme__tag{letter-spacing:.18em;}
-  .alexandria-meme__caption{font-size:16px;letter-spacing:.12em;}
+  .alexandria-media{gap:12px;}
+  .alexandria-media__caption{letter-spacing:.1em;}
 }
 
 /* Growth engine — инфографика связки роста */
