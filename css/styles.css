@@ -2563,6 +2563,12 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .mission-memes__note{margin:0;font-size:clamp(16px,1.8vw,20px);line-height:1.6;color:rgba(240,204,132,0.86)}
 .mission-memes__hashtags{display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0;list-style:none;font-family:'Cinzel',serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:rgba(240,204,132,0.72)}
 .mission-memes__hashtags li{padding:8px 18px;border-radius:999px;background:rgba(38,18,8,0.5);border:1px solid rgba(240,204,132,0.32)}
+@media (min-width:1025px){
+  .mission-memes__layout{align-items:stretch}
+  .mission-memes__art{height:100%;grid-template-rows:1fr auto}
+  .mission-memes__frame{height:100%;display:flex}
+  .mission-memes__frame img{flex:1;height:100%}
+}
 @media (max-width:1024px){
   .mission-memes__layout{grid-template-columns:minmax(0,1fr)}
   .mission-memes__art{order:-1}
