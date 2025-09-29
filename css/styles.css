@@ -2207,249 +2207,154 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   .distribution-ring::after{inset:46px}
 }
 
-#fraternity{
+#mission-dream{
+  position:relative;
+  overflow:hidden;
   background:
-    radial-gradient(880px 520px at 12% 12%, rgba(123,92,255,0.18), transparent 70%),
-    radial-gradient(720px 520px at 86% 0%, rgba(255,46,106,0.16), transparent 72%),
-    linear-gradient(180deg, rgba(12,12,26,0.92), rgba(8,8,20,0.92));
+    radial-gradient(720px 420px at 8% 6%, rgba(245,210,115,0.18), transparent 70%),
+    radial-gradient(640px 420px at 95% 10%, rgba(124,101,255,0.16), transparent 72%),
+    linear-gradient(180deg, #0f101d 0%, #070713 100%);
   border-bottom:none;
   isolation:isolate;
 }
 
-#fraternity::before{
+#mission-dream::before{
   content:"";
   position:absolute;
-  inset:auto 10% -18% 10%;
-  height:280px;
-  background:radial-gradient(circle at 50% 0%, rgba(255,255,255,0.08), transparent 70%);
-  opacity:.6;
+  inset:10% 55% auto -12%;
+  height:360px;
+  background:radial-gradient(circle at 0% 0%, rgba(245,210,115,0.35), transparent 70%);
+  filter:blur(14px);
+  opacity:.65;
+  pointer-events:none;
+}
+
+#mission-dream::after{
+  content:"";
+  position:absolute;
+  inset:auto -20% -25% 40%;
+  height:320px;
+  background:radial-gradient(circle at 60% 100%, rgba(118,87,255,0.32), transparent 70%);
   filter:blur(18px);
+  opacity:.55;
   pointer-events:none;
 }
 
-.fraternity-layout{
+.dream-section__inner{
   position:relative;
-  display:grid;
-  grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);
-  gap:32px;
-  align-items:stretch;
   z-index:1;
-}
-
-.fraternity-heading{position:relative;padding-bottom:18px;margin-bottom:24px}
-.fraternity-heading::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:0;
-  width:86px;
-  height:3px;
-  border-radius:6px;
-  background:linear-gradient(90deg,var(--accent),var(--accent-2));
-  opacity:.9;
-}
-
-.fraternity-grid{
   display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:18px;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,0.7fr);
+  gap:clamp(32px,6vw,72px);
+  align-items:start;
 }
 
-.fraternity-card{
-  position:relative;
-  padding:22px 22px 24px;
-  border-radius:20px;
-  border:1px solid rgba(255,255,255,0.12);
-  background:linear-gradient(155deg, rgba(20,20,38,0.92), rgba(13,11,30,0.88));
-  box-shadow:0 18px 44px rgba(8,6,26,0.45);
-  overflow:hidden;
-  transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+.dream-section__text{
+  display:flex;
+  flex-direction:column;
+  gap:clamp(16px,2.8vw,24px);
+  color:rgba(232,229,245,0.9);
 }
 
-.fraternity-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:radial-gradient(circle at 80% -10%, rgba(255,46,106,0.24), transparent 70%);
-  opacity:.45;
-  pointer-events:none;
-}
-
-.fraternity-card:hover{
-  transform:translateY(-4px);
-  border-color:rgba(255,255,255,0.2);
-  box-shadow:0 24px 60px rgba(10,8,36,0.55);
-}
-
-.fraternity-card h3{margin:12px 0 10px;font-size:24px}
-
-.fraternity-pill{
+.dream-section__eyebrow{
   display:inline-flex;
   align-items:center;
-  gap:6px;
-  padding:6px 12px;
-  border-radius:999px;
-  font-size:13px;
+  gap:10px;
+  font-size:12px;
+  letter-spacing:.32em;
   text-transform:uppercase;
-  letter-spacing:.08em;
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.14);
-  color:#fff;
+  color:#f5d273;
 }
 
-.fraternity-meta{margin-top:32px;display:flex;flex-direction:column;gap:10px}
-.fraternity-meta-item{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.fraternity-meta-label{
-  padding:6px 12px;
-  border-radius:12px;
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.14);
-  font-size:13px;
-  text-transform:uppercase;
-  letter-spacing:.08em;
-  color:#fff;
-}
-.fraternity-meta-value{font-weight:700;font-size:18px}
-
-.fraternity-journey{
-  position:relative;
-  border-radius:26px;
-  padding:32px 28px;
-  border:1px solid rgba(255,255,255,0.12);
-  background:linear-gradient(165deg, rgba(16,16,38,0.94), rgba(26,20,60,0.92));
-  box-shadow:0 32px 80px rgba(6,4,24,0.65);
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  gap:24px;
-}
-
-.fraternity-journey::before{
+.dream-section__eyebrow::before{
   content:"";
-  position:absolute;
-  inset:18% -30% auto;
-  height:240px;
-  background:radial-gradient(circle at 30% 0%, rgba(255,46,106,0.3), transparent 65%);
-  opacity:.6;
-  pointer-events:none;
+  width:48px;
+  height:1px;
+  background:linear-gradient(90deg, rgba(245,210,115,0.8), rgba(124,101,255,0));
 }
 
-.fraternity-journey::after{
-  content:"";
-  position:absolute;
-  inset:auto -20% -30% -20%;
-  height:220px;
-  background:radial-gradient(circle at 50% 100%, rgba(123,92,255,0.32), transparent 70%);
-  opacity:.6;
-  pointer-events:none;
-  filter:blur(12px);
-}
-
-.fraternity-journey-head{
-  position:relative;
-  display:flex;
-  align-items:center;
-  gap:16px;
-  z-index:1;
-}
-
-.fraternity-sigil{
-  display:grid;
-  place-items:center;
-  width:54px;
-  height:54px;
-  border-radius:16px;
-  background:linear-gradient(135deg, rgba(255,46,106,0.85), rgba(123,92,255,0.85));
-  font-size:28px;
-  font-weight:700;
-  box-shadow:0 16px 38px rgba(15,8,38,0.55);
-}
-
-.fraternity-steps{
-  position:relative;
-  list-style:none;
+.dream-section__title{
   margin:0;
-  padding:12px 0 12px 0;
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-  z-index:1;
+  font-size:clamp(32px,4.5vw,54px);
+  font-weight:600;
+  color:#fff9dc;
+  text-shadow:0 0 22px rgba(245,210,115,0.25);
 }
 
-.fraternity-steps::before{
-  content:"";
-  position:absolute;
-  left:28px;
-  top:0;
-  bottom:0;
-  width:2px;
-  background:linear-gradient(180deg, rgba(255,46,106,0.85), rgba(123,92,255,0.1));
-  opacity:.7;
+.dream-section__lead{
+  margin:0;
+  font-size:clamp(18px,2vw,22px);
+  line-height:1.6;
+  color:#f1e6c9;
 }
 
-.fraternity-step{
+.dream-section__text p{
+  margin:0;
+  font-size:clamp(16px,1.7vw,18px);
+  line-height:1.7;
+  color:rgba(232,229,245,0.82);
+}
+
+.dream-section__text p + p{margin-top:clamp(12px,2vw,18px)}
+
+.dream-section__art{
   position:relative;
   display:flex;
+  flex-direction:column;
   gap:16px;
   align-items:flex-start;
-  padding:16px 18px 16px 56px;
-  border-radius:20px;
-  border:1px solid rgba(255,255,255,0.08);
-  background:rgba(10,10,22,0.55);
-  backdrop-filter:blur(6px);
-  transition:transform .25s ease, border-color .25s ease;
 }
 
-.fraternity-step::before{
+.dream-section__frame{
+  width:100%;
+  max-width:360px;
+  border-radius:28px;
+  border:1px solid rgba(245,210,115,0.45);
+  background:linear-gradient(150deg, rgba(20,18,35,0.92), rgba(9,9,20,0.88));
+  box-shadow:0 24px 60px rgba(5,5,15,0.55);
+  padding:clamp(18px,3vw,26px);
+  backdrop-filter:blur(6px);
+}
+
+.dream-section__frame::after{
   content:"";
   position:absolute;
-  left:22px;
-  top:24px;
-  width:14px;
-  height:14px;
-  border-radius:50%;
-  background:linear-gradient(135deg,var(--accent),var(--accent-2));
-  box-shadow:0 0 0 6px rgba(123,92,255,0.22);
+  inset:-12% -18% auto auto;
+  width:140px;
+  height:140px;
+  background:radial-gradient(circle at 50% 50%, rgba(245,210,115,0.3), transparent 70%);
+  filter:blur(14px);
+  opacity:.7;
+  pointer-events:none;
 }
 
-.fraternity-step:hover{transform:translateX(4px);border-color:rgba(255,255,255,0.18)}
+.dream-section__frame img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:18px;
+  object-fit:cover;
+  background:rgba(255,255,255,0.04);
+}
 
-.fraternity-step-index{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:6px 14px;
-  border-radius:999px;
+.dream-section__caption{
   font-size:13px;
   letter-spacing:.08em;
   text-transform:uppercase;
-  font-weight:700;
-  background:rgba(255,255,255,0.08);
-  border:1px solid rgba(255,255,255,0.16);
-  color:#fff;
-  min-width:92px;
+  color:rgba(241,230,201,0.66);
 }
 
-.fraternity-step-body h4{margin:0 0 6px;font-size:18px}
-.fraternity-step-body p{margin:0;color:#d2d2e6}
-
-@media (max-width:1080px){
-  .fraternity-layout{grid-template-columns:1fr;gap:40px}
-  .fraternity-journey{max-width:620px;margin-inline:auto}
+@media (max-width:1024px){
+  .dream-section__inner{grid-template-columns:1fr;align-items:center}
+  .dream-section__art{order:-1;align-items:center;text-align:center}
+  .dream-section__frame{max-width:320px}
+  .dream-section__caption{text-align:center}
 }
 
-@media (max-width:720px){
-  .fraternity-grid{grid-template-columns:1fr}
-  .fraternity-card h3{font-size:22px}
-  .fraternity-step{padding-left:52px}
-  .fraternity-step-index{min-width:82px;font-size:12px}
-}
-
-@media (max-width:520px){
-  .fraternity-journey{padding:26px 22px}
-  .fraternity-steps::before{left:24px}
-  .fraternity-step{padding:16px 16px 16px 46px}
-  .fraternity-step::before{left:18px}
+@media (max-width:640px){
+  .dream-section__frame{padding:20px;border-radius:22px}
+  .dream-section__frame img{border-radius:14px}
+  .dream-section__eyebrow{letter-spacing:.24em}
 }
 
 #roadmap-about .roadmap-board{
@@ -2636,11 +2541,11 @@ body.mission-page .legend-section{
     linear-gradient(120deg, rgba(11,11,20,0.78), rgba(18,8,26,0.82));
 }
 
-body.mission-page #fraternity{
+body.mission-page #mission-dream{
   background:
-    radial-gradient(880px 520px at 12% 12%, rgba(123,92,255,0.18), transparent 70%),
-    radial-gradient(720px 520px at 86% 0%, rgba(255,46,106,0.16), transparent 72%),
-    linear-gradient(180deg, rgba(12,12,26,0.78), rgba(8,8,20,0.82));
+    radial-gradient(860px 520px at 8% 8%, rgba(245,210,115,0.14), transparent 70%),
+    radial-gradient(760px 540px at 92% 6%, rgba(118,87,255,0.16), transparent 74%),
+    linear-gradient(180deg, rgba(15,16,29,0.86), rgba(7,7,19,0.9));
 }
 
 body.mission-page #mission-values{
