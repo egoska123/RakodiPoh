@@ -21,14 +21,19 @@
     <div class="logo"><img src="assets/20250922_1253_Neon_Visor_Monogram_remix_01k5r6fxgkeq7svghrvncrhmyv.png" alt="RAKODI"><div style="font-size: 1.6vw;" class="brand">RAKODI</div></div>
     <button class="menu-toggle" aria-label="Меню"><span></span><span></span><span></span></button>
     <nav class="links">
-      <a href="index.html">Главная</a>
-      <a href="about.html">О проекте</a>
-      <a href="tokenomics.html">Токеномика</a>
-      <a href="brotherhood.html">Братство.</a>
-      <a href="news.html">Мемы</a>
+      <a href="index.html" data-i18n="nav.home">Главная</a>
+      <a href="about.html" data-i18n="nav.mission">Миссия</a>
+      <a href="tokenomics.html" data-i18n="nav.tokenomics">Токеномика</a>
+      <a href="brotherhood.html" data-i18n="nav.brotherhood">Братство.</a>
+      <a href="news.html" data-i18n="nav.news">Мемы</a>
     </nav>
     <div class="right">
-      <a class="btn small" href="#">Купить</a>
+      <button type="button" class="lang-toggle" data-current="en" aria-label="Switch language" title="Switch language">
+        <span class="lang-toggle__option" data-lang-code="ru">RU</span>
+        <span class="lang-toggle__divider">/</span>
+        <span class="lang-toggle__option" data-lang-code="en">EN</span>
+      </button>
+      <a class="btn small" href="#" data-i18n="nav.buy">Купить</a>
       <a class="icon-btn" href="#" aria-label="Telegram"><img src="assets/telegram.svg" alt="Telegram"></a>
       <a class="icon-btn" href="#" aria-label="YouTube"><img src="assets/youtube.svg" alt="YouTube"></a>
     </div>
@@ -91,32 +96,28 @@
     </div>
   </section>
 
-  <!-- Видео (тизеры/клипы) -->
-  <section id="video" class="reveal">
-    <div class="container">
-      <h2 class="section-title">Видеотека</h2>
-      <p class="section-sub">Клиповые тизеры в стиле игровых и кинематографических трейлеров. Наша визуальная легенда.</p>
-      <div class="feature-media feature-media--showcase">
-        <div class="feature-media__inner">
-          <iframe
-            src="https://www.youtube.com/embed/abiL84EAWSY?si=tSqi2_liSB2K7lQu"
-            title="RAKODI — тизер"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            loading="lazy"
-            allowfullscreen
-          ></iframe>
+  <!-- Тренд I: Фаросский маяк -->
+  <section id="pharos" class="reveal pharos-section">
+    <div class="pharos-section__bg" aria-hidden="true"></div>
+    <div class="container pharos-shell">
+      <figure class="pharos-visual">
+        <div class="pharos-visual__frame">
+          <img src="assets/pharos-placeholder.svg" alt="Stylised illustration of the Lighthouse of Pharos" loading="lazy">
+        </div>
+        <figcaption class="pharos-visual__caption" data-i18n="pharos.caption">Light your beacon. Raise the signal.</figcaption>
+      </figure>
+      <div class="pharos-content">
+        <div class="pharos-header">
+          <span class="pharos-chip" data-i18n="pharos.chip">Trend I · Beacon Protocol</span>
+          <h2 class="pharos-title" data-i18n="pharos.title">The Lighthouse of Pharos</h2>
+          <p class="pharos-subtitle" data-i18n="pharos.subtitle">Switch on the torch, lift it high, and ignite your own beacon.</p>
+        </div>
+        <div class="pharos-text">
+          <p data-i18n="pharos.paragraph1">The Lighthouse of Pharos was not merely a tower of stone, but a voice of eternity speaking to humankind. Its light pierced through the darkness, whispering to sailors: “There is a path. Even if you are alone upon the boundless sea.” Born of human hands, yet touched by the divine, its radiance felt as though the universe itself was reaching out to those daring enough to sail beyond the horizon.</p>
+          <p data-i18n="pharos.paragraph2">For the ancient world, Pharos was a wonder, a living testament that human will and intellect could lift fire to the heavens. For us, it remains a symbol of hope, courage, and choice. Light can always be kindled, even in the deepest darkness, and once lit, it becomes a beacon for others to follow.</p>
+          <p data-i18n="pharos.paragraph3">Within each of us lies our own Pharos — an inner flame, capable not only of illuminating our own journey but also of inspiring those who walk beside us.</p>
         </div>
       </div>
-      <div class="grid cols-3" style="margin-top:14px">
-        <div class="card"><h3>Свитки будущего</h3><p class="muted">Короткий взгляд на путь комьюнити к DEX.</p></div>
-        <div class="card"><h3>Голоса зала</h3><p class="muted">Форумный вайб и огни неона.</p></div>
-        <div class="card"><h3>Пламя мемов</h3><p class="muted">Монтаж лучших моментов недели.</p></div>
-      </div>
-      <div class="hero-cta" style="margin-top:12px">
-        <a href="#" class="btn">Смотреть тизер</a>
-        <a href="#" class="btn ghost">Подписаться на YouTube</a>
-      </div>
-      <p class="small">Новые премьеры — по расписанию. Включи уведомления.</p>
     </div>
   </section>
 

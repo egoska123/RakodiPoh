@@ -1,0 +1,40 @@
+<svg width="620" height="880" viewBox="0 0 620 880" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Pharos placeholder</title>
+  <desc id="desc">Abstract placeholder illustration of a lighthouse surrounded by waves.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#201522" />
+      <stop offset="50%" stop-color="#2c1c2f" />
+      <stop offset="100%" stop-color="#16131f" />
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffdd8a" stop-opacity="0" />
+      <stop offset="40%" stop-color="#ffe6a6" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#fff3c6" stop-opacity="0.85" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#ffe9a8" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#ffdd8a" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="620" height="880" fill="url(#bg)" rx="36" ry="36" />
+  <g opacity="0.85">
+    <path d="M90 736 Q310 620 530 736" fill="none" stroke="#4e3755" stroke-width="8" stroke-linecap="round" />
+    <path d="M110 768 Q310 660 510 768" fill="none" stroke="#3a2a3f" stroke-width="6" stroke-linecap="round" />
+    <path d="M130 802 Q310 708 490 802" fill="none" stroke="#2b1f30" stroke-width="6" stroke-linecap="round" />
+  </g>
+  <g transform="translate(180 120)">
+    <path d="M130 0 L200 0 L220 40 L110 40 Z" fill="#1c1624" stroke="#bfa464" stroke-width="4" />
+    <rect x="120" y="40" width="100" height="70" fill="#22192e" stroke="#bfa464" stroke-width="4" />
+    <rect x="140" y="110" width="60" height="40" fill="#271c33" stroke="#d5b76b" stroke-width="3" />
+    <path d="M170 150 L230 590 L110 590 Z" fill="#21182d" stroke="#c9a85b" stroke-width="4" />
+    <rect x="156" y="190" width="28" height="80" fill="#2f223f" stroke="#f4d27d" stroke-width="2" />
+    <rect x="156" y="310" width="28" height="80" fill="#2f223f" stroke="#f4d27d" stroke-width="2" />
+    <rect x="156" y="430" width="28" height="80" fill="#2f223f" stroke="#f4d27d" stroke-width="2" />
+    <circle cx="170" cy="88" r="28" fill="#ffe29b" opacity="0.4" />
+  </g>
+  <path d="M310 150 L620 260 L620 210 L310 100 Z" fill="url(#beam)" opacity="0.65" />
+  <circle cx="310" cy="150" r="160" fill="url(#glow)" opacity="0.45" />
+  <text x="50%" y="86%" text-anchor="middle" fill="#e0c888" font-family="'Cinzel', 'Times New Roman', serif" font-size="32" letter-spacing="6">PHAROS</text>
+  <text x="50%" y="91%" text-anchor="middle" fill="#8d6f3a" font-family="'Inter', 'Arial', sans-serif" font-size="18" letter-spacing="4">PLACEHOLDER ART</text>
+</svg>

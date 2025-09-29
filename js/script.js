@@ -51,7 +51,14 @@ const translations = {
     'alexandria.detail2.text': 'Поэты, философы и учёные задавали пульс города, доказывая, что идеи — лучшая валюта, когда сообщество поддерживает их живыми.',
     'alexandria.detail3.label': 'Наследие Ракотиса',
     'alexandria.detail3.text': 'Память о Ракотисе вливается в Rakodi. Мы наследуем дух создателей, превращающих приморское поселение в маяк, устремлённый «ту зе мун».',
-    'alexandria.caption': 'Ту зе мун, Александр Македонский'
+    'alexandria.caption': 'Ту зе мун, Александр Македонский',
+    'pharos.chip': 'Тренд I · Протокол маяка',
+    'pharos.title': 'Фаросский маяк',
+    'pharos.subtitle': 'Включи фонарик, подними его и зажги свой маяк.',
+    'pharos.paragraph1': 'Маяк Фарос был не просто башней из камня, но голосом вечности, обращённым к людям. Его свет пронзал мрак, шепча морякам: «Путь есть. Даже если ты один посреди безграничного моря». Он был создан человеком, но в его сиянии чувствовалось присутствие богов — словно сама Вселенная протягивала руку тем, кто осмеливался выйти за горизонт.',
+    'pharos.paragraph2': 'Для древнего мира Фарос был чудом света, воплощением веры в то, что человеческий разум и воля способны вознести огонь к небесам. Для нас он остаётся символом надежды, мужества и выбора. Свет всегда можно зажечь, даже когда вокруг тьма, и именно он способен стать ориентиром для других.',
+    'pharos.paragraph3': 'Каждый человек носит в себе свой собственный Фарос — внутренний огонь, который способен не только освещать дорогу самому, но и вдохновлять тех, кто идёт рядом.',
+    'pharos.caption': 'Зажги маяк. Подними сигнал.'
   },
   en: {
     'meta.title': 'RAKODI — Mission of the Meme City',
@@ -94,7 +101,14 @@ const translations = {
     'alexandria.detail2.text': 'Poets, philosophers, and scientists shaped the city’s pulse — proving that ideas can be the greatest currency when a community keeps them alive.',
     'alexandria.detail3.label': 'Legacy of Rakotis',
     'alexandria.detail3.text': 'The memory of Rakotis flows into Rakodi. We inherit the spirit of builders who transform a coastal settlement into a beacon that reaches “to the moon.”',
-    'alexandria.caption': 'To the moon, Alexander the Great'
+    'alexandria.caption': 'To the moon, Alexander the Great',
+    'pharos.chip': 'Trend I · Beacon Protocol',
+    'pharos.title': 'The Lighthouse of Pharos',
+    'pharos.subtitle': 'Switch on the torch, lift it high, and ignite your own beacon.',
+    'pharos.paragraph1': 'The Lighthouse of Pharos was not merely a tower of stone, but a voice of eternity speaking to humankind. Its light pierced through the darkness, whispering to sailors: “There is a path. Even if you are alone upon the boundless sea.” Born of human hands, yet touched by the divine, its radiance felt as though the universe itself was reaching out to those daring enough to sail beyond the horizon.',
+    'pharos.paragraph2': 'For the ancient world, Pharos was a wonder, a living testament that human will and intellect could lift fire to the heavens. For us, it remains a symbol of hope, courage, and choice. Light can always be kindled, even in the deepest darkness, and once lit, it becomes a beacon for others to follow.',
+    'pharos.paragraph3': 'Within each of us lies our own Pharos — an inner flame, capable not only of illuminating our own journey but also of inspiring those who walk beside us.',
+    'pharos.caption': 'Light your beacon. Raise the signal.'
   }
 };
 
