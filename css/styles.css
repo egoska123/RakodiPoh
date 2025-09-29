@@ -2600,10 +2600,6 @@ body.mission-page #memlib{
 }
 
 body.mission-page .mission-cinema{
-  background:
-    radial-gradient(1200px 680px at 14% -10%, rgba(240,204,132,0.28), transparent 70%),
-    radial-gradient(960px 620px at 86% 0%, rgba(123,92,255,0.22), transparent 68%),
-    linear-gradient(160deg, rgba(16,10,28,0.92), rgba(8,6,18,0.92));
   color:var(--mission-ink);
   font-family:'EB Garamond',serif;
   position:relative;
@@ -2714,6 +2710,10 @@ body.mission-page .mission-cinema{
   overflow:hidden;
   flex:1 1 auto;
   border-radius:32px;
+  border:1px solid rgba(240,204,132,0.32);
+  background:rgba(5,4,10,0.88);
+  box-shadow:0 32px 90px rgba(6,4,14,0.65);
+  padding:clamp(18px,2.6vw,28px);
   border:1px solid rgba(204,164,104,0.65);
   background:rgba(5,4,10,0.88);
   box-shadow:0 26px 60px rgba(8,4,16,0.6);
