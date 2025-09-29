@@ -40,7 +40,18 @@ const translations = {
     'panel.meta': 'YouTube · Telegram · Братство',
     'panel.cta': 'Смотреть превью',
     'lang.aria': 'Сменить язык',
-    'header.menu': 'Меню'
+    'header.menu': 'Меню',
+    'alexandria.chip': 'Хроника происхождения',
+    'alexandria.title': 'Первая Александрия — <span class="alexandria-title__accent">город, вдохновивший Rakodi</span>',
+    'alexandria.paragraph1': 'Первая Александрия — это легендарный город в Египте, основанный Александром Македонским в 331 году до н.э. Он задумывал его как новый центр торговли и культуры, соединяющий Египет с античным миром Средиземноморья. После смерти Александра город стал столицей Птолемеев и превратился в интеллектуальное сердце древности. Именно здесь возникла знаменитая Александрийская библиотека — хранилище знаний со всего света, и был построен маяк на острове Фарос, одно из семи чудес света. Александрия быстро обрела славу города философов, поэтов и учёных — места, где рождались новые идеи и смыслы.',
+    'alexandria.paragraph2': 'Важно помнить, что до основания Александрии на этом месте существовало египетское поселение Ракотис. Именно от него ведёт своё происхождение название «Ракоди» — как символ преемственности, памяти и вдохновения. Так древний Ракотис стал основой для города, изменившего историю, а сегодня метафорой этого города станет наш проект.',
+    'alexandria.detail1.label': 'Инженерия знаний',
+    'alexandria.detail1.text': 'Свитки Библиотеки и маяк на Фаросе превращали Александрию в освещённый узел, ведущий купцов, мыслителей и мечтателей по всему Средиземноморью.',
+    'alexandria.detail2.label': 'Культура в движении',
+    'alexandria.detail2.text': 'Поэты, философы и учёные задавали пульс города, доказывая, что идеи — лучшая валюта, когда сообщество поддерживает их живыми.',
+    'alexandria.detail3.label': 'Наследие Ракотиса',
+    'alexandria.detail3.text': 'Память о Ракотисе вливается в Rakodi. Мы наследуем дух создателей, превращающих приморское поселение в маяк, устремлённый «ту зе мун».',
+    'alexandria.caption': 'Ту зе мун, Александр Македонский'
   },
   en: {
     'meta.title': 'RAKODI — Mission of the Meme City',
@@ -72,7 +83,18 @@ const translations = {
     'panel.meta': 'YouTube · Telegram · Brotherhood',
     'panel.cta': 'Play preview',
     'lang.aria': 'Switch language',
-    'header.menu': 'Menu'
+    'header.menu': 'Menu',
+    'alexandria.chip': 'Origin Chronicle',
+    'alexandria.title': 'First Alexandria — <span class="alexandria-title__accent">the city that inspired Rakodi</span>',
+    'alexandria.paragraph1': 'The first Alexandria is a legendary city in Egypt, founded by Alexander the Great in 331 BC. He envisioned it as a new center of trade and culture, uniting Egypt with the classical world of the Mediterranean. After Alexander’s death, the city became the capital of the Ptolemaic dynasty and grew into the intellectual heart of antiquity. It was here that the famous Library of Alexandria was created — a repository of knowledge from across the world — and the great Lighthouse of Pharos was built, one of the Seven Wonders of the Ancient World. Alexandria quickly gained renown as a city of philosophers, poets, and scholars — a place where new ideas and meanings were born.',
+    'alexandria.paragraph2': 'It is important to remember that before Alexandria, there stood the Egyptian settlement of Rakotis. From this name comes “Rakodi” — a symbol of continuity, memory, and inspiration. Ancient Rakotis became the foundation of a city that changed history, and today its metaphor lives on in our project.',
+    'alexandria.detail1.label': 'Knowledge Engine',
+    'alexandria.detail1.text': 'Library scrolls and the Pharos lighthouse turned Alexandria into an illuminated hub that guided merchants, thinkers, and dreamers across the Mediterranean.',
+    'alexandria.detail2.label': 'Culture in Motion',
+    'alexandria.detail2.text': 'Poets, philosophers, and scientists shaped the city’s pulse — proving that ideas can be the greatest currency when a community keeps them alive.',
+    'alexandria.detail3.label': 'Legacy of Rakotis',
+    'alexandria.detail3.text': 'The memory of Rakotis flows into Rakodi. We inherit the spirit of builders who transform a coastal settlement into a beacon that reaches “to the moon.”',
+    'alexandria.caption': 'To the moon, Alexander the Great'
   }
 };
 
