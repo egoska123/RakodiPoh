@@ -107,102 +107,96 @@
     </div>
   </section>
 
-  <!-- 4) Экосистема — «Нервный центр и сигнальные башни» -->
-  <section id="ecosystem" class="reveal">
+  <!-- 4) Сигнальная карусель — «Синематика маяков» -->
+  <section id="mission-cinema" class="reveal mission-cinema">
     <div class="container">
-      <h2 class="section-title">Как всё соединено</h2>
-      <p class="section-sub">Орбитальная схема показывает, как каждый канал ловит внимание и возвращает его в нервный центр экосистемы.</p>
+      <div class="mission-cinema__heading">
+        <span class="mission-cinema__chip" data-i18n="cinema.chip">Signal Cinema</span>
+        <h2 class="mission-cinema__title" data-i18n="cinema.title">Keepers of the Raised Light</h2>
+        <p class="mission-cinema__subtitle" data-i18n="cinema.subtitle">A gentle Hellenistic carousel that holds our core film and the torchlifting trend.</p>
+      </div>
 
-      <div class="ecosystem-diagram">
-        <svg class="ecosystem-links" viewBox="0 0 800 600" aria-hidden="true" focusable="false">
-          <defs>
-            <linearGradient id="ecosystem-line" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="rgba(255,46,106,0.85)"/>
-              <stop offset="50%" stop-color="rgba(123,92,255,0.65)"/>
-              <stop offset="100%" stop-color="rgba(76,217,253,0.6)"/>
-            </linearGradient>
-            <radialGradient id="ecosystem-core" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="rgba(255,46,106,0.8)"/>
-              <stop offset="60%" stop-color="rgba(123,92,255,0.25)"/>
-              <stop offset="100%" stop-color="rgba(12,16,32,0)"/>
-            </radialGradient>
-            <radialGradient id="ecosystem-orbit" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/>
-              <stop offset="70%" stop-color="rgba(255,255,255,0.02)"/>
-              <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
-            </radialGradient>
-          </defs>
-          <circle cx="400" cy="300" r="188" fill="none" stroke="url(#ecosystem-line)" stroke-width="1.4" stroke-dasharray="10 18" opacity="0.55" class="ecosystem-orbit"/>
-          <circle cx="400" cy="300" r="262" fill="none" stroke="url(#ecosystem-line)" stroke-width="1.1" stroke-dasharray="12 26" opacity="0.35" class="ecosystem-orbit"/>
-          <circle cx="400" cy="300" r="118" fill="url(#ecosystem-orbit)" opacity="0.5"/>
-          <path d="M400 300 C 332 236 260 198 170 158" stroke="url(#ecosystem-line)" stroke-width="2.4" fill="none" stroke-linecap="round" class="ecosystem-line"/>
-          <path d="M400 300 C 336 352 280 398 188 426" stroke="url(#ecosystem-line)" stroke-width="2.4" fill="none" stroke-linecap="round" class="ecosystem-line"/>
-          <path d="M400 300 C 476 266 542 238 604 260" stroke="url(#ecosystem-line)" stroke-width="2.4" fill="none" stroke-linecap="round" class="ecosystem-line"/>
-          <circle cx="400" cy="300" r="74" fill="url(#ecosystem-core)" opacity="0.7"/>
-        </svg>
-
-        <article class="ecosystem-node ecosystem-node--site">
-          <span class="ecosystem-chip">Главный узел</span>
-          <h3>Сайт — нервный центр</h3>
-          <p>Живые метрики, токеномика, квесты и база знаний. Сюда стекается весь внешний трафик и превращается в участие.</p>
-          <ul class="ecosystem-meta">
-            <li>открытая аналитика и дашборды</li>
-            <li>документация и onboarding для Братства</li>
-          </ul>
+      <div class="mission-cinema__intro">
+        <article class="mission-cinema__intro-card">
+          <h3 class="mission-cinema__intro-title" data-i18n="cinema.intro1.title">Signal Choreography</h3>
+          <p class="mission-cinema__intro-text" data-i18n="cinema.intro1.text">Placeholder copy about how we align the raised lights, shaping moodboards and storyboards for every drop.</p>
         </article>
-
-        <article class="ecosystem-node ecosystem-node--youtube">
-          <span class="ecosystem-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" role="presentation" focusable="false">
-              <circle cx="16" cy="16" r="13.2" stroke="currentColor" stroke-width="2" opacity="0.6" fill="none"/>
-              <path d="M13 11.5L21 16L13 20.5V11.5Z" fill="currentColor"/>
-            </svg>
-          </span>
-          <h3>YouTube — медиаядро</h3>
-          <p>Клиповые тизеры, прямые эфиры и коллаборации. Эмоция зажигает внимание и ведёт к подробностям на сайте.</p>
-          <span class="ecosystem-note">Трейлеры • Бэкстейдж • Прямые стримы</span>
-        </article>
-
-        <article class="ecosystem-node ecosystem-node--social">
-          <span class="ecosystem-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" role="presentation" focusable="false">
-              <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
-              <circle cx="22" cy="8" r="3" fill="currentColor" opacity="0.7"/>
-              <circle cx="24" cy="22" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
-              <circle cx="9" cy="23" r="3" fill="currentColor" opacity="0.7"/>
-              <path d="M12.5 12.5L19 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-              <path d="M13 8L19 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-              <path d="M20 22L22 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-            </svg>
-          </span>
-          <h3>Соцсети — сетка сигналов</h3>
-          <p>X, Instagram и Reddit ловят новые аудитории. Усиливаем охват и возвращаем людей к видео и на сайт.</p>
-          <span class="ecosystem-note">Кросс-постинг • Мемы • Анонсы и спойлеры</span>
+        <article class="mission-cinema__intro-card">
+          <h3 class="mission-cinema__intro-title" data-i18n="cinema.intro2.title">City Pulse Notes</h3>
+          <p class="mission-cinema__intro-text" data-i18n="cinema.intro2.text">Another placeholder about the creative labs that polish edits, color, and lore before the beacon goes live.</p>
         </article>
       </div>
 
-      <div class="ecosystem-flow">
-        <div class="flow-step">
-          <span class="flow-index">01</span>
-          <h4>Контент зажигает</h4>
-          <p>Видео и мемы создают эмоциональный вход. Основные CTA ведут на сайт и в Telegram.</p>
+      <div class="mission-cinema__carousel" data-carousel tabindex="0">
+        <button class="mission-cinema__nav mission-cinema__nav--prev" type="button" data-carousel-prev>
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path d="M14.5 6.5L9 12l5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="visually-hidden" data-i18n="cinema.prev">Previous video</span>
+        </button>
+        <div class="mission-cinema__viewport">
+          <div class="mission-cinema__track" data-carousel-track>
+            <article class="mission-cinema__slide" data-carousel-slide>
+              <div class="mission-cinema__frame">
+                <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Rakodi: Light Over the City" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+              </div>
+              <div class="mission-cinema__meta">
+                <span class="mission-cinema__tag" data-i18n="cinema.slide1.tag">Project Film</span>
+                <h3 class="mission-cinema__slide-title" data-i18n="cinema.slide1.title">Rakodi: Light Over the City</h3>
+                <p class="mission-cinema__slide-text" data-i18n="cinema.slide1.text">Cinematic core teaser with sweeping shots of the invisible city rising under a sea of torches.</p>
+              </div>
+            </article>
+
+            <article class="mission-cinema__slide" data-carousel-slide>
+              <div class="mission-cinema__frame">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Torch Trend Compilation" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+              </div>
+              <div class="mission-cinema__meta">
+                <span class="mission-cinema__tag" data-i18n="cinema.slide2.tag">Beacon Trend</span>
+                <h3 class="mission-cinema__slide-title" data-i18n="cinema.slide2.title">Torch Trend Compilation</h3>
+                <p class="mission-cinema__slide-text" data-i18n="cinema.slide2.text">Quick-cut reel of creators lifting the light upward — mood, energy, and pure meme momentum.</p>
+              </div>
+            </article>
+
+            <article class="mission-cinema__slide" data-carousel-slide>
+              <div class="mission-cinema__frame">
+                <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="Beacon POV Sequence" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+              </div>
+              <div class="mission-cinema__meta">
+                <span class="mission-cinema__tag" data-i18n="cinema.slide3.tag">Beacon Trend</span>
+                <h3 class="mission-cinema__slide-title" data-i18n="cinema.slide3.title">Beacon POV Sequence</h3>
+                <p class="mission-cinema__slide-text" data-i18n="cinema.slide3.text">Immersive point-of-view of the raised flashlight ritual, stitched with crowd reactions and synth swells.</p>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="flow-step">
-          <span class="flow-index">02</span>
-          <h4>Сайт собирает</h4>
-          <p>Цифры, легенда и механики удерживают внимание, конвертируя его в регистрацию и покупку токена.</p>
-        </div>
-        <div class="flow-step">
-          <span class="flow-index">03</span>
-          <h4>Комьюнити усиливает</h4>
-          <p>Телеграм и соцсети возвращают инсайты в контент, замыкая петлю роста.</p>
-        </div>
+        <button class="mission-cinema__nav mission-cinema__nav--next" type="button" data-carousel-next>
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+            <path d="M9.5 6.5L15 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="visually-hidden" data-i18n="cinema.next">Next video</span>
+        </button>
+      </div>
+
+      <div class="mission-cinema__dots">
+        <button type="button" class="is-active" data-carousel-dot>
+          <span class="visually-hidden" data-i18n="cinema.dot1">Go to video 1</span>
+        </button>
+        <button type="button" data-carousel-dot>
+          <span class="visually-hidden" data-i18n="cinema.dot2">Go to video 2</span>
+        </button>
+        <button type="button" data-carousel-dot>
+          <span class="visually-hidden" data-i18n="cinema.dot3">Go to video 3</span>
+        </button>
+      </div>
+
+      <div class="mission-cinema__manifest">
+        <h3 class="mission-cinema__manifest-title" data-i18n="cinema.manifest.title">The Light We Guard</h3>
+        <p class="mission-cinema__manifest-text" data-i18n="cinema.manifest.text">To love means opening your heart to the world and letting it resonate within you. To dream means seeing beyond the horizon and daring to create the impossible. Courage is born the moment you choose to move forward, even when the path is hidden in darkness. And believing in yourself is the light that never fades, as long as you guard it within. We are building a space where love becomes movement, dreams become foundation, and faith becomes the key to the future. The world is waiting for those who dare to be themselves and live life to its fullest. Are you with us?</p>
       </div>
     </div>
 
-
   </section>
-
   <!-- 5) Контент-двигатель — «Как мемы двигают капитализацию» -->
   <section id="engine" class="reveal">
     <div class="container">
