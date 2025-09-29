@@ -482,13 +482,7 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .mission-finale__backdrop{
   position:absolute;
   inset:0;
-  background:
-    radial-gradient(circle at 20% 10%,rgba(240,204,132,0.28),transparent 65%),
-    radial-gradient(circle at 80% 18%,rgba(255,134,120,0.2),transparent 60%),
-    linear-gradient(165deg,rgba(18,10,20,0.96),rgba(8,4,14,0.94));
-  filter:saturate(1.05);
-  opacity:0.96;
-  z-index:-3;
+  
 }
 .mission-finale__glow{
   position:absolute;
