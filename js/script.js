@@ -73,7 +73,16 @@ const translations = {
     'cinema.slide2.title': 'Подборка поднятых фонариков',
     'cinema.slide2.text': 'Динамичный монтаж создателей, поднимающих свет вверх — настроение, энергия и чистый мемный импульс.',
     'cinema.manifest.title': 'Свет, который мы храним',
-    'cinema.manifest.text': 'Любить — значит открывать сердце миру и позволять ему звучать в тебе. Мечтать — значит видеть дальше горизонта и не бояться создавать невозможное. Смелость рождается там, где ты выбираешь идти вперёд, даже когда путь скрыт во тьме. А вера в себя — это тот свет, который никогда не гаснет, если ты сам его хранишь. Мы строим пространство, где любовь становится движением, мечты — основой, а вера — ключом к будущему. Мир ждёт тех, кто осмелится быть собой и прожить жизнь в полную силу. Ты с нами?'
+    'cinema.manifest.text': 'Любить — значит открывать сердце миру и позволять ему звучать в тебе. Мечтать — значит видеть дальше горизонта и не бояться создавать невозможное. Смелость рождается там, где ты выбираешь идти вперёд, даже когда путь скрыт во тьме. А вера в себя — это тот свет, который никогда не гаснет, если ты сам его хранишь. Мы строим пространство, где любовь становится движением, мечты — основой, а вера — ключом к будущему. Мир ждёт тех, кто осмелится быть собой и прожить жизнь в полную силу. Ты с нами?',
+    'finale.chip': 'Тренд I · Огонь маяка',
+    'finale.title': 'Фарос зажжён!',
+    'finale.paragraph1': 'Мы зажгли свой Фарос. Когда-то на острове Фарос горел величайший маяк древнего мира — чудо света, огонь которого освещал морякам путь через тьму и штормы. Его свет говорил каждому: «Ты не один. Путь существует». Сегодня мы продолжаем эту традицию. RAKODI зажигает свой собственный Фарос — не из камня и огня, а из идей, смелости и веры в человека. Веры в тебя. Это свет, который способен пробить тьму сомнений и открыть дорогу в будущее.',
+    'finale.paragraph2': 'Мы верим: как маяк Фарос однажды стал символом надежды и величия, так и наш Фарос будет символом нового пути. Пусть его сияние станет ориентиром для тех, кто ищет свой свет, и знаком того, что вместе мы способны превратить ночь безумия и страха в рассвет разума и надежды.',
+    'finale.cta.telegram': 'Сигнал в Telegram',
+    'finale.cta.brotherhood': 'Войти в Братство',
+    'finale.hashtag1': '#ФаросЗажжён',
+    'finale.hashtag2': '#RakodiBeacon',
+    'finale.hashtag3': '#ЗажгиОрден'
   },
   en: {
     'meta.title': 'RAKODI — Mission of the Meme City',
@@ -138,7 +147,16 @@ const translations = {
     'cinema.slide2.title': 'Torch Trend Compilation',
     'cinema.slide2.text': 'Quick-cut reel of creators lifting the light upward — mood, energy, and pure meme momentum.',
     'cinema.manifest.title': 'The Light We Guard',
-    'cinema.manifest.text': 'To love means opening your heart to the world and letting it resonate within you. To dream means seeing beyond the horizon and daring to create the impossible. Courage is born the moment you choose to move forward, even when the path is hidden in darkness. And believing in yourself is the light that never fades, as long as you guard it within. We are building a space where love becomes movement, dreams become foundation, and faith becomes the key to the future. The world is waiting for those who dare to be themselves and live life to its fullest. Are you with us?'
+    'cinema.manifest.text': 'To love means opening your heart to the world and letting it resonate within you. To dream means seeing beyond the horizon and daring to create the impossible. Courage is born the moment you choose to move forward, even when the path is hidden in darkness. And believing in yourself is the light that never fades, as long as you guard it within. We are building a space where love becomes movement, dreams become foundation, and faith becomes the key to the future. The world is waiting for those who dare to be themselves and live life to its fullest. Are you with us?',
+    'finale.chip': 'Trend I · Beacon Ignited',
+    'finale.title': 'Pharos is Lit!',
+    'finale.paragraph1': 'We have lit our own Pharos. Long ago, on the island of Pharos, the greatest lighthouse of the ancient world shone — a wonder of light whose fire guided sailors through darkness and storms. Its radiance spoke to every traveler: “You are not alone. The path exists.” Today, we carry that tradition forward. RAKODI lights its own Pharos — not of stone and fire, but of ideas, courage, and faith in humanity. Faith in you. This is a light strong enough to pierce through doubt and open the road to the future.',
+    'finale.paragraph2': 'We believe: just as the Lighthouse of Pharos once stood as a symbol of hope and greatness, so too will our Pharos become the symbol of a new path. May its brilliance guide those who seek their own light, and be the sign that together we can transform a night of madness and fear into a dawn of reason and hope.',
+    'finale.cta.telegram': 'Join the Telegram Signal',
+    'finale.cta.brotherhood': 'Enter the Brotherhood',
+    'finale.hashtag1': '#PharosIgnited',
+    'finale.hashtag2': '#RakodiBeacon',
+    'finale.hashtag3': '#LightTheOrder'
   }
 };
 
