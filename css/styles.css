@@ -2543,39 +2543,50 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .mission-ethos__frame{position:relative;display:flex;width:100%;height:100%;border-radius:28px;overflow:hidden;border: 1px solid rgba(255, 223, 155, .28);box-shadow:0 24px 60px rgba(12,6,24,.65);max-width:100%;background:rgba(16,12,24,.6);}
 .mission-ethos__frame::after{content:"";position:absolute;inset:12px;border-radius:20px;pointer-events:none;}
 .mission-ethos__frame img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.02);}
-.mission-memes{position:relative;padding:clamp(80px,18vw,140px) 0;background:radial-gradient(120% 140% at 0% 0%,rgba(38,18,8,0.92),transparent 70%),linear-gradient(140deg,rgba(20,10,6,0.96),rgba(8,4,12,0.92));color:var(--mission-ink);overflow:hidden}
-.mission-memes::before{content:"";position:absolute;inset:0;background:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"%3E%3Cfilter id="n" x="0" y="0" width="1" height="1"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="4"/%3E%3C/filter%3E%3Crect width="160" height="160" filter="url(%23n)" opacity="0.28"/%3E%3C/svg%3E') center/220px repeat;opacity:.18;mix-blend-mode:soft-light;pointer-events:none}
-.mission-memes__layout{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,70px);align-items:center}
-.mission-memes__art{position:relative;display:grid;gap:14px;justify-items:center}
-.mission-memes__frame{position:relative;width:100%;max-width:520px;border-radius:34px;padding:clamp(18px,2.6vw,28px);background:linear-gradient(130deg,rgba(65,34,18,0.72),rgba(22,12,32,0.9));border:1px solid rgba(240,204,132,0.32);box-shadow:0 42px 110px rgba(10,4,16,0.62);backdrop-filter:blur(14px)}
-.mission-memes__frame::before{content:"";position:absolute;inset:18%;border-radius:26px;background:radial-gradient(circle at 18% 12%,rgba(255,166,97,0.52),transparent 62%);filter:blur(40px);opacity:.8;pointer-events:none}
-.mission-memes__frame img{display:block;width:100%;height:auto;border-radius:24px;object-fit:cover;filter:saturate(1.08) contrast(1.05)}
-.mission-memes__caption{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,204,132,0.62);font-family:'Cinzel',serif}
-.mission-memes__content{display:flex;flex-direction:column;gap:clamp(18px,3vw,28px);font-family:'EB Garamond',serif}
-.mission-memes__chip{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;padding:10px 22px;border-radius:999px;background:rgba(54,28,18,0.6);border:1px solid rgba(240,204,132,0.42);letter-spacing:.28em;text-transform:uppercase;font-size:12px;font-family:'Cinzel',serif;color:rgba(240,204,132,0.86);backdrop-filter:blur(14px)}
-.mission-memes__chip::before{content:"✦";color:var(--mission-gold-bright);letter-spacing:0}
-.mission-memes__title{margin:0;font-size:clamp(36px,5vw,60px);letter-spacing:.02em;text-transform:uppercase;color:var(--mission-ink);text-shadow:0 22px 60px rgba(5,3,0,0.42)}
-.mission-memes__intro{margin:0;font-size:clamp(18px,2.1vw,24px);line-height:1.6;color:rgba(248,241,223,0.9)}
-.mission-memes__body{margin:0;font-size:clamp(17px,2vw,22px);line-height:1.65;color:rgba(248,241,223,0.82)}
-.mission-memes__cta{display:flex;flex-wrap:wrap;gap:14px}
-.mission-memes__cta .btn{min-width:180px;justify-content:center}
-.mission-memes__footer{display:grid;gap:18px}
-.mission-memes__note{margin:0;font-size:clamp(16px,1.8vw,20px);line-height:1.6;color:rgba(240,204,132,0.86)}
-.mission-memes__hashtags{display:flex;flex-wrap:wrap;gap:12px;margin:0;padding:0;list-style:none;font-family:'Cinzel',serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:rgba(240,204,132,0.72)}
-.mission-memes__hashtags li{padding:8px 18px;border-radius:999px;background:rgba(38,18,8,0.5);border:1px solid rgba(240,204,132,0.32)}
-@media (min-width:1025px){
-  .mission-memes__layout{align-items:stretch}
-  .mission-memes__art{height:100%;grid-template-rows:1fr auto}
-  .mission-memes__frame{height:100%;display:flex}
-  .mission-memes__frame img{flex:1;height:100%}
+.mission-odyssey{position:relative;padding:clamp(96px,16vw,180px) 0;color:#f8efe1;background:linear-gradient(140deg,rgba(9,6,16,.95) 12%,rgba(18,10,6,.94) 54%,rgba(6,4,12,.96) 96%);overflow:hidden}
+.mission-odyssey__glow{position:absolute;inset:0;background:radial-gradient(120% 140% at 15% 10%,rgba(255,196,125,.12),transparent 68%),radial-gradient(100% 120% at 50% 100%,rgba(0,0,0,.7),transparent 72%),url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240"%3E%3Cfilter id="grain" x="0" y="0" width="1" height="1"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="4"/%3E%3C/filter%3E%3Crect width="240" height="240" fill="%23000000" filter="url(%23grain)" opacity="0.22"/%3E%3C/svg%3E') center/260px repeat;mix-blend-mode:soft-light;pointer-events:none}
+.mission-odyssey__shell{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,72px);align-items:center}
+.mission-odyssey__visual{margin:0}
+.mission-odyssey__visual-frame{position:relative;border-radius:32px;overflow:hidden;border:1px solid rgba(238,196,132,.32);background:radial-gradient(circle at 18% 18%,rgba(255,190,132,.18),rgba(24,12,8,.85));box-shadow:0 46px 120px rgba(5,2,12,.78);transition:transform .6s ease}
+.mission-odyssey__visual-frame::before{content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid rgba(255,218,180,.25);mix-blend-mode:screen;pointer-events:none}
+.mission-odyssey__visual-frame:hover{transform:translateY(-6px)}
+.mission-odyssey__visual img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:contrast(1.08) saturate(1.05)}
+.mission-odyssey__visual-note{position:absolute;left:clamp(18px,3vw,34px);bottom:clamp(16px,3vw,30px);padding:10px 20px;border-radius:999px;border:1px solid rgba(238,196,132,.36);background:rgba(18,10,6,.75);backdrop-filter:blur(14px);font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(244,215,178,.84)}
+.mission-odyssey__panel{position:relative;border-radius:36px;padding:clamp(40px,6vw,72px);background:linear-gradient(160deg,rgba(26,14,10,.88),rgba(12,8,18,.92));border:1px solid rgba(240,200,140,.28);box-shadow:0 46px 130px rgba(6,4,14,.72);display:flex;flex-direction:column;gap:clamp(24px,4vw,40px);isolation:isolate}
+.mission-odyssey__panel::before{content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid rgba(255,226,180,.18);opacity:.65;mix-blend-mode:screen;pointer-events:none}
+.mission-odyssey__header{display:flex;flex-direction:column;gap:clamp(14px,2.5vw,24px)}
+.mission-odyssey__label{display:inline-flex;align-items:center;gap:14px;align-self:flex-start;padding:12px 28px;border-radius:999px;border:1px solid rgba(244,206,154,.45);background:rgba(54,26,12,.58);font-family:'Cinzel',serif;font-size:.82rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,230,196,.9);text-shadow:0 8px 26px rgba(0,0,0,.45)}
+.mission-odyssey__label::before{content:"✶";font-size:1.1em;color:rgba(255,222,173,.92)}
+.mission-odyssey__title{margin:0;font-family:'Cinzel',serif;font-size:clamp(2.8rem,6vw,4.6rem);letter-spacing:.08em;text-transform:uppercase;color:#fbf3e6;text-shadow:0 28px 80px rgba(0,0,0,.7)}
+.mission-odyssey__subtitle{margin:0;font-family:'EB Garamond',serif;font-size:clamp(1.2rem,2.6vw,1.7rem);letter-spacing:.02em;color:rgba(248,234,212,.9)}
+.mission-odyssey__body{display:flex;flex-direction:column;gap:clamp(18px,3vw,28px)}
+.mission-odyssey__description{margin:0;font-family:'EB Garamond',serif;font-size:clamp(1.1rem,2.4vw,1.45rem);line-height:1.8;color:rgba(250,238,218,.88)}
+.mission-odyssey__highlight{margin:0;font-family:'EB Garamond',serif;font-size:clamp(1.15rem,2.5vw,1.5rem);line-height:1.75;color:rgba(255,224,189,.9);background:linear-gradient(90deg,rgba(255,198,140,.08),rgba(255,198,140,.22),rgba(255,198,140,0));border-left:3px solid rgba(255,198,140,.55);padding:14px 0 14px 20px}
+.mission-odyssey__divider{width:160px;max-width:40%;height:2px;background:linear-gradient(90deg,rgba(244,193,110,0),rgba(244,193,110,.78),rgba(244,193,110,0));box-shadow:0 0 32px rgba(244,193,110,.55);margin-top:8px}
+.mission-odyssey__meta{display:flex;flex-wrap:wrap;gap:14px}
+.mission-odyssey__meta-item{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;border-radius:999px;border:1px solid rgba(244,193,110,.36);background:rgba(34,20,12,.65);font-family:'Cinzel',serif;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(244,211,160,.88);text-shadow:0 14px 32px rgba(0,0,0,.55)}
+.mission-odyssey__meta-item::before{content:"▴";font-size:.8rem;color:rgba(255,216,170,.9);letter-spacing:0}
+.mission-odyssey__footer{margin-top:auto;padding-top:clamp(12px,2vw,20px);border-top:1px solid rgba(244,206,160,.18)}
+.mission-odyssey__footnote{margin:0;font-family:'EB Garamond',serif;font-size:1rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(244,215,178,.76)}
+@media (max-width:1200px){
+  .mission-odyssey__shell{grid-template-columns:1fr;justify-items:center}
+  .mission-odyssey__visual{order:-1}
+  .mission-odyssey__visual-frame{max-width:520px;width:100%}
+  .mission-odyssey__panel{max-width:740px;width:100%}
+  .mission-odyssey__label{align-self:center}
+  .mission-odyssey__header{text-align:center;align-items:center}
+  .mission-odyssey__body{text-align:center}
+  .mission-odyssey__highlight{border-left:none;padding:18px 18px;border-radius:18px;background:rgba(255,198,140,.16)}
+  .mission-odyssey__meta{justify-content:center}
 }
-@media (max-width:1024px){
-  .mission-memes__layout{grid-template-columns:minmax(0,1fr)}
-  .mission-memes__art{order:-1}
-  .mission-memes__content{align-items:center;text-align:center}
-  .mission-memes__chip{align-self:center}
-  .mission-memes__cta{justify-content:center}
-  .mission-memes__hashtags{justify-content:center}
+@media (max-width:768px){
+  .mission-odyssey{padding:clamp(72px,20vw,120px) 0}
+  .mission-odyssey__visual-note{letter-spacing:.18em;font-size:.64rem;padding:8px 14px}
+  .mission-odyssey__label{letter-spacing:.22em;font-size:.72rem;padding:10px 22px}
+  .mission-odyssey__meta{gap:10px}
+  .mission-odyssey__meta-item{width:100%;justify-content:center;letter-spacing:.16em}
+  .mission-odyssey__divider{margin-left:auto;margin-right:auto;width:110px}
+  .mission-odyssey__footnote{letter-spacing:.12em}
 }
 .mission-ethos__media-note{display:block;margin-top:1.1rem;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;text-align:center;color:rgba(244,233,212,.72);}
 
