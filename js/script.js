@@ -207,7 +207,17 @@ function initMissionCarousel(){
     if(!slides.length) return;
     const prev = root.querySelector('[data-carousel-prev]');
     const next = root.querySelector('[data-carousel-next]');
-    const dots = Array.from(root.querySelectorAll('[data-carousel-dot]'));
+    const dots = (()=>{
+      const filterDots = list=>list.filter(dot=>dot.closest('[data-carousel]') === root || !dot.closest('[data-carousel]'));
+      const direct = filterDots(Array.from(root.querySelectorAll('[data-carousel-dot]')));
+      if(direct.length) return direct;
+      const parent = root.parentElement;
+      if(!parent) return direct;
+      const nearby = filterDots(Array.from(parent.querySelectorAll('[data-carousel-dot]')));
+      if(nearby.length) return nearby;
+      const scoped = root.closest('section, [data-carousel-scope]');
+      return scoped ? filterDots(Array.from(scoped.querySelectorAll('[data-carousel-dot]'))) : direct;
+    })();
     const viewport = root.querySelector('.mission-cinema__viewport') || root;
     let index = 0;
     const goTo = (newIndex)=>{
