@@ -46,7 +46,7 @@ body.mission-page main::before{
   content:"";
   position:fixed;
   inset:0;
-  background:url('../assets/mission-bg1.png') center top/cover no-repeat;
+  background:url('../assets/bg-mission.png') center top/cover no-repeat;
   z-index:-1;
   pointer-events:none;
 }
@@ -175,7 +175,7 @@ header .right .btn.small{display:inline-flex;align-items:center;justify-content:
 .btn.ghost{background:transparent;border:var(--border)}
 .btn.small{padding:8px 12px;border-radius:12px;font-size:14px}
 
-section{position:relative;padding:120px 0;border-bottom:var(--border)}
+section{position:relative;padding:120px 0;}
 section .section-title{font-size:42px;line-height:1.1;margin:0 0 18px}
 section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 
@@ -364,13 +364,13 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 .alexandria-section{
   position:relative;
   padding:150px 0;
-  background:
+  /* background:
     radial-gradient(1200px 780px at 10% -5%, rgba(255,46,106,0.16), transparent 65%),
     radial-gradient(900px 680px at 92% 8%, rgba(123,92,255,0.18), transparent 62%),
     linear-gradient(160deg, #0a0916 0%, #1b0f1f 48%, #060712 100%);
-  overflow:hidden;
+  overflow:hidden; */
 }
-.alexandria-section__bg{
+/* .alexandria-section__bg{
   position:absolute;
   inset:-18% -18% auto -18%;
   height:520px;
@@ -381,7 +381,7 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
   opacity:0.7;
   filter:blur(48px);
   pointer-events:none;
-}
+} */
 .alexandria-shell{
   position:relative;
   display:grid;
@@ -2407,12 +2407,12 @@ section .section-sub{color:var(--muted);max-width:900px;margin:0 0 28px}
 }
 
 /* Mission page static background adjustments */
-body.mission-page .alexandria-section{
+/* body.mission-page .alexandria-section{
   background:
     radial-gradient(1200px 780px at 10% -5%, rgba(255,46,106,0.16), transparent 65%),
     radial-gradient(900px 680px at 92% 8%, rgba(123,92,255,0.18), transparent 62%),
     linear-gradient(160deg, rgba(10,9,22,0.82) 0%, rgba(27,15,31,0.78) 48%, rgba(6,7,18,0.82) 100%);
-}
+} */
 
 body.mission-page .legend-section{
   background:
